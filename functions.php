@@ -130,7 +130,7 @@ function bootscore_widgets_init() {
         'name' => esc_html__('Top Nav Search', 'bootscore' ),
         'id' => 'top-nav-search',
         'description' => esc_html__('Add widgets here.', 'bootscore' ),
-        'before_widget' => '<div class="top-nav-search ml-3">',
+        'before_widget' => '<div class="top-nav-search ml-lg-3">',
         'after_widget' => '</div>',
         'before_title' => '<h2 class="card-header widget-title">',
         'after_title' => '</h2>'

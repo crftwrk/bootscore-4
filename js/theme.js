@@ -65,7 +65,8 @@ jQuery(document).ready(function ($) {
 
     // Close nav collapse on click nav-link, keep sub-menu item open
     $('.navbar-nav>li>a:not(.dropdown-toggle), a.dropdown-item').on('click', function () {
-        $('.navbar-collapse').collapse('hide')
+        $('.navbar-collapse').collapse('hide'),
+            $('.opac').removeClass('visible')
     });
 
     // Close nav collapse on click sub-menu nav-link
@@ -74,7 +75,7 @@ jQuery(document).ready(function ($) {
     });
 
     // Close nav collapse on click / touch outside
-    $('.site-content').on('click touchstart', function () {
+    $('.site-content, .opac').on('click touchstart', function () {
         $(".navbar-collapse.show").collapse('hide')
     });
 
@@ -91,13 +92,22 @@ jQuery(document).ready(function ($) {
     // CSS Toggler
     $('.navbar-toggler').on('click', function () {
         $('.toggler-icon-animated').toggleClass('open')
+            //$('.opac').toggleClass('visible')
     });
 
     // Close Search collapse on click / touch outside
     $('.site-content').on('click touchstart', function () {
         $(".top-nav-search-mobile .dropdown-menu.show").removeClass('show')
     });
-
+    
+    // Overlay
+    $('.opac').on('click touchstart', function () {
+        $('.opac').removeClass('visible')
+    });
+    
+    $('.toggler-icon-animated').on('click', function () {
+            $('.opac').toggleClass('visible')
+    });
 
 
     
@@ -133,10 +143,12 @@ jQuery(document).ready(function ($) {
         $('.offcanvas-collapse').removeClass('open')
     });
 
-    // Close Offcanvas on click / touch outside
-    $('.site-content').on('click touchstart', function () {
+    // Close Offcanvas, opac on click / touch outside
+    $('.site-content, .opac').on('click touchstart', function () {
         $('.offcanvas-collapse').removeClass('open')
     });*/
+    
+    
 
 
 
@@ -286,61 +298,9 @@ jQuery(document).ready(function ($) {
 
 
 
-    /*
-   // Contactform 7
-    window.wpcf7.clearResponse = function (form) {
-        var $form = $(form);
-        var $close = $form.find('div.wpcf7-response-output .close');
-
-        $form.removeClass('invalid spam sent failed');
-        $form.siblings('.screen-reader-response').html('').attr('role', '');
-
-        $('.wpcf7-not-valid-tip', $form).remove();
-        $('[aria-invalid]', $form).attr('aria-invalid', 'false');
-        $('.wpcf7-form-control', $form).removeClass('wpcf7-not-valid');
-        $('div.form-group', $form).removeClass('has-error');
-        $('img.ajax-loader', $form).removeClass('is-active');
 
 
-        $('.wpcf7-response-output', $form)
-            .hide().empty().removeAttr('role')
-            .removeClass('wpcf7-mail-sent-ok wpcf7-mail-sent-ng wpcf7-validation-errors wpcf7-spam-blocked alert-warning alert-success alert-danger');
-
-        if (0 < $close.length) {
-            $form.find('div.wpcf7-response-output').append($close);
-        }
-    };
-
-
-
-    // add Bootstrap Alert classes to response output
-    $(function () {
-        $('div.wpcf7').on('invalid.wpcf7', function () {
-            $(this).find('div.wpcf7-response-output').addClass('alert alert-danger');
-        });
-
-        $('div.wpcf7').on('spam.wpcf7', function () {
-            $(this).find('div.wpcf7-response-output').addClass('alert alert-warning');
-        });
-
-        $('div.wpcf7').on('mailsent.wpcf7', function () {
-            $(this).find('div.wpcf7-response-output').addClass('alert alert-success');
-        });
-
-        $('div.wpcf7').on('mailfailed.wpcf7', function () {
-            $(this).find('div.wpcf7-response-output').addClass('alert alert-danger');
-        });
-
-
-        $('div.wpcf7').on('click', 'div.wpcf7-response-output .close', function (e) {
-            $(this).parent().hide();
-            e.preventDefault();
-        });
-    });
-    // Contactform 7 End
-*/
-
-
+    // Contactform 7
     /* Validation Events for changing response CSS classes */
     document.addEventListener('wpcf7invalid', function (event) {
         $('.wpcf7-response-output').addClass('alert alert-danger');
@@ -355,7 +315,12 @@ jQuery(document).ready(function ($) {
         $('.wpcf7-response-output').addClass('alert alert-success');
         $('.wpcf7-response-output').removeClass('alert-danger');
     }, false);
+    // Contactform 7 End
     
 
+
+    
+    
+    
 
 }); // jQuery End

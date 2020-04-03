@@ -110,7 +110,9 @@
 					</div>
 					
 				</div><!-- container -->
-				
+                
+				<div class="opac"></div>
+                
 			</nav>
 			
 		</header><!-- #masthead -->

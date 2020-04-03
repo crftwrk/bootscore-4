@@ -57,7 +57,7 @@
                     <div class="top-nav-search-mobile ml-2 d-lg-none">
                         <a class="btn btn-link text-secondary" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-search"></i></a>
                         <div class="dropdown-menu bg-light border-top-0 border-left-0 border-right-0 border-bottom-0 rounded-0" aria-labelledby="dropdownMenuLink">
-                            <div class="container pl-0">
+                            <div class="container">
                                 <?php if ( is_active_sidebar( 'top-nav-search' )) : ?>
                                 <div>
                                     <?php dynamic_sidebar( 'top-nav-search' ); ?>

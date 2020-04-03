@@ -21,9 +21,9 @@ body {
 @media (max-width: 991px) {
 	.offcanvas-collapse {
 		position: fixed;
-		top: 56px;
+		top: 0;
 		/* Height of navbar */
-		padding-top: 0px;
+		padding-top: 56px;
 		bottom: 0;
 		/*width: 100%;*/
 		padding-right: 1rem;
@@ -34,6 +34,7 @@ body {
 		transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
 		-webkit-transform: translateX(100%);
 		transform: translateX(100%);
+        z-index: 1;
 	}
 	.offcanvas-collapse.open {
 		-webkit-transform: translateX(-1rem);
@@ -44,12 +45,12 @@ body {
 
 @media (max-width: 782px) {
     .logged-in.admin-bar .offcanvas-collapse {
-        top: 102px;
+        top: 46px;
     }
 }
 
 @media (min-width: 783px) {
     .logged-in.admin-bar .offcanvas-collapse {
-        top: 88px;
+        top: 32px;
     }
 }

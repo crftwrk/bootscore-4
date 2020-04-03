@@ -26,7 +26,6 @@ jQuery(document).ready(function ($) {
         $('.cart-right').removeClass('open')
     });
 
-
     $('.bootscore-cart, .toggler-icon, .add_to_cart_button, .single_add_to_cart_button').on('click', function () {
         $('.opac').addClass('visible')
     });
@@ -41,14 +40,9 @@ jQuery(document).ready(function ($) {
         $('.opac').removeClass('visible')
     })
 
-    /*$('.bootscore-cart, .add_to_cart_button, .single_add_to_cart_button:not(.product_type_variable)').click(function () {
-        $(".cart-right").toggleClass("open");
-    });*/
-
     $('.bootscore-cart, .single_add_to_cart_button:not(.product_type_variable)').click(function () {
         $(".cart-right").toggleClass("open");
     });
-
 
     $('.opac').on('click touchstart', function () {
         $('.cart-right, .offcanvas-collapse-left').removeClass('open')

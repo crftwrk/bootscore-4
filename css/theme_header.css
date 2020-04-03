@@ -125,3 +125,34 @@
         display: block!important
     }
 }
+
+
+
+
+
+.opac {
+    background-color: rgba(0, 0, 0, .6);
+    backdrop-filter: grayscale(100%) blur(7px);
+    -webkit-backdrop-filter: grayscale(100%) blur(7px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s ease-in-out;
+}
+
+
+.opac.visible {
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+.opac.z11 {
+    z-index: 11;
+}
+
