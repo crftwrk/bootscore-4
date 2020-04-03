@@ -12,7 +12,7 @@
 		<div class="row">
 			<!-- Sidebar -->
 			<?php get_sidebar(); ?>
-			<div class="col order-first order-md-last">
+			<div class="col-md-8 order-first order-md-last">
 				<header class="entry-header">
 					<?php the_post(); ?>
 					<!-- Category Badge -->

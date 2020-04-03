@@ -13,7 +13,7 @@
 	<main id="main" class="site-main">
 		<div class="row">
 		<?php get_sidebar(); ?>
-			<div class="col order-first order-md-last">
+			<div class="col-md-8 order-first order-md-last">
 				<!-- Author Vcard -->
 				<header class="page-header">
 					<div class="media mb-4">

@@ -264,8 +264,7 @@ jQuery(document).ready(function($) {
 
 
 	// Forms
-	$('select').addClass('custom-select');
-	$('#text_field, #text_area, .password, .wpcf7-textarea, .wpcf7-text').addClass('form-control');
+	$('#text_field, #text_area, select, .password, .wpcf7-textarea, .wpcf7-text').addClass('form-control');
 	$('.button, .wpcf7-submit').addClass('btn btn-outline-primary');
 	$('.wp-block-button__link').addClass('btn btn-outline-primary');
 

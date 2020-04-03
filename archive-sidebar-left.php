@@ -14,7 +14,7 @@
 		<div class="row">
 			<!-- Sidebar -->
 			<?php get_sidebar(); ?>
-			<div class="col order-first order-md-last">
+			<div class="col-md-8 order-first order-md-last">
 				<!-- Title & Description -->
 				<header class="page-header">
 					<div class="card mb-4 bg-light border-0">
