@@ -13,7 +13,7 @@
 		<div class="row">
 			<!-- Featured Image-->
 			<?php if (has_post_thumbnail() )
-				echo '<div class="card-img-left col-md-6 col-lg-4">' . get_the_post_thumbnail(null, 'medium') . '</div>';
+				echo '<div class="card-img-left-md col-lg-5">' . get_the_post_thumbnail(null, 'medium') . '</div>';
 				?>
 			<div class="col">
 				<div class="card-body">

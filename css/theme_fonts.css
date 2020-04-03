@@ -36,3 +36,12 @@ body {
     font-weight: 700 !important;
 }
 
+
+.breadcrumb {
+    hyphens: auto;
+    -webkit-hyphens: auto;
+  	-moz-hyphens: auto;
+  	-ms-hyphens: auto;
+}
+
+

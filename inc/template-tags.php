@@ -202,7 +202,7 @@ if ( ! function_exists( 'bootscore_post_thumbnail' ) ) :
 			?>
 
 			<div class="post-thumbnail">
-				<?php the_post_thumbnail('large', array('class' => 'rounded mb-3')); ?>
+				<?php the_post_thumbnail('full', array('class' => 'rounded mb-3')); ?>
 			</div><!-- .post-thumbnail -->
 
 		<?php else : ?>

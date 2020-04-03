@@ -3,13 +3,13 @@ jQuery(document).ready(function ($) {
 	// Scrollspy
 	$('body').scrollspy({
 		target: '#bootscore-navbar-collapse',
-		offset: 100
+		offset: 56
 	});
 
 
 	// Smooth Scroll
 	$(function () {
-		$('a[href*="#"]:not([href="#"])').click(function () {
+		$('a[href*="#"]:not([href="#"]):not([href="#tab-reviews"]):not([href="#tab-additional_information"]):not([href="#tab-description"]):not([href="#reviews"]):not([href="#carouselExampleIndicators"])').click(function () {
 			if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
 				var target = $(this.hash);
 				target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');

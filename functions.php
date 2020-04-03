@@ -411,6 +411,3 @@ add_filter("the_password_form","bootscore_pw_form");
 // Password protected form End
 
 
-
-
-

@@ -90,22 +90,48 @@ blockquote::before {
 	font-weight: 900;
 	content: "\f10d";
 	font-size: xx-large;
-	position: absolute;
-	margin-top: -4px;
-	left: 2.3rem;
+	float: left;
+    margin: -.1rem 1.25rem 0 0;
 }
 
-blockquote p {
-	margin: 0 0 0 3rem;
-}
-
-blockquote cite {
-	margin-left: 3rem;
-}
 
 .wp-block-quote.is-style-large {
 	margin: 0 0 1rem;
 	padding: 1.25rem;
+}
+
+
+figure.wp-block-pullquote blockquote:before {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	content: "\f10d";
+	font-size: xx-large;
+	display: block;
+	float: none;
+}
+
+q {
+    padding: .2rem .4rem;
+    font-size: 87.5%;
+    background-color: #f8f9fa;
+    border-radius: .2rem;
+}
+
+q::before {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	content: "\f10d";
+	font-size: 87.5%;
+	margin-right: .5rem;
+}
+
+.comment-content.card-block blockquote {
+    padding: 0;
+}
+
+.comment-content.card-block q {
+    padding: 0;
+    font-size: 100%;
 }
 
 
