@@ -79,7 +79,7 @@
             
         </div>
     </div>
-    <div class="bootscore-info bg-light text-secondary border-top py-2 text-center">
+    <div class="bootscore-info bg-light text-muted border-top py-2 text-center">
         <div class="container">
             <small>&copy;&nbsp;<?php echo Date('Y'); ?> - <?php bloginfo('name'); ?></small>    
         </div>

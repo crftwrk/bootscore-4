@@ -55,9 +55,9 @@
 
                     <!-- Mobile Search Module -->
                     <div class="top-nav-search-mobile ml-2 d-lg-none">
-                        <a class="btn btn-outline-secondary" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-search"></i></a>
+                        <a class="btn btn-link text-secondary" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-search"></i></a>
                         <div class="dropdown-menu bg-light border-top-0 border-left-0 border-right-0 border-bottom-0 rounded-0" aria-labelledby="dropdownMenuLink">
-                            <div class="container">
+                            <div class="container pl-0">
                                 <?php if ( is_active_sidebar( 'top-nav-search' )) : ?>
                                 <div>
                                     <?php dynamic_sidebar( 'top-nav-search' ); ?>
@@ -115,9 +115,9 @@
                     <!-- Woocommerce Mobile -->
                     <!-- User -->
                     <div class="d-lg-none">
-                        <a class="btn btn-outline-secondary mr-1" title="Mein Konto" href="<?php echo get_permalink( wc_get_page_id( 'myaccount' ) ); ?>"><i class="fas fa-user"></i></a>
+                        <a class="btn btn-link text-secondary pr-0 mr-1" title="Mein Konto" href="<?php echo get_permalink( wc_get_page_id( 'myaccount' ) ); ?>"><i class="fas fa-user"></i></a>
                         <!-- Mini Cart Header Mobile -->
-                        <span class="bootscore-cart btn btn-outline-secondary">
+                        <span class="bootscore-cart btn btn-link text-secondary pr-0">
                             <?php if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
 									$count = WC()->cart->cart_contents_count;
 									?><span class="cart-content" title="<?php _e( 'bootscore-cart ansehen' ); ?>"><?php 
@@ -138,7 +138,7 @@
 
 
                     <!-- Large Top Module -->
-                    <div class="top-module-1 d-none d-lg-block ml-3">
+                    <div class="top-module-1 d-none d-lg-block">
                         <?php if ( is_active_sidebar( 'top-nav-module' )) : ?>
                         <div>
                             <?php dynamic_sidebar( 'top-nav-module' ); ?>
@@ -147,10 +147,10 @@
                     </div>
 
                     <!-- Large Top Search Module -->
-                    <div class="top-nav-search-large d-none d-lg-block ml-2">
+                    <div class="top-nav-search-large d-none d-lg-block ml-3">
                         <a class="btn btn-outline-secondary" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-search"></i></a>
                         <div class="w-100 mt-n1 dropdown-menu bg-light border-top-0 border-left-0 border-right-0 border-bottom-0 rounded-0" aria-labelledby="dropdownMenuLink">
-                            <div class="container">
+                            <div class="container pl-0">
                                 <?php if ( is_active_sidebar( 'top-nav-search' )) : ?>
                                 <div>
                                     <?php dynamic_sidebar( 'top-nav-search' ); ?>

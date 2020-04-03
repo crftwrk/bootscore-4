@@ -92,7 +92,7 @@
                ?>   
 										
 					<!-- Large Top Module -->
-					<div class="top-module-1 d-none d-lg-block ml-3">
+					<div class="top-module-1 d-none d-lg-block">
 						<?php if ( is_active_sidebar( 'top-nav-module' )) : ?>
 						<div>
 							<?php dynamic_sidebar( 'top-nav-module' ); ?>
@@ -101,7 +101,7 @@
 					</div>
 					
 					<!-- Large Top Search Module -->
-					<div class="top-nav-search d-none d-lg-block ml-3">
+					<div class="top-nav-search d-none d-lg-block">
 						<?php if ( is_active_sidebar( 'top-nav-search' )) : ?>
 						<div>
 							<?php dynamic_sidebar( 'top-nav-search' ); ?>

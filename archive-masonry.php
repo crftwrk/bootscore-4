@@ -51,7 +51,7 @@
                         </h2>
                         <!-- Meta -->
                         <?php if ( 'post' === get_post_type() ) : ?>
-                        <small class="text-secondary mb-2">
+                        <small class="text-muted mb-2">
                             <?php
 								bootscore_date();
 								bootscore_author();

@@ -41,7 +41,7 @@
                     </div>
 
                     <p class="entry-meta">
-                        <small class="text-secondary">
+                        <small class="text-muted">
                             <?php
 							bootscore_date();
 							_e(' by ', 'bootscore'); the_author_posts_link();

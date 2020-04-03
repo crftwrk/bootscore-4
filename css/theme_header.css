@@ -118,10 +118,10 @@
 
 
 @media (min-width:992px) {
-    .top-nav-search-large.d-none.d-lg-block.ml-2  {
+    .top-nav-search-large.d-none.d-lg-block  {
         display: none!important
     }
-    .top-nav-search-large.d-none.d-lg-block.ml-2.visible {
+    .top-nav-search-large.d-none.d-lg-block.visible {
         display: block!important
     }
 }

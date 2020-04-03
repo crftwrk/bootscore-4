@@ -6,7 +6,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 Requires at least: 4.5
 Tested up to: 5.3.2
 Requires PHP: 5.6
-Stable tag: 3.0.4
+Stable tag: 3.0.5
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -39,6 +39,15 @@ Bootscore includes support for Infinite Scroll in Jetpack.
 
 
 == Changelog ==
+
+    = 3.0.5 - March 25 2020 =
+        
+        * Updated WooCommerce Templates
+        * Moved ml-3 from top-nav-search and top-nav-module from header.php to functions.php in widget section.
+        * Shortcode in HTML Widget
+        * Bug fixes
+        * Changed meta and footer copyright from text-secondary to text muted
+        * Updatet .pot file german Du to du
 
     = 3.0.4 - March 04 2020 =
         

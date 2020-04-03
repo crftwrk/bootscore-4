@@ -130,7 +130,7 @@ function bootscore_widgets_init() {
         'name' => esc_html__('Top Nav Search', 'bootscore' ),
         'id' => 'top-nav-search',
         'description' => esc_html__('Add widgets here.', 'bootscore' ),
-        'before_widget' => '<div class="top-nav-search">',
+        'before_widget' => '<div class="top-nav-search ml-3">',
         'after_widget' => '</div>',
         'before_title' => '<h2 class="card-header widget-title">',
         'after_title' => '</h2>'
@@ -142,7 +142,7 @@ function bootscore_widgets_init() {
         'name' => esc_html__('Top Nav Module', 'bootscore' ),
         'id' => 'top-nav-module',
         'description' => esc_html__('Add widgets here.', 'bootscore' ),
-        'before_widget' => '<div class="top-nav-module">',
+        'before_widget' => '<div class="top-nav-module ml-3">',
         'after_widget' => '</div>',
         'before_title' => '<h2 class="card-header widget-title">',
         'after_title' => '</h2>'
@@ -438,6 +438,7 @@ add_filter('wpcf7_form_elements', function ($content) {
     return $content;
 });
 //Adjust contact form 7 radios and checkboxes to match bootstrap 4 custom radio structure. End
+
 
 
 
