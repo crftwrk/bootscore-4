@@ -35,7 +35,7 @@
 				<header class="blog-header">
 					<div class="row flex-nowrap justify-content-between align-items-center">
 					
-											<div class="col-6">
+						<div class="col-6">
 							<!-- SVG Logo -->
 							<!--<a class="navbar-brand" href="<?php echo esc_url( home_url() ); ?>"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/logo/logo.svg" alt="logo" class="logo" ></a>-->
 							<!-- Customizer Title & Logo -->

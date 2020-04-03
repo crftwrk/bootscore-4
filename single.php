@@ -9,7 +9,7 @@
 		<!-- Breadcrumb -->
 		<?php the_breadcrumb(); ?>
 		<div class="row">
-			<div class="col-md-8">
+			<div class="col">
 				<header class="entry-header">
 					<?php the_post(); ?>
 					<!-- Category Badge -->
@@ -19,7 +19,7 @@
 						$i = 0;
 						foreach( get_the_category() as $category ) {
 						    if ( 0 < $i ) $thelist .= ' ';
-						    $thelist .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" class="badge badge-secondary">' . $category->name.'</a>';
+						    $thelist .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" class="badge badge-primary">' . $category->name.'</a>';
 						    $i++;
 						}
 						echo $thelist;

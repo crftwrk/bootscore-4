@@ -24,15 +24,19 @@
 							$i = 0;
 							foreach( get_the_category() as $category ) {
 							    if ( 0 < $i ) $thelist .= ' ';
-							    $thelist .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" class="badge badge-secondary">' . $category->name.'</a>';
+							    $thelist .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" class="badge badge-primary">' . $category->name.'</a>';
 							    $i++;
 							}
 							echo $thelist;
 							?>
-						<!-- Category -->
-						<!--<?php
-							bootscore_category();
-							?>-->
+						<!-- isopost Categories -->
+						<?php
+							$terms = get_the_terms( $post->ID, 'isopost_categories' );
+								if ($terms && ! is_wp_error($terms)): ?>
+						<?php foreach($terms as $term): ?>
+						<a href="<?php echo get_term_link( $term->slug, 'isopost_categories'); ?>" rel="tag" class="badge badge-primary"><?php echo $term->name; ?></a>
+						<?php endforeach; ?>
+						<?php endif; ?>
 					</div>
 					<!-- Title -->
 					<h2 class="blog-post-title">

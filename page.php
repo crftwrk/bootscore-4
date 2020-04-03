@@ -17,7 +17,7 @@
 <div id="primary" class="content-area">
     <main id="main" class="site-main">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col">
                 <header class="entry-header">
                     <?php the_post(); ?>
                     <!-- Title -->
