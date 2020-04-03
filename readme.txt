@@ -6,7 +6,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 Requires at least: 4.5
 Tested up to: 5.3.2
 Requires PHP: 5.6
-Stable tag: 3.0.1
+Stable tag: 3.0.3
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -40,16 +40,18 @@ Bootscore includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
+    = 3.0.2 - February 22 2020 =
+    
+        * Added Ajax add to cart PlugIn in theme https://quadmenu.com/add-to-cart-with-woocommerce-and-ajax-step-by-step/
+
     = 3.0.1 - January 30 2020 =
     
         * Moved container from header.php to page-, single-, category-, author- and archive.php
         * WooCommerce Germanized support
         * Insert alert in 404.php and search content-none.php
         * Lighten up the design
-        * Bootstrap styles to Contactform 7 Alerts
         * Deleted all category- and author.php. Use archive.php instead
         * Deleted header-blog-logo-center.php, header-blog-logo-left.php and header-fluid.php
-        * cleaned up the functions.php
         * Bug fixes
 
     = 3.0.0 - January 21 2020 =
@@ -149,6 +151,7 @@ Bootscore includes support for Infinite Scroll in Jetpack.
 * Comments Section Script by wp-bootstrap-starter https://github.com/afterimagedesigns/wp-bootstrap-starter
 * Google Fonts https://developers.google.com/fonts/faq
 * Font Awesome https://fontawesome.com/license/free
+* Ajax add to cart https://quadmenu.com/add-to-cart-with-woocommerce-and-ajax-step-by-step/
 
 
 == Documentation ==

@@ -108,7 +108,7 @@
 }
 
 @media (max-width:991px) {
-    .top-nav-search-mobile {
+    .top-nav-search-mobile  {
         display: none!important
     }
     .top-nav-search-mobile.visible {
