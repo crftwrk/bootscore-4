@@ -4,9 +4,9 @@ Contributors: craftwerk
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
 Requires at least: 4.5
-Tested up to: 5.2.4
+Tested up to: 5.3
 Requires PHP: 5.6
-Stable tag: 2.0.3
+Stable tag: 2.0.4
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -39,6 +39,14 @@ Bootscore includes support for Infinite Scroll in Jetpack.
 
 
 == Changelog ==
+
+	= 2.0.4 - November 17 2019 =
+	
+		* Changed bootstrap.min.js to bootstrap.bundle.min.js. 
+            * This ads tooltips and dropdowns.
+            * This fixes bug with search dropdown on header-blog-logo-left.php and header-blog-logo-center.php on mobile view
+        * Moved GDPR ready Google Analytics Snippet from footer.php to own google-analytics.js in folder js
+
 
 	= 2.0.3 - November 12 2019 =
 	
