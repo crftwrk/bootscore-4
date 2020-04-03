@@ -6,6 +6,18 @@
  *
  * @package Bootscore
  */
+
+// Hide Admin Bar in Frontend
+/*function hide_admin_bar_from_front_end()
+{
+    if (is_blog_admin()) {
+        return true;
+    }
+    return false;
+}
+add_filter('show_admin_bar', 'hide_admin_bar_from_front_end');*/
+// Hide Admin Bar in Frontend End
+// 
  
 // Register Nav Walker class_alias
 require_once('inc/class-wp-bootstrap-navwalker.php');
@@ -60,7 +72,6 @@ if ( ! function_exists( 'bootscore_setup' ) ) :
 		 * to output valid HTML5.
 		 */
 		add_theme_support( 'html5', array(
-			'search-form',
 			'comment-form',
 			'comment-list',
 			'gallery',

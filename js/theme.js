@@ -229,8 +229,8 @@ jQuery(document).ready(function($) {
 	})
 
 
-	// Hide Search Dropdown on scroll
-	$(function() {
+	// Hide Search Dropdown on scroll. Only if blog-header is used.
+	/*$(function() {
 		var header = $(".dropdown-menu");
 		$(window).scroll(function() {
 			var scroll = $(window).scrollTop();
@@ -241,7 +241,7 @@ jQuery(document).ready(function($) {
 				header.removeClass("show");
 			}
 		});
-	});
+	});*/
 
 
 	// Forms
