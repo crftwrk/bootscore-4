@@ -17,6 +17,10 @@
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="profile" href="https://gmpg.org/xfn/11">
+		<!-- Favicons -->		
+    	<link rel="apple-touch-icon" sizes="180x180" href="<?php echo esc_url( get_template_directory_uri() ); ?>/img/favicon/apple-touch-icon.png">
+    	<link rel="icon" type="image/png" sizes="32x32" href="<?php echo esc_url( get_template_directory_uri() ); ?>/img/favicon//favicon-32x32.png">
+    	<link rel="icon" type="image/png" sizes="16x16" href="<?php echo esc_url( get_template_directory_uri() ); ?>/img/favicon//favicon-16x16.png">
 		<!-- Loads the internal WP jQuery -->
 		<?php wp_enqueue_script('jquery'); ?>
 		<?php wp_head(); ?>
@@ -43,30 +47,7 @@
 				<div class="container">
 					
 					<!-- SVG Logo -->
-					<!--<a class="navbar-brand" href="<?php echo esc_url( home_url() ); ?>"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/logo/logo.svg" alt="logo" class="logo" ></a>-->
-					
-					<!-- Customizer Title & Logo -->
-					<div class="navbar-brand">
-						<div class="site-branding">
-							<?php
-								the_custom_logo();
-								if ( is_front_page() && is_home() ) :
-									?>
-							<strong class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></strong>
-							<?php
-								else :
-									?>
-							<strong class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></strong>
-							<?php
-								endif;
-								$bootscore_description = get_bloginfo( 'description', 'display' );
-								if ( $bootscore_description || is_customize_preview() ) :
-									?>
-							<br>
-							<small class="site-description text-secondary"><?php echo $bootscore_description; /* WPCS: xss ok. */ ?></small>
-							<?php endif; ?>
-						</div>
-					</div>
+					<a class="navbar-brand" href="<?php echo esc_url( home_url() ); ?>"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/logo/logo.svg" alt="logo" class="logo" ></a>
 					
 					<!-- Mobile Top Module -->
 					<div class="top-module-1 flex-fill justify-content-end d-flex pr-3 d-lg-none">

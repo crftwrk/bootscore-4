@@ -1,14 +1,6 @@
-/* Customizer Logo & Title */
-.site-branding {
-	line-height: 0.9;
-	font-size: 84%;
+.nav-link:focus {
+    outline: none;
 }
-
-a.custom-logo-link img {
-	height: 30px;
-	width: auto;
-}
-/* Customizer Logo & Title End */
 
 @media (min-width:576px) and (max-width:1023px) {
 	.navbar>.container {

@@ -1,6 +1,6 @@
 <?php
 	/**
-	 * Category Template: Equal Height Sidebar right
+	 * Category Template: Equal Height Sidebar Right
 	 *
 	 * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
 	 *

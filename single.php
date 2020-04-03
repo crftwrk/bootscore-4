@@ -66,8 +66,6 @@
 							</li>
 						</ul>
 					</nav>
-					<!-- Just for WP Test, can be deleted -->
-					<?php posts_nav_link() ?>
 					<!-- .entry-footer -->
 				</footer>
 				<!-- Comments -->

@@ -6,7 +6,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 Requires at least: 4.5
 Tested up to: 5.2.1
 Requires PHP: 5.6
-Stable tag: 1.0.6
+Stable tag: 2.0.0
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -39,6 +39,15 @@ Bootscore includes support for Infinite Scroll in Jetpack.
 
 
 == Changelog ==
+
+	= 2.0.0 - August 05 2019 =
+		
+		* Removed all Customizer settings and files by removing customizer.php, customizer.js, code in functions.php and logo upload code in all header.php. background-color, text-color and logo upload must do manually now. Logo is placed as an .svg in theme folder /img/logo.
+		* Removed Custom Header function by removing the custom-header.php and changing the index.php
+		* Added Favicon Links to all header.php files. Use https://realfavicongenerator.net to generate different Favicons for specific devices.
+		* Updated to Bootstrap 4.3.1
+		* Bug Fixes
+
 
 	= 1.0.6 - July 22 2019 =
 		* Tags to badge-primary
