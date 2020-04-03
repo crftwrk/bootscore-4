@@ -42,3 +42,6 @@ q {
 }
 
 
+:focus {
+    outline: none !important;
+}

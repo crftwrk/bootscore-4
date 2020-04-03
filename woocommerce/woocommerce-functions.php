@@ -105,36 +105,7 @@ function wc_mini_cart_ajax_refresh( $fragments ){
 
 
 
-// Understrap
-
-
-
-// Exit if accessed directly.
-/*defined( 'ABSPATH' ) || exit;
-
-add_action( 'after_setup_theme', 'understrap_woocommerce_support' );
-if ( ! function_exists( 'understrap_woocommerce_support' ) ) {
-
-	function understrap_woocommerce_support() {
-		add_theme_support( 'woocommerce' );
-
-		// Add New Woocommerce 3.0.0 Product Gallery support.
-		add_theme_support( 'wc-product-gallery-lightbox' );
-		add_theme_support( 'wc-product-gallery-zoom' );
-		add_theme_support( 'wc-product-gallery-slider' );
-
-		// hook in and customizer form fields.
-		add_filter( 'woocommerce_form_field_args', 'understrap_wc_form_field_args', 10, 3 );
-	}
-}*/
-
-
-
-
-
-
-
-
+// Forms
 
 /**
  * Filter hook function monkey patching form classes
@@ -146,8 +117,8 @@ if ( ! function_exists( 'understrap_woocommerce_support' ) ) {
  *
  * @return mixed
  */
-if ( ! function_exists( 'understrap_wc_form_field_args' ) ) {
-	function understrap_wc_form_field_args( $args, $key, $value = null ) {
+if ( ! function_exists( 'bootscore_wc_form_field_args' ) ) {
+	function bootscore_wc_form_field_args( $args, $key, $value = null ) {
 		// Start field type switch case.
 		switch ( $args['type'] ) {
 			/* Targets all select input type elements, except the country and state select input types */
@@ -240,16 +211,7 @@ if ( ! is_admin() && ! function_exists( 'wc_review_ratings_enabled' ) ) {
 	}
 }
 
-
-
-// Understrap end
-
-
-
-// Ajax on Single Product Page, Probleme mit variablen Produkten und quantity
-//remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30 );
-//add_action( 'woocommerce_single_product_summary', 'woocommerce_template_loop_add_to_cart', 30 );
-// Ajax on Single Product Page End
+// Forms end
 
 
 
@@ -269,18 +231,6 @@ function jk_woocommerce_breadcrumbs() {
             'home'        => _x( 'Home', 'breadcrumb', 'woocommerce' ),
         );
 }
-
-
-/**
- * Rename "home" in breadcrumb
- */
-/*add_filter( 'woocommerce_breadcrumb_defaults', 'wcc_change_breadcrumb_home_text' );
-function wcc_change_breadcrumb_home_text( $defaults ) {
-    // Change the breadcrumb home text from 'Home' to 'Apartment'
-	$defaults['home'] = 'test';
-	return $defaults;
-}*/
-
 
 
 
@@ -331,42 +281,10 @@ add_filter( 'woocommerce_ship_to_different_address_checked', '__return_false' );
 // Ajax add to cart https://quadmenu.com/add-to-cart-with-woocommerce-and-ajax-step-by-step/
 
 
-if (!defined('ABSPATH')) {
-  die('-1');
-}
-if (!defined('QLWCAJAX_PLUGIN_NAME')) {
-  define('QLWCAJAX_PLUGIN_NAME', 'Ajax add to cart for WooCommerce');
-}
 if (!defined('QLWCAJAX_PLUGIN_VERSION')) {
   define('QLWCAJAX_PLUGIN_VERSION', '1.1.4');
 }
-if (!defined('QLWCAJAX_PLUGIN_FILE')) {
-  define('QLWCAJAX_PLUGIN_FILE', __FILE__);
-}
-if (!defined('QLWCAJAX_PLUGIN_DIR')) {
-  define('QLWCAJAX_PLUGIN_DIR', __DIR__ . DIRECTORY_SEPARATOR);
-}
-if (!defined('QLWCAJAX_DOMAIN')) {
-  define('QLWCAJAX_DOMAIN', 'qlwcajax');
-}
-if (!defined('QLWCAJAX_WORDPRESS_URL')) {
-  define('QLWCAJAX_WORDPRESS_URL', 'https://wordpress.org/plugins/woo-ajax-add-to-cart/');
-}
-if (!defined('QLWCAJAX_REVIEW_URL')) {
-  define('QLWCAJAX_REVIEW_URL', 'https://wordpress.org/support/plugin/woo-ajax-add-to-cart/reviews/?filter=5#new-post');
-}
-if (!defined('QLWCAJAX_DEMO_URL')) {
-  define('QLWCAJAX_DEMO_URL', 'https://quadlayers.com/portfolio/woocommerce-direct-checkout/?utm_source=qlwcajax_admin');
-}
-if (!defined('QLWCAJAX_PURCHASE_URL')) {
-  define('QLWCAJAX_PURCHASE_URL', QLWCAJAX_DEMO_URL);
-}
-if (!defined('QLWCAJAX_SUPPORT_URL')) {
-  define('QLWCAJAX_SUPPORT_URL', 'https://quadlayers.com/account/support/?utm_source=qlwcajax_admin');
-}
-if (!defined('QLWCAJAX_GROUP_URL')) {
-  define('QLWCAJAX_GROUP_URL', 'https://www.facebook.com/groups/quadlayers');
-}
+
 
 if (!class_exists('QLWCAJAX')) {
 
@@ -395,66 +313,12 @@ if (!class_exists('QLWCAJAX')) {
       }
     }
 
-    function add_notices() {
-      if (!get_user_meta(get_current_user_id(), 'qlwcajax-update-notice', true)) {
-        ?>
-        <div id="qlwcajax-admin-rating" class="qlwcajax-notice notice is-dismissible" data-notice_id="qlwcajax-update-notice">
-          <div class="notice-container" style="padding-top: 10px; padding-bottom: 10px; display: flex; justify-content: left; align-items: center;">
-            <div class="notice-image">
-              <img style="border-radius:50%;max-width: 90px;" src="<?php echo plugins_url('/assets/qlwcdc.png', QLWCAJAX_PLUGIN_FILE); ?>" alt="<?php echo esc_html(QLWCAJAX_PLUGIN_NAME); ?>>">
-            </div>
-            <div class="notice-content" style="margin-left: 15px;">
-              <p>
-                <?php printf(esc_html__('Hello! Do you want to improve your sales?', 'woo-ajax-add-to-cart'), QLWCAJAX_PLUGIN_NAME); ?>
-                <br/>
-                <?php esc_html_e('We want to invite you to meet our WooCommerce Direct Checkout plugin which allows you to simplifies the checkout process by skipping the shopping cart page and other tips.', 'woo-ajax-add-to-cart'); ?>
-              </p>
-              <a href="<?php echo esc_url(QLWCAJAX_PURCHASE_URL); ?>" class="button-primary" target="_blank">
-                <?php esc_html_e('More Info!', 'woo-ajax-add-to-cart'); ?>
-              </a>
-              <?php if (current_user_can('activate_plugins')): ?>
-                <a href="<?php echo wp_nonce_url(self_admin_url('update.php?action=install-plugin&plugin=woocommerce-direct-checkout'), 'install-plugin_woocommerce-direct-checkout'); ?>" class="button-secondary" target="_blank">
-                  <?php esc_html_e('Install', 'woo-ajax-add-to-cart'); ?>
-                </a>
-              <?php endif; ?>
-            </div>				
-          </div>
-        </div>
-        <script>
-          (function ($) {
-            $('.qlwcajax-notice').on('click', '.notice-dismiss', function (e) {
-              e.preventDefault();
-              var notice_id = $(e.delegateTarget).data('notice_id');
-              $.ajax({
-                type: 'POST',
-                url: ajaxurl,
-                data: {
-                  notice_id: notice_id,
-                  action: 'qlwcajax_dismiss_notice',
-                },
-                success: function (response) {
-                  console.log(response);
-                },
-              });
-            });
-          })(jQuery);
-        </script>
-        <?php
-      }
-    }
-
-    function add_action_links($links) {
-
-      $links[] = '<a target="_blank" href="' . QLWCAJAX_PURCHASE_URL . '">' . esc_html__('Premium', 'woo-ajax-add-to-cart') . '</a>';
-
-      return $links;
-    }
 
     function init() {
       add_action('wp_enqueue_scripts', array($this, 'add_product_js'), 99);
-      add_action('wp_ajax_qlwcajax_dismiss_notice', array($this, 'ajax_dismiss_notice'));
+      /*add_action('wp_ajax_qlwcajax_dismiss_notice', array($this, 'ajax_dismiss_notice'));
       add_action('admin_notices', array($this, 'add_notices'));
-      add_filter('plugin_action_links_' . plugin_basename(QLWCAJAX_PLUGIN_FILE), array($this, 'add_action_links'));
+      add_filter('plugin_action_links_' . plugin_basename(QLWCAJAX_PLUGIN_FILE), array($this, 'add_action_links'));*/
     }
 
     public static function instance() {

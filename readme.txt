@@ -35,10 +35,14 @@ A powerful Bootstrap WordPress Starter Theme
 
 = Does this theme support any plugins? =
 
-Bootscore includes support for Infinite Scroll in Jetpack.
+Bootscore includes support for WooCommerce and Infinite Scroll in Jetpack.
 
 
 == Changelog ==
+
+    = 3.0.3 - February 28 2020 =
+    
+        * Bug fixes
 
     = 3.0.2 - February 22 2020 =
     

@@ -246,15 +246,15 @@ jQuery(document).ready(function ($) {
 
     // Mobile Search Button hide if empty
     if ($('#searchform').length != 0) {
-        $('.top-nav-search-mobile').addClass('visible');
+        $('.top-nav-search-mobile, .top-nav-search-large').addClass('visible');
     }
     // Mobile Search Button hide if empty End
 
 
     // Tooltips
-    $(function () {
+    /*$(function () {
         $('[data-toggle="tooltip"]').tooltip()
-    })
+    })*/
 
 
     // Hide Search Dropdown on scroll. Only if blog-header is used.

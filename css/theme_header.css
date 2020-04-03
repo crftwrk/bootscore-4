@@ -115,3 +115,13 @@
         display: block!important
     }
 }
+
+
+@media (min-width:992px) {
+    .top-nav-search-large.d-none.d-lg-block.ml-2  {
+        display: none!important
+    }
+    .top-nav-search-large.d-none.d-lg-block.ml-2.visible {
+        display: block!important
+    }
+}

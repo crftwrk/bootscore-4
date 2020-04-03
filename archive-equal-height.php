@@ -28,7 +28,7 @@
                     
                     <div class="card h-100">
                         
-                        <?php the_post_thumbnail('thumbnail', array('class' => 'card-img-top')); ?>
+                        <?php the_post_thumbnail('medium', array('class' => 'card-img-top')); ?>
                         
                         <div class="card-body d-flex flex-column">
                             
@@ -39,7 +39,7 @@
 									$i = 0;
 									foreach( get_the_category() as $category ) {
 									    if ( 0 < $i ) $thelist .= ' ';
-									    $thelist .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" class="badge badge-primary">' . $category->name.'</a>';
+									    $thelist .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" class="badge badge-secondary">' . $category->name.'</a>';
 									    $i++;
 									}
 									echo $thelist;

@@ -55,7 +55,7 @@
 												$i = 0;
 												foreach( get_the_category() as $category ) {
 												    if ( 0 < $i ) $thelist .= ' ';
-												    $thelist .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" class="badge badge-primary">' . $category->name.'</a>';
+												    $thelist .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" class="badge badge-secondary">' . $category->name.'</a>';
 												    $i++;
 												}
 												echo $thelist;
