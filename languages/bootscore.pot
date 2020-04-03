@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: _s 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2019-06-16 18:03+0000\n"
+"POT-Creation-Date: 2019-08-17 16:37+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -16,12 +16,14 @@ msgstr ""
 "Language: \n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;"
 
-#: category-equal-height.php:72 category-sidebar-left.php:74
-#: author-masonry.php:71 archive.php:72 author-equal-height.php:71
-#: archive-sidebar-left.php:74 category.php:73 archive-equal-height.php:70
-#: index.php:90 index.php:156 category-masonry.php:72
-#: author-sidebar-left.php:77 author.php:76 archive-masonry.php:70
-#: template-parts/content-search.php:56
+#: category-equal-height.php:73 category-sidebar-left.php:74
+#: author-masonry.php:71 archive.php:72 author-equal-height.php:72
+#: archive-sidebar-left.php:74 archive-equal-height-sidebar-right.php:71
+#: category.php:73 archive-equal-height.php:71 index.php:90 index.php:156
+#: category-masonry.php:72 author-sidebar-left.php:77
+#: author-equal-height-sidebar-right.php:72 author.php:76
+#: archive-masonry.php:70 category-equal-height-sidebar-right.php:73
+#: template-parts/content-search.php:60
 msgid "Read more"
 msgstr ""
 
@@ -31,7 +33,7 @@ msgstr ""
 msgid "Search Results for: %s"
 msgstr ""
 
-#: header-blog-logo-center.php:107 header-blog-logo-left.php:110
+#: header-blog-logo-center.php:89 header-blog-logo-left.php:92
 msgid "Menu"
 msgstr ""
 
@@ -48,61 +50,61 @@ msgstr ""
 msgid "Full width image"
 msgstr ""
 
-#: page.php:34 page-no-title.php:20 page-sidebar-none.php:29
-#: page-sidebar-left.php:33
+#: page.php:34 page-blank-without-container.php:20 page-sidebar-none.php:29
+#: page-sidebar-left.php:33 page-blank-with-container.php:20
 msgid "Pages:"
 msgstr ""
 
-#: functions.php:54
+#: functions.php:66
 msgid "Main Menu"
 msgstr ""
 
-#: functions.php:55
+#: functions.php:67
 msgid "Footer Menu"
 msgstr ""
 
-#: functions.php:116
+#: functions.php:110
 msgid "Sidebar"
 msgstr ""
 
-#: functions.php:118 functions.php:129 functions.php:141 functions.php:153
-#: functions.php:165 functions.php:177 functions.php:189 functions.php:202
+#: functions.php:112 functions.php:123 functions.php:135 functions.php:147
+#: functions.php:159 functions.php:171 functions.php:183 functions.php:196
 msgid "Add widgets here."
 msgstr ""
 
-#: functions.php:127
+#: functions.php:121
 msgid "Top Nav Search"
 msgstr ""
 
-#: functions.php:139
+#: functions.php:133
 msgid "Top Nav Module"
 msgstr ""
 
-#: functions.php:151
+#: functions.php:145
 msgid "Footer 1"
 msgstr ""
 
-#: functions.php:163
+#: functions.php:157
 msgid "Footer 2"
 msgstr ""
 
-#: functions.php:175
+#: functions.php:169
 msgid "Footer 3"
 msgstr ""
 
-#: functions.php:187
+#: functions.php:181
 msgid "Footer 4"
 msgstr ""
 
-#: functions.php:200
+#: functions.php:194
 msgid "404 Page"
 msgstr ""
 
-#: functions.php:393
+#: functions.php:378
 msgid "Password"
 msgstr ""
 
-#: functions.php:394
+#: functions.php:379
 msgid "Submit"
 msgstr ""
 
@@ -111,7 +113,7 @@ msgid "Sidebar left"
 msgstr ""
 
 #: 404.php:21
-msgid "Place some widgets here and remove this line in the 404.php."
+msgid "Page not found."
 msgstr ""
 
 #: 404.php:26
@@ -119,11 +121,11 @@ msgid "Back Home &raquo;"
 msgstr ""
 
 #. Name of the template
-msgid "Full Width Image"
+msgid "Blank without container"
 msgstr ""
 
 #. Name of the template
-msgid "No Title"
+msgid "Full Width Image"
 msgstr ""
 
 #. %s: post title
@@ -214,6 +216,10 @@ msgstr ""
 msgid "Left Sidebar"
 msgstr ""
 
+#. Name of the template
+msgid "Blank with container"
+msgstr ""
+
 #: searchform.php:5 searchform.php:6 searchform.php:15 searchform.php:27
 #: searchform.php:37 searchform.php:44 searchform.php:54
 msgid "Search"
@@ -290,6 +296,10 @@ msgstr ""
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
+msgstr ""
+
+#: languages/translations-isopost.php:1
+msgid "All"
 msgstr ""
 
 #. Name of the theme

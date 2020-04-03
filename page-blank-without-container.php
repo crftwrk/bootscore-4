@@ -1,6 +1,6 @@
 <?php
 	/**
-	 * Template Name: No Title
+	 * Template Name: Blank without container
 	 *
 	 * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
 	 *
@@ -9,7 +9,7 @@
 	
 	get_header();
 	?>	
-<div id="primary" class="content-area no-title">
+<div id="primary" class="content-area no-title width-100">
 	<main id="main" class="site-main">
 		<div class="row">
 			<div class="col">

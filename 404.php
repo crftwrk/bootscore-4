@@ -18,13 +18,12 @@ get_header();
 							
 					<h1>404</h1>
 					<!-- Remove this line and place some widgets -->
-					<p><?php esc_html_e('Place some widgets here and remove this line in the 404.php.', 'bootscore'); ?></p>					
+					<p><?php esc_html_e('Page not found.', 'bootscore'); ?></p>					
 					<!-- 404 Widget -->
 					<?php if ( is_active_sidebar( '404-page' )) : ?>
                		<div><?php dynamic_sidebar( '404-page' ); ?></div>
                		<?php endif; ?>
 					<a class="my-3 btn btn-outline-primary" href="<?php echo esc_url( home_url() ); ?>" role="button"><?php esc_html_e('Back Home &raquo;', 'bootscore'); ?></a>
-               		
 				</div>
 			</section><!-- .error-404 -->
 
