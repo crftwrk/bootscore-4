@@ -18,4 +18,4 @@
 defined( 'ABSPATH' ) || exit;
 
 ?>
-<p class="alert alert-primary"><?php esc_html_e( 'No products were found matching your selection.', 'woocommerce' ); ?></p>
+<p class="alert alert-info"><?php esc_html_e( 'No products were found matching your selection.', 'woocommerce' ); ?></p>

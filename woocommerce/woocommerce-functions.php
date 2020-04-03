@@ -65,10 +65,10 @@ function my_header_add_to_cart_fragment( $fragments ) {
  
     ob_start();
     $count = WC()->cart->cart_contents_count;
-    ?><span class="cart-content" title="<?php _e( 'View your shopping cart' ); ?>"><i class="fas fa-shopping-cart"></i><?php
+    ?><span class="cart-content"><i class="fas fa-shopping-bag"></i><?php
     if ( $count > 0 ) {
         ?>
-        <span class="cart-content-count badge badge-danger"><?php echo esc_html( $count ); ?></span><span class="cart-total ml-2 d-none d-md-inline"><?php echo WC()->cart->get_cart_total(); ?></span>
+        <span class="cart-content-count badge badge-danger"><?php echo esc_html( $count ); ?></span><span class="cart-total ml-1 d-none d-md-inline"><?php echo WC()->cart->get_cart_total(); ?></span>
         <?php            
     }
         ?></span><?php

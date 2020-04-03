@@ -4,13 +4,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: _s 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2020-03-03 06:24+0000\n"
+"POT-Creation-Date: 2020-03-31 09:54+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2020-03-03 06:25+0000\n"
+"PO-Revision-Date: 2020-03-31 09:55+0000\n"
 "Last-Translator: craftwerk <pst@crftwrk.de>\n"
-"Language-Team: Deutsch (Sie)\n"
+"Language-Team: German (Formal)\n"
 "X-Generator: Loco https://localise.biz/\n"
 "Language: de_DE_formal\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
@@ -25,6 +25,10 @@ msgstr "Suchergebnisse für: %s"
 #: header.php:79 header-woocommerce-large-search.php:79
 msgid "Close menu"
 msgstr "Menü schliessen"
+
+#: header.php:118 header.php:165
+msgid "Account"
+msgstr "Mein Konto"
 
 #: header.php:191 header-woocommerce-large-search.php:186
 msgid "Continue shopping"
@@ -116,11 +120,11 @@ msgstr "Footer 4"
 msgid "404 Page"
 msgstr "404 Seite"
 
-#: functions.php:390
+#: functions.php:400
 msgid "Password"
 msgstr "Passwort"
 
-#: functions.php:391
+#: functions.php:401
 msgid "Submit"
 msgstr "Senden"
 
@@ -303,6 +307,10 @@ msgstr ""
 #: woocommerce/single-product-reviews.php:134
 msgid "Your review...*"
 msgstr "Ihre Bewertung...*"
+
+#: woocommerce/woocommerce-functions.php:68
+msgid "View your shopping cart"
+msgstr "Warenkorb ansehen"
 
 #: template-parts/content-none.php:14
 msgid "Nothing Found for"

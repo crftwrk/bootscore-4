@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: _s 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2020-03-03 06:24+0000\n"
+"POT-Creation-Date: 2020-03-31 09:54+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -24,6 +24,10 @@ msgstr ""
 
 #: header.php:79 header-woocommerce-large-search.php:79
 msgid "Close menu"
+msgstr ""
+
+#: header.php:118 header.php:165
+msgid "Account"
 msgstr ""
 
 #: header.php:191 header-woocommerce-large-search.php:186
@@ -116,11 +120,11 @@ msgstr ""
 msgid "404 Page"
 msgstr ""
 
-#: functions.php:390
+#: functions.php:400
 msgid "Password"
 msgstr ""
 
-#: functions.php:391
+#: functions.php:401
 msgid "Submit"
 msgstr ""
 
@@ -297,6 +301,10 @@ msgstr ""
 
 #: woocommerce/single-product-reviews.php:134
 msgid "Your review...*"
+msgstr ""
+
+#: woocommerce/woocommerce-functions.php:68
+msgid "View your shopping cart"
 msgstr ""
 
 #: template-parts/content-none.php:14

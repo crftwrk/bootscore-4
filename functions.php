@@ -441,6 +441,12 @@ add_filter('wpcf7_form_elements', function ($content) {
 
 
 
+// Disable Contactform 7 Styles
+add_action( 'wp_print_styles', 'wps_deregister_styles', 100 );
+function wps_deregister_styles() {
+    wp_deregister_style( 'contact-form-7' );
+}
+// Disable Contactform 7 Styles End
 
 
 

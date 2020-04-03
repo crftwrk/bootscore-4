@@ -17,6 +17,7 @@
 
     <div class="bootscore-footer bg-light pt-5 pb-3">
         <div class="container">
+            
             <div class="row">
 
                 <!-- Footer Widgets -->
@@ -96,11 +97,9 @@
     <!-- Cookie Consent End -->
 
     <!-- To Top Button -->
-    <a href="#to-top" class="d-flex top-button align-items-center justify-content-center bg-light border rounded-circle">
-        <div>
-            <i class="fas fa-arrow-up"></i>
-        </div>
-    <a>
+    <div class="top-button">
+        <a href="#to-top" class="btn btn-primary btn-sm shadow"><i class="fas fa-chevron-up"></i><a>
+    </div>
     <!-- To Top Button End -->
 
 </div><!-- #page -->

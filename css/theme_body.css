@@ -1,7 +1,3 @@
-/*body {
-	padding-top: 5rem;
-}
-*/
 
 #content {
     min-height: 600px;
@@ -35,6 +31,12 @@
 
 
 
+/* a hover */
+.no-underline:hover, .no-underline:focus {
+    text-decoration: none !important;
+}
+
+
 /* Full width*/
 .width-100 {
 	position: relative;
@@ -53,10 +55,6 @@ img {
 
 .wp-post-image {
 	width: 100%;
-}
-
-figure {
-	max-width: 100%;
 }
 
 iframe {

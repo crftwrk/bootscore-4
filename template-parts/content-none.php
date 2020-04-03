@@ -34,7 +34,7 @@
 					
 					elseif ( is_search() ) :
 						?>
-				<p class="alert alert-primary mb-4"><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'bootscore' ); ?></p>
+				<p class="alert alert-info mb-4"><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'bootscore' ); ?></p>
 				<?php
 					get_search_form();
 					

@@ -85,7 +85,7 @@
 
 span.badge.badge-danger.sale {
     position: absolute;
-    right: 1rem;
+    left: 1rem;
     top: 1rem;
 }
 

@@ -157,11 +157,11 @@
 
                     <!-- User -->
                     <div class="d-none d-lg-inline">
-                        <a class="btn btn-outline-secondary ml-2" title="Mein Konto" href="<?php echo get_permalink( wc_get_page_id( 'myaccount' ) ); ?>"><i class="fas fa-user"></i></a>
+                        <a class="btn btn-outline-secondary ml-2" title="<?php esc_html_e('Account', 'bootscore'); ?>" href="<?php echo get_permalink( wc_get_page_id( 'myaccount' ) ); ?>"><i class="fas fa-user"></i></a>
                     </div>
 
                     <!-- Mini Cart Header-->
-                    <span class="bootscore-cart btn btn-outline-secondary d-none d-lg-block ml-2">
+                    <span class="bootscore-cart btn btn-outline-secondary d-none d-lg-block ml-2" title="<?php esc_html_e('View your shopping cart', 'bootscore'); ?>">
                         <?php if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
 									$count = WC()->cart->cart_contents_count;
 									?><span class="cart-content" title="<?php _e( 'bootscore-cart ansehen' ); ?>"><?php 

@@ -99,6 +99,8 @@ jQuery(document).ready(function ($) {
     });
 
 
+
+    
     // Sub Menu Animation
     $('.navbar-nav .dropdown-menu').addClass('invisible'); //FIRST TIME INVISIBLE
 
@@ -283,6 +285,76 @@ jQuery(document).ready(function ($) {
 
 
 
+
+    /*
+   // Contactform 7
+    window.wpcf7.clearResponse = function (form) {
+        var $form = $(form);
+        var $close = $form.find('div.wpcf7-response-output .close');
+
+        $form.removeClass('invalid spam sent failed');
+        $form.siblings('.screen-reader-response').html('').attr('role', '');
+
+        $('.wpcf7-not-valid-tip', $form).remove();
+        $('[aria-invalid]', $form).attr('aria-invalid', 'false');
+        $('.wpcf7-form-control', $form).removeClass('wpcf7-not-valid');
+        $('div.form-group', $form).removeClass('has-error');
+        $('img.ajax-loader', $form).removeClass('is-active');
+
+
+        $('.wpcf7-response-output', $form)
+            .hide().empty().removeAttr('role')
+            .removeClass('wpcf7-mail-sent-ok wpcf7-mail-sent-ng wpcf7-validation-errors wpcf7-spam-blocked alert-warning alert-success alert-danger');
+
+        if (0 < $close.length) {
+            $form.find('div.wpcf7-response-output').append($close);
+        }
+    };
+
+
+
+    // add Bootstrap Alert classes to response output
+    $(function () {
+        $('div.wpcf7').on('invalid.wpcf7', function () {
+            $(this).find('div.wpcf7-response-output').addClass('alert alert-danger');
+        });
+
+        $('div.wpcf7').on('spam.wpcf7', function () {
+            $(this).find('div.wpcf7-response-output').addClass('alert alert-warning');
+        });
+
+        $('div.wpcf7').on('mailsent.wpcf7', function () {
+            $(this).find('div.wpcf7-response-output').addClass('alert alert-success');
+        });
+
+        $('div.wpcf7').on('mailfailed.wpcf7', function () {
+            $(this).find('div.wpcf7-response-output').addClass('alert alert-danger');
+        });
+
+
+        $('div.wpcf7').on('click', 'div.wpcf7-response-output .close', function (e) {
+            $(this).parent().hide();
+            e.preventDefault();
+        });
+    });
+    // Contactform 7 End
+*/
+
+
+    /* Validation Events for changing response CSS classes */
+    document.addEventListener('wpcf7invalid', function (event) {
+        $('.wpcf7-response-output').addClass('alert alert-danger');
+    }, false);
+    document.addEventListener('wpcf7spam', function (event) {
+        $('.wpcf7-response-output').addClass('alert alert-warning');
+    }, false);
+    document.addEventListener('wpcf7mailfailed', function (event) {
+        $('.wpcf7-response-output').addClass('alert alert-warning');
+    }, false);
+    document.addEventListener('wpcf7mailsent', function (event) {
+        $('.wpcf7-response-output').addClass('alert alert-success');
+        $('.wpcf7-response-output').removeClass('alert-danger');
+    }, false);
     
 
 

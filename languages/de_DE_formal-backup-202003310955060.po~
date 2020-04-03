@@ -4,61 +4,49 @@ msgid ""
 msgstr ""
 "Project-Id-Version: _s 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2020-01-16 16:03+0000\n"
+"POT-Creation-Date: 2020-03-31 09:54+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2020-01-26 09:57+0000\n"
+"PO-Revision-Date: 2020-03-31 09:54+0000\n"
 "Last-Translator: craftwerk <pst@crftwrk.de>\n"
-"Language-Team: Deutsch (Sie)\n"
+"Language-Team: German (Formal)\n"
 "X-Generator: Loco https://localise.biz/\n"
 "Language: de_DE_formal\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Loco-Version: 2.3.1; wp-5.3.2"
 
-#: category-equal-height.php:73 category-sidebar-left.php:74
-#: author-masonry.php:71 archive.php:73 index-blog.php:90 index-blog.php:156
-#: author-equal-height.php:72 archive-sidebar-left.php:74
-#: archive-equal-height-sidebar-right.php:71 category.php:73
-#: archive-equal-height.php:71 category-masonry.php:72
-#: author-sidebar-left.php:77 author-equal-height-sidebar-right.php:72
-#: author.php:76 archive-masonry.php:70
-#: category-equal-height-sidebar-right.php:73
-#: template-parts/content-search.php:60
-msgid "Read more"
-msgstr "Weiterlesen"
-
 #. translators: %s: search query.
-#: search.php:23
+#: search.php:26
 #, php-format
 msgid "Search Results for: %s"
 msgstr "Suchergebnisse für: %s"
 
-#: header-blog-logo-center.php:89 header-blog-logo-left.php:92
-msgid "Menu"
-msgstr "Menü"
-
-#: header.php:79
+#: header.php:79 header-woocommerce-large-search.php:79
 msgid "Close menu"
 msgstr "Menü schliessen"
 
-#: header.php:185
+#: header.php:118 header.php:165
+msgid "Account"
+msgstr "Mein Konto"
+
+#: header.php:191 header-woocommerce-large-search.php:186
 msgid "Continue shopping"
 msgstr "Weiter einkaufen"
 
-#: header.php:192
+#: header.php:199 header-woocommerce-large-search.php:194
 msgid "Cart"
 msgstr "Warenkorb"
 
-#: header.php:235
+#: header.php:243 header-woocommerce-large-search.php:238
 msgid "To find out your shipping cost , Please proceed to checkout."
 msgstr "Um Ihre Versandkosten zu berechnen, gehen Sie bitte zur Kasse."
 
-#: header.php:236
+#: header.php:244 header-woocommerce-large-search.php:239
 msgid "Edit cart"
 msgstr "Warenkorb bearbeiten"
 
-#: header.php:237
+#: header.php:245 header-woocommerce-large-search.php:240
 msgid "Proceed to checkout"
 msgstr "Zur Kasse"
 
@@ -66,70 +54,77 @@ msgstr "Zur Kasse"
 msgid "No Sidebar"
 msgstr "Ohne Sidebar"
 
-#: single-sidebar-none.php:38 single-full-width-image.php:43 single.php:37
-#: single-sidebar-left.php:40
+#: single-sidebar-none.php:36 single-full-width-image.php:47 single.php:39
+#: single-sidebar-left.php:42
 msgid " by "
 msgstr " von "
+
+#: archive.php:72 index-blog.php:88 index-blog.php:154
+#: archive-sidebar-left.php:74 archive-equal-height-sidebar-right.php:68
+#: archive-equal-height.php:69 archive-masonry.php:65
+#: template-parts/content-search.php:60
+msgid "Read more"
+msgstr "Weiterlesen"
 
 #. Name of the template
 msgid "Full width image"
 msgstr "Bild in voller Breite"
 
-#: page.php:34 page-blank-without-container.php:20 page-sidebar-none.php:29
-#: page-sidebar-left.php:33 page-blank-with-container.php:20
+#: page.php:40 page-blank-without-container.php:21 page-sidebar-none.php:30
+#: page-sidebar-left.php:35 page-blank-with-container.php:21
 msgid "Pages:"
 msgstr "Seiten:"
 
-#: functions.php:66
+#: functions.php:73
 msgid "Main Menu"
 msgstr "Hauptmenü"
 
-#: functions.php:67
+#: functions.php:74
 msgid "Footer Menu"
 msgstr "Footer Menü"
 
-#: functions.php:112
+#: functions.php:119
 msgid "Sidebar"
 msgstr "Sidebar"
 
-#: functions.php:114 functions.php:125 functions.php:137 functions.php:149
-#: functions.php:161 functions.php:173 functions.php:185 functions.php:198
+#: functions.php:121 functions.php:132 functions.php:144 functions.php:156
+#: functions.php:168 functions.php:180 functions.php:192 functions.php:205
 msgid "Add widgets here."
 msgstr "Widgets hier einfügen"
 
-#: functions.php:123
+#: functions.php:130
 msgid "Top Nav Search"
 msgstr "Top Nav Suche"
 
-#: functions.php:135
+#: functions.php:142
 msgid "Top Nav Module"
 msgstr "Top Nav Modul"
 
-#: functions.php:147
+#: functions.php:154
 msgid "Footer 1"
 msgstr "Footer 1"
 
-#: functions.php:159
+#: functions.php:166
 msgid "Footer 2"
 msgstr "Footer 2"
 
-#: functions.php:171
+#: functions.php:178
 msgid "Footer 3"
 msgstr "Footer 3"
 
-#: functions.php:183
+#: functions.php:190
 msgid "Footer 4"
 msgstr "Footer 4"
 
-#: functions.php:196
+#: functions.php:203
 msgid "404 Page"
 msgstr "404 Seite"
 
-#: functions.php:388
+#: functions.php:400
 msgid "Password"
 msgstr "Passwort"
 
-#: functions.php:389
+#: functions.php:401
 msgid "Submit"
 msgstr "Senden"
 
@@ -137,11 +132,11 @@ msgstr "Senden"
 msgid "Sidebar left"
 msgstr "Sidebar links"
 
-#: 404.php:21
+#: 404.php:22
 msgid "Page not found."
 msgstr "Seite nicht gefunden"
 
-#: 404.php:26
+#: 404.php:27
 msgid "Back Home &raquo;"
 msgstr "Zur Startseite &raquo;"
 
@@ -207,11 +202,11 @@ msgstr "Kommentar posten"
 msgid "Start typing..."
 msgstr "Schreiben Sie Ihren Kommentar..."
 
-#: comments.php:121
+#: comments.php:121 woocommerce/single-product-reviews.php:89
 msgid "Name*"
 msgstr "Name*"
 
-#: comments.php:125
+#: comments.php:125 woocommerce/single-product-reviews.php:95
 msgid "Email* (will not be published)"
 msgstr "Email* (wird nicht veröffentlicht)"
 
@@ -248,8 +243,7 @@ msgstr "Linke Sidebar"
 msgid "Blank with container"
 msgstr "Blank mit container"
 
-#: searchform.php:5 searchform.php:6 searchform.php:15 searchform.php:27
-#: searchform.php:37 searchform.php:44 searchform.php:54
+#: searchform.php:4
 msgid "Search"
 msgstr "Suche"
 
@@ -310,7 +304,15 @@ msgstr ""
 "Meinen Namen, E-Mail und Website in diesem Browser speichern, bis ich wieder "
 "kommentiere."
 
-#: template-parts/content-none.php:15
+#: woocommerce/single-product-reviews.php:134
+msgid "Your review...*"
+msgstr "Ihre Bewertung...*"
+
+#: woocommerce/woocommerce-functions.php:68
+msgid "View your shopping cart"
+msgstr ""
+
+#: template-parts/content-none.php:14
 msgid "Nothing Found for"
 msgstr "Nichts gefunden für"
 
@@ -343,7 +345,7 @@ msgstr ""
 msgid "All"
 msgstr "Alle"
 
-#: woocommerce/loop/orderby.php:27 woocommerce-01/loop/orderby.php:27
+#: woocommerce/loop/orderby.php:27
 msgid "Shop order"
 msgstr ""
 

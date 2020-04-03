@@ -8,11 +8,9 @@
     position: fixed;
     right: 5%;
     bottom: 30px;
-    width: 35px;
-    height: 35px;
     opacity: 0;
     transition: opacity 1s;
-    z-index: 3;
+    z-index: 91;
 }
 
 .top-button.visible {

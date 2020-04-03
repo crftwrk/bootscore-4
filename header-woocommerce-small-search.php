@@ -74,7 +74,7 @@
 
                     <div class="navbar-collapse offcanvas-collapse-left" id="navbar">
 
-                        <a class="menu-header bg-light d-block p-3 d-lg-none" data-toggle="offcanvas" href="javascript:void(0)">
+                        <a class="menu-header bg-light d-block p-3 d-lg-none no-underline" data-toggle="offcanvas" href="javascript:void(0)">
                             <div class="d-flex align-items-center">
                                 <span class="mr-auto"><?php esc_html_e('Close menu' , 'bootscore'); ?></span> <i class="fas fa-times"></i>
                             </div>
@@ -115,9 +115,9 @@
                     <!-- Woocommerce Mobile -->
                     <!-- User -->
                     <div class="d-lg-none">
-                        <a class="btn btn-link text-secondary pr-0 mr-1" title="Mein Konto" href="<?php echo get_permalink( wc_get_page_id( 'myaccount' ) ); ?>"><i class="fas fa-user"></i></a>
+                        <a class="btn btn-link text-secondary pr-0 mr-1" title="<?php esc_html_e('Account', 'bootscore'); ?>" href="<?php echo get_permalink( wc_get_page_id( 'myaccount' ) ); ?>"><i class="fas fa-user"></i></a>
                         <!-- Mini Cart Header Mobile -->
-                        <span class="bootscore-cart btn btn-link text-secondary pr-0">
+                        <span class="bootscore-cart btn btn-link text-secondary pr-0 no-underline">
                             <?php if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
 									$count = WC()->cart->cart_contents_count;
 									?><span class="cart-content" title="<?php _e( 'bootscore-cart ansehen' ); ?>"><?php 
@@ -162,14 +162,14 @@
 
                     <!-- User -->
                     <div class="d-none d-lg-inline">
-                        <a class="btn btn-outline-secondary ml-2" title="Mein Konto" href="<?php echo get_permalink( wc_get_page_id( 'myaccount' ) ); ?>"><i class="fas fa-user"></i></a>
+                        <a class="btn btn-outline-secondary ml-2" title="<?php esc_html_e('Account', 'bootscore'); ?>" href="<?php echo get_permalink( wc_get_page_id( 'myaccount' ) ); ?>"><i class="fas fa-user"></i></a>
                     </div>
 
                     <!-- Mini Cart Header-->
-                    <span class="bootscore-cart btn btn-outline-secondary d-none d-lg-block ml-2">
+                    <span class="bootscore-cart btn btn-outline-secondary d-none d-lg-block ml-2" title="<?php esc_html_e('View your shopping cart', 'bootscore'); ?>">
                         <?php if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
 									$count = WC()->cart->cart_contents_count;
-									?><span class="cart-content" title="<?php _e( 'bootscore-cart ansehen' ); ?>"><?php 
+									?><span class="cart-content"><?php 
 									if ( $count > 0 ) {
 									    ?>
                             <span class="cart-content-count bagde badge-danger"><?php echo esc_html( $count ); ?></span>
@@ -186,7 +186,7 @@
 
                     <div class="cart-right" id="cart">
 
-                        <a class="cart-header bg-light d-block p-3" data-toggle="cart" href="javascript:void(0)">
+                        <a class="cart-header bg-light d-block p-3 no-underline" data-toggle="cart" href="javascript:void(0)">
                             <div class="d-flex align-items-center">
                                 <i class="fas fa-chevron-left"></i> <span class="ml-auto"><?php esc_html_e('Continue shopping' , 'bootscore'); ?></span>
                             </div>
