@@ -6,7 +6,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 Requires at least: 4.5
 Tested up to: 5.3
 Requires PHP: 5.6
-Stable tag: 2.0.4
+Stable tag: 2.0.5
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -39,6 +39,10 @@ Bootscore includes support for Infinite Scroll in Jetpack.
 
 
 == Changelog ==
+
+	= 2.0.5 - November 18 2019 =
+	
+		* Added bootstrap.min-sketch.css. For use rename to bootstrap.min.css. Customize here https://bootstrap.build/app/project/uhPrFvLSfVUW
 
 	= 2.0.4 - November 17 2019 =
 	
