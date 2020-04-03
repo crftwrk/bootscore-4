@@ -45,3 +45,38 @@ body {
 }
 
 
+@media (max-width: 1200px) {
+    .display-1 {
+        font-size: calc(1.725rem + 5.7vw) !important;
+    }
+    
+    .display-2 {
+        font-size: calc(1.675rem + 5.1vw) !important;
+    }
+    
+    .display-3 {
+        font-size: calc(1.575rem + 3.9vw) !important;
+    }
+    
+    .display-4 {
+        font-size: calc(1.475rem + 2.7vw) !important;
+    }
+    
+    h1, .h1 {
+        font-size: calc(1.35rem + 1.2vw) !important;
+    }
+    
+    h2, .h2 {
+        font-size: calc(1.3rem + .6vw) !important;
+    }
+    
+    h3, .h3 {
+        font-size: calc(1.275rem + .3vw) !important;
+    }
+
+    h4, .h4 {
+        font-size: calc(1.25rem + 0vw) !important;
+    }
+}
+
+

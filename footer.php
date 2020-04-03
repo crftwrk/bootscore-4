@@ -85,22 +85,6 @@
         </div>
     </div>
 
-    <!-- Cookie Consent -->
-    <div id="gdpr-box" class="cookies-accept bg-light text-center border-top pt-3 pb-3">
-		<div class="container">
-			<?php esc_html_e('Cookies help us deliver our services. By using our services, you agree to our use of cookies.', 'bootscore'); ?>&nbsp;<a href="<?php bloginfo('site_url'); ?><?php esc_html_e('/privacy', 'bootscore'); ?>" class="privacylink"><?php esc_html_e('More Information', 'bootscore'); ?></a>&nbsp;&nbsp;&nbsp;<button class="gdpr-button-accept btn btn-primary btn-sm"><?php esc_html_e('Accept', 'bootscore'); ?></button>		
-		</div>
-	</div>
-    <!-- Cookie Consent End -->
-
-    <!-- To Top Button -->
-    <a href="#to-top" class="d-flex top-button align-items-center justify-content-center bg-light border rounded-circle">
-        <div>
-            <i class="fas fa-arrow-up"></i>
-        </div>
-    <a>
-    <!-- To Top Button End -->
-
     <!-- Google Analytics -->
     <!--<script> 
     	var gaProperty = 'UA-123456789-X'; 
@@ -125,6 +109,23 @@
     <!-- Google Analytics End -->
 
 </footer>
+
+    <!-- Cookie Consent -->
+    <div id="gdpr-box" class="cookies-accept bg-light text-center border-top pt-3 pb-3">
+		<div class="container">
+			<?php esc_html_e('Cookies help us deliver our services. By using our services, you agree to our use of cookies.', 'bootscore'); ?>&nbsp;<a href="<?php bloginfo('site_url'); ?><?php esc_html_e('/privacy', 'bootscore'); ?>" class="privacylink"><?php esc_html_e('More Information', 'bootscore'); ?></a>&nbsp;&nbsp;&nbsp;<button class="gdpr-button-accept btn btn-primary btn-sm"><?php esc_html_e('Accept', 'bootscore'); ?></button>		
+		</div>
+	</div>
+    <!-- Cookie Consent End -->
+
+    <!-- To Top Button -->
+    <a href="#to-top" class="d-flex top-button align-items-center justify-content-center bg-light border rounded-circle">
+        <div>
+            <i class="fas fa-arrow-up"></i>
+        </div>
+    <a>
+    <!-- To Top Button End -->
+
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
