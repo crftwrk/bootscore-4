@@ -1,0 +1,62 @@
+#nav-main.on-top {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: all .5s ease-in-out!important;
+    border-bottom: 1px solid rgba(0,0,0,0) !important;
+}
+
+#nav-main.clear {
+    background: rgba(255, 255, 255, 0)!important;
+    transition: background .5s ease-in-out, border-bottom .5s ease-in-out
+}
+
+
+#nav-main {
+    transition: background .5s ease-in-out, border-bottom .5s ease-in-out, padding .5s ease-in-out, transform .5s ease-in-out
+}
+
+.clear .nav-link {
+    color: #fff!important;
+    transition: all .5s
+}
+
+.clear .nav-link.active,
+.clear .nav-link:hover {
+    color: #dc3545!important;
+    transition: all .5s
+}
+
+.clear .active>.nav-link {
+    color: #dc3545!important
+}
+
+.clear .toggler-icon-animated span {
+    background: #fff;
+    transition: background .5s
+}
+
+.toggler-icon-animated span {
+    transition: background .5s
+}
+
+.clear .navbar-brand,
+.navbar-brand {
+    transition: transform .5s ease-in-out, filter .25s ease-in-out;
+    filter: invert(1) brightness(150%);
+}
+
+.navbar-brand {
+    filter: invert(0) brightness(100%)
+}
+
+.on-top .navbar-brand img {
+    transform: scale(1.2) translate3d(12px, 0px, 0px);
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    transition: transform .5s ease-in-out, filter 1s ease-in-out;
+}
+
+.navbar-brand img {
+    transform: scale(1) translate3d(0px, 0px, 0px);
+    transition: transform .5s ease-in-out, filter 1s ease-in-out;
+}

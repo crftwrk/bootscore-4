@@ -1,37 +1,85 @@
 <?php
-/**
- * The template for displaying all single posts
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
- *
- * @package Bootscore
- */
-
-get_header();
-?>
-
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
-
-		<?php
-		while ( have_posts() ) :
-			the_post();
-
-			get_template_part( 'template-parts/content', get_post_type() );
-
-			the_post_navigation();
-
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
-
-		endwhile; // End of the loop.
-		?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php
-get_sidebar();
-get_footer();
+	/*
+	 * Template Post Type: post
+	 */
+	  
+	 get_header();  ?>
+<div id="primary" class="content-area">
+	<main id="main" class="site-main">
+		<!-- Breadcrumb -->
+		<?php the_breadcrumb(); ?>
+		<div class="row">
+			<div class="col-md-8">
+				<header class="entry-header">
+					<?php the_post(); ?>
+					<!-- Category Badge -->
+					<div class="mb-2">
+					<?php
+						$thelist = '';
+						$i = 0;
+						foreach( get_the_category() as $category ) {
+						    if ( 0 < $i ) $thelist .= ' ';
+						    $thelist .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" class="badge badge-secondary">' . $category->name.'</a>';
+						    $i++;
+						}
+						echo $thelist;
+						?>
+						</div>
+					<!-- Category link -->
+					<!--<?php the_category(', ') ?><?php the_terms( $post->ID, 'isopost_categories', ' ', ' / ' ); ?>-->
+					<!-- Title -->
+					<?php the_title('<h1>', '</h1>'); ?>
+					<!-- Meta -->
+					<p class="entry-meta">
+						<small class="text-secondary">
+						<?php
+							bootscore_date();
+							_e(' by ', 'bootscore'); the_author_posts_link();
+							bootscore_comment_count();
+							bootscore_edit();							
+							 ?>
+						</small>
+						<!-- .entry-meta -->
+					</p>
+					<!-- Featured Image-->
+					<?php bootscore_post_thumbnail(); ?>
+					<!-- .entry-header -->
+				</header>
+				<div class="entry-content">
+					<!-- Content -->
+					<?php the_content(); ?>
+					<!-- .entry-content -->
+				</div>
+				<footer class="entry-footer">
+					<!-- Tags & Edit Link -->
+					<p>
+						<?php bootscore_tags(); ?>
+					</p>
+					<!-- Pagination -->
+					<nav aria-label="Page navigation example">
+						<ul class="pagination justify-content-center">
+							<li class="page-item">
+								<?php previous_post_link('%link'); ?>
+							</li>
+							<li class="page-item">
+								<?php next_post_link('%link'); ?>
+							</li>
+						</ul>
+					</nav>
+					<!-- Just for WP Test, can be deleted -->
+					<?php posts_nav_link() ?>
+					<!-- .entry-footer -->
+				</footer>
+				<!-- Comments -->
+				<?php comments_template(); ?>
+				<!-- col -->
+			</div>
+			<!-- Sidebar -->
+			<?php get_sidebar(); ?>
+			<!-- row -->
+		</div>
+		<!-- #main -->
+	</main>
+	<!-- #primary -->	
+</div>
+<?php get_footer(); ?>

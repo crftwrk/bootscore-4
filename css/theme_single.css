@@ -1,0 +1,12 @@
+.page-image img, .post-image img {
+    width: 100%;
+    object-fit: contain;
+    height: auto;
+}
+
+#featured-full-image {
+    background-size: cover;
+    background-position: 50%;
+    margin-top: -1.5rem;
+    background-repeat: no-repeat;
+}

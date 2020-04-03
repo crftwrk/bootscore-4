@@ -1,0 +1,9 @@
+.widget-area ul {
+    padding: 0;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.widget-area ul li ul li {
+    padding: 0 20px;
+}

@@ -1,0 +1,40 @@
+ul.comment-list {
+	list-style: none;
+	padding: 0;
+}
+
+ul.comment-list li {
+	list-style: none;
+}
+
+@media (min-width: 992px) {
+	.comment-list ul.children {
+		padding-left: 80px;
+	}
+}
+
+
+/* Media Object */
+
+.media img {
+	border-radius: .25rem;
+}
+
+
+/* Comments Link Hide Title */
+
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	word-wrap: normal !important;
+}
+
+
+/* comments width */
+
+div#comments .media-body {
+	max-width: 89%;
+}

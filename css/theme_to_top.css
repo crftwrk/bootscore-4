@@ -1,0 +1,21 @@
+#to-top {
+    height: 0;
+    position: absolute;
+    top: 0
+}
+
+.top-button {
+    position: fixed;
+    right: 5%;
+    bottom: 30px;
+    width: 35px;
+    height: 35px;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 3;
+}
+
+.top-button.visible {
+    opacity: 1;
+    transition: opacity 1s
+}

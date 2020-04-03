@@ -1,0 +1,16 @@
+#gdpr-box {
+    display: none;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 9999;
+}
+
+#gdpr-box a.gdpr-button-settings,
+#gdpr-box button.gdpr-button-accept {
+    display: inline-block
+}
+
+#gdpr-box button.gdpr-button-accept:hover {
+    cursor: pointer
+}

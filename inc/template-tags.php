@@ -7,14 +7,36 @@
  * @package Bootscore
  */
 
-if ( ! function_exists( 'bootscore_posted_on' ) ) :
+
+
+
+
+// Category
+if ( ! function_exists( 'bootscore_category' ) ) :
+	function bootscore_category() {
+		// Hide category and tag text for pages.
+		if ( 'post' === get_post_type() ) {
+			/* translators: used between list items, there is a space after the comma */
+			$categories_list = get_the_category_list( esc_html__( ', ', 'bootscore' ) );
+			if ( $categories_list ) {
+				/* translators: 1: list of categories. */
+				printf( '<span class="cat-links"></span>', $categories_list ); // WPCS: XSS OK.	
+			}		
+		}
+	}
+endif;
+// Category End
+
+
+// Date
+if ( ! function_exists( 'bootscore_date' ) ) :
 	/**
 	 * Prints HTML with meta information for the current post-date/time.
 	 */
-	function bootscore_posted_on() {
+	function bootscore_date() {
 		$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
 		if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
-			$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
+			$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time> / <time class="updated" datetime="%3$s">%4$s</time>';
 		}
 
 		$time_string = sprintf( $time_string,
@@ -26,22 +48,22 @@ if ( ! function_exists( 'bootscore_posted_on' ) ) :
 
 		$posted_on = sprintf(
 			/* translators: %s: post date. */
-			esc_html_x( 'Posted on %s', 'post date', 'bootscore' ),
-			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
+			'%s',
+			'<span rel="bookmark">' . $time_string . '</span>'
 		);
 
 		echo '<span class="posted-on">' . $posted_on . '</span>'; // WPCS: XSS OK.
 
 	}
 endif;
+// Date End
 
-if ( ! function_exists( 'bootscore_posted_by' ) ) :
-	/**
-	 * Prints HTML with meta information for the current author.
-	 */
-	function bootscore_posted_by() {
+
+// Author
+if ( ! function_exists( 'bootscore_author' ) ) :
+
+	function bootscore_author() {
 		$byline = sprintf(
-			/* translators: %s: post author. */
 			esc_html_x( 'by %s', 'post author', 'bootscore' ),
 			'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 		);
@@ -50,36 +72,24 @@ if ( ! function_exists( 'bootscore_posted_by' ) ) :
 
 	}
 endif;
+// Author End
 
-if ( ! function_exists( 'bootscore_entry_footer' ) ) :
+
+// Comments
+if ( ! function_exists( 'bootscore_comments' ) ) :
 	/**
 	 * Prints HTML with meta information for the categories, tags and comments.
 	 */
-	function bootscore_entry_footer() {
-		// Hide category and tag text for pages.
-		if ( 'post' === get_post_type() ) {
-			/* translators: used between list items, there is a space after the comma */
-			$categories_list = get_the_category_list( esc_html__( ', ', 'bootscore' ) );
-			if ( $categories_list ) {
-				/* translators: 1: list of categories. */
-				printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'bootscore' ) . '</span>', $categories_list ); // WPCS: XSS OK.
-			}
+	function bootscore_comments() {
 
-			/* translators: used between list items, there is a space after the comma */
-			$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'bootscore' ) );
-			if ( $tags_list ) {
-				/* translators: 1: list of tags. */
-				printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'bootscore' ) . '</span>', $tags_list ); // WPCS: XSS OK.
-			}
-		}
 
 		if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
-			echo '<span class="comments-link">';
+			echo ' | <i class="far fa-comments"></i> <span class="comments-link">';
 			comments_popup_link(
 				sprintf(
 					wp_kses(
 						/* translators: %s: post title */
-						__( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'bootscore' ),
+						__( 'Leave a Comment', 'bootscore' ),
 						array(
 							'span' => array(
 								'class' => array(),
@@ -91,12 +101,24 @@ if ( ! function_exists( 'bootscore_entry_footer' ) ) :
 			);
 			echo '</span>';
 		}
+	
+	}
+endif;
+// Comments End
+
+
+// Edit Link
+if ( ! function_exists( 'bootscore_edit' ) ) :
+	/**
+	 * Prints HTML with the comment count for the current post.
+	 */
+	function bootscore_edit() {
 
 		edit_post_link(
 			sprintf(
 				wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Edit <span class="screen-reader-text">%s</span>', 'bootscore' ),
+					__( 'Edit', 'bootscore' ),
 					array(
 						'span' => array(
 							'class' => array(),
@@ -105,12 +127,65 @@ if ( ! function_exists( 'bootscore_entry_footer' ) ) :
 				),
 				get_the_title()
 			),
-			'<span class="edit-link">',
+			' | <span class="edit-link">',
 			'</span>'
 		);
 	}
 endif;
+// Edit Link End
+		
 
+// Single Comments Count
+if ( ! function_exists( 'bootscore_comment_count' ) ) :
+	/**
+	 * Prints HTML with the comment count for the current post.
+	 */
+	function bootscore_comment_count() {
+		if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
+			echo ' | <i class="far fa-comments"></i> <span class="comments-link">';
+
+			/* translators: %s: Name of current post. Only visible to screen readers. */
+			// comments_popup_link( sprintf( __( 'Leave a comment<span class="screen-reader-text"> on %s</span>', 'bootscore' ), get_the_title() ) );
+			comments_popup_link( sprintf( __( 'Leave a comment', 'bootscore' ), get_the_title() ) );
+
+
+			echo '</span>';
+		}
+	}
+endif;
+// Single Comments Count End
+
+
+// Tags
+if ( ! function_exists( 'bootscore_tags' ) ) :
+	/**
+	 * Prints HTML with meta information for the categories, tags and comments.
+	 */
+	function bootscore_tags() {
+		// Hide category and tag text for pages.
+		if ( 'post' === get_post_type() ) {
+
+
+			/* translators: used between list items, there is a space after the comma */
+			$tags_list = get_the_tag_list( '', ' ' );
+			if ( $tags_list ) {
+				/* translators: 1: list of tags. */
+				printf( '<div class="tags-links mt-2">' . esc_html__( 'Tagged %1$s', 'bootscore' ) . '</div>', $tags_list ); // WPCS: XSS OK.
+			}
+		}
+	}
+endif;
+
+
+add_filter( "term_links-post_tag", 'add_tag_class');
+
+function add_tag_class($links) {
+    return str_replace('<a href="', '<a class="badge badge-secondary" href="', $links);
+}
+// Tags End
+
+
+// Featured Image
 if ( ! function_exists( 'bootscore_post_thumbnail' ) ) :
 	/**
 	 * Displays an optional post thumbnail.
@@ -127,7 +202,7 @@ if ( ! function_exists( 'bootscore_post_thumbnail' ) ) :
 			?>
 
 			<div class="post-thumbnail">
-				<?php the_post_thumbnail(); ?>
+				<?php the_post_thumbnail('large', array('class' => 'rounded mb-3')); ?>
 			</div><!-- .post-thumbnail -->
 
 		<?php else : ?>
@@ -146,3 +221,12 @@ if ( ! function_exists( 'bootscore_post_thumbnail' ) ) :
 		endif; // End is_singular().
 	}
 endif;
+// Featured Image End
+
+
+
+
+
+
+
+

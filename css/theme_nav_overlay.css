@@ -1,0 +1,94 @@
+@media (max-width:991px) {
+    .navbar-nav.fade-in {
+        animation: fade-in .25s ease
+    }
+    .navbar-nav.fade-in .nav-link {
+        animation: fade-in-2 1s ease
+    }
+    .navbar-nav {
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+        margin-bottom: .5rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #f8f9fa;
+        z-index: -1;
+        animation: fade-out .5s ease
+    }
+    .navbar-nav .nav-link {
+        animation: fade-out-2 .5s ease
+    }
+}
+
+@-webkit-keyframes fade-in {
+    from {
+        height: 0%;
+        opacity: 0;
+        transform: translate3d(0, -50px, 0)
+    }
+    to {
+        height: 100%;
+        opacity: 1;
+        transform: translate3d(0, 0, 0)
+    }
+}
+
+.fade-in {
+    -webkit-animation-name: fade-in;
+    animation-name: -fade-in
+}
+
+@-webkit-keyframes fade-in-2 {
+    10%,
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.fade-in-2 {
+    -webkit-animation-name: fade-in-2;
+    animation-name: -fade-in-2
+}
+
+@-webkit-keyframes fade-out {
+    from {
+        height: 100%;
+        opacity: 1;
+        transform: translate3d(0, 0, 0)
+    }
+    50% {
+        opacity: 1
+    }
+    to {
+        height: 0%;
+        opacity: 0;
+        transform: translate3d(0, -50px, 0)
+    }
+}
+
+.fade-out {
+    -webkit-animation-name: fade-out;
+    animation-name: -fade-out
+}
+
+@-webkit-keyframes fade-out-2 {
+    from {
+        opacity: 1
+    }
+    50%,
+    to {
+        opacity: 0
+    }
+}
+
+.fade-out-2 {
+    -webkit-animation-name: fade-out-2;
+    animation-name: -fade-out-2
+}

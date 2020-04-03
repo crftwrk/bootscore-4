@@ -1,0 +1,8 @@
+#nav-main,
+.down #nav-main {
+    transition: transform .3s .1s ease-in-out
+}
+
+.down #nav-main {
+    transform: translate3d(0, -57px, 0)
+}
