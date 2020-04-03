@@ -4,17 +4,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: _s 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2019-05-04 12:28+0000\n"
+"POT-Creation-Date: 2019-06-16 18:03+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-05-04 12:29+0000\n"
+"PO-Revision-Date: 2019-06-16 18:05+0000\n"
 "Last-Translator: bootScore <pst@crftwrk.de>\n"
 "Language-Team: German\n"
 "X-Generator: Loco https://localise.biz/\n"
 "Language: de_DE\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Loco-Version: 2.2.2; wp-5.1.1"
+"X-Loco-Version: 2.3.0; wp-5.2.1"
 
 #: category-equal-height.php:72 category-sidebar-left.php:74
 #: author-masonry.php:71 archive.php:72 author-equal-height.php:71
@@ -31,9 +31,13 @@ msgstr "Weiterlesen"
 msgid "Search Results for: %s"
 msgstr "Suchergebnisse für: %s"
 
+#: header-blog-logo-center.php:107 header-blog-logo-left.php:110
+msgid "Menu"
+msgstr "Menü"
+
 #. Name of the template
 msgid "No Sidebar"
-msgstr "Keine sidebar"
+msgstr "Keine Sidebar"
 
 #: single-sidebar-none.php:38 single-full-width-image.php:43 single.php:37
 #: single-sidebar-left.php:40
@@ -44,56 +48,61 @@ msgstr " von "
 msgid "Full width image"
 msgstr "Bild in voller Breite"
 
-#: functions.php:68
+#: page.php:34 page-no-title.php:20 page-sidebar-none.php:29
+#: page-sidebar-left.php:33
+msgid "Pages:"
+msgstr ""
+
+#: functions.php:54
 msgid "Main Menu"
 msgstr ""
 
-#: functions.php:69
+#: functions.php:55
 msgid "Footer Menu"
 msgstr ""
 
-#: functions.php:130
+#: functions.php:116
 msgid "Sidebar"
 msgstr "Sidebar"
 
-#: functions.php:132 functions.php:143 functions.php:155 functions.php:167
-#: functions.php:179 functions.php:191 functions.php:203 functions.php:216
+#: functions.php:118 functions.php:129 functions.php:141 functions.php:153
+#: functions.php:165 functions.php:177 functions.php:189 functions.php:202
 msgid "Add widgets here."
 msgstr "Widgets hier hinzufügen"
 
-#: functions.php:141
+#: functions.php:127
 msgid "Top Nav Search"
 msgstr ""
 
-#: functions.php:153
+#: functions.php:139
 msgid "Top Nav Module"
 msgstr ""
 
-#: functions.php:165
+#: functions.php:151
 msgid "Footer 1"
 msgstr ""
 
-#: functions.php:177
+#: functions.php:163
 msgid "Footer 2"
 msgstr ""
 
-#: functions.php:189
+#: functions.php:175
 msgid "Footer 3"
 msgstr ""
 
-#: functions.php:201
+#: functions.php:187
 msgid "Footer 4"
 msgstr ""
 
-#: functions.php:214
+#: functions.php:200
 msgid "404 Page"
 msgstr ""
 
-#: functions.php:430
+#: functions.php:393
 msgid "Password"
 msgstr "Passwort"
 
-#: functions.php:431
+#: functions.php:394
 msgid "Submit"
 msgstr "Senden"
 
@@ -101,24 +110,13 @@ msgstr "Senden"
 msgid "Sidebar left"
 msgstr "Sidebar links"
 
-#: 404.php:22
-msgid ""
-"Oops, I screwed up and you discovered my fatal flaw. Well, we are not all "
-"perfect, but we try. Can you try this again or maybe visit our Front Page to "
-"start fresh. We will do better next time."
-msgstr ""
-"Hoppla, ich habe es vermasselt und Sie haben meinen fatalen Fehler entdeckt. "
-"Nun, wir sind nicht alle perfekt, aber wir versuchen es. Können Sie das noch "
-"einmal versuchen oder besuchen Sie unsere Front Page, um neu zu beginnen. "
-"Nächstes Mal werden wir es besser machen."
-
-#: 404.php:23 404.php:32
-msgid "Back Home »"
-msgstr "Startseite »"
-
-#: 404.php:27
+#: 404.php:21
 msgid "Place some widgets here and remove this line in the 404.php."
 msgstr "Platziere hier Widgets und entferne diese Zeile in der 404.php."
+
+#: 404.php:26
+msgid "Back Home &raquo;"
+msgstr ""
 
 #. Name of the template
 msgid "Full Width Image"
@@ -233,19 +231,6 @@ msgstr ""
 msgid ", "
 msgstr ", "
 
-#. 1: list of categories.
-#: inc/template-tags.php:23
-#, php-format
-msgid "%1$s"
-msgstr "%1$s"
-
-#. %s: post date.
-#: inc/template-tags.php:51
-#, php-format
-msgctxt "post date"
-msgid "%s"
-msgstr "%s"
-
 #. translators: %s: post author.
 #: inc/template-tags.php:67
 #, php-format
@@ -261,12 +246,6 @@ msgstr "Bearbeiten"
 #: inc/template-tags.php:149
 msgid "Leave a comment"
 msgstr "Kommentar schreiben"
-
-#. used between list items, there is a space after the comma
-#: inc/template-tags.php:170
-msgctxt "list item separator"
-msgid " "
-msgstr ""
 
 #. translators: 1: list of tags.
 #: inc/template-tags.php:173
@@ -327,7 +306,17 @@ msgid "bootScore"
 msgstr ""
 
 #. Description of the theme
-msgid "A powerful Bootstrap Starter Theme"
+msgid ""
+"A powerful Bootstrap Starter Onepage or Multi-Page Theme. Examples: https:"
+"//bootscore.me/#examples, Documentation: https://bootscore."
+"me/category/documentation/. This theme gives you full control whatever you "
+"do and the full freedom to design whatever you want. It comes with some "
+"useful header scripts and a wide selection of category, page, post, author "
+"and archive templates as well as sidebar, header, footer and 404 widgets. A "
+"preloader is included. There are just minor customizer settings in the "
+"backend. All important settings can only be made by touching the code. Some "
+"CSS, HTML, PHP and JS Skills are required to customize it completely. Make "
+"bootScore your own!"
 msgstr ""
 
 #. URI of the theme

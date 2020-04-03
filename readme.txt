@@ -1,13 +1,20 @@
 === Bootscore ===
 
-Contributors: automattic
+Contributors: craftwerk
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
 Requires at least: 4.5
-Tested up to: 4.8
-Stable tag: 1.0.0
+Tested up to: 5.2.1
+Requires PHP: 5.6
+Stable tag: 1.0.2
 License: GNU General Public License v2 or later
-License URI: LICENSE
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+
+Bootscore WordPress Theme, Copyright 2019 Bastian Kreiter.
+
+
+=== Plugin Name ===
+Contributors: craftwerk
 
 A starter theme called Bootscore.
 
@@ -33,8 +40,18 @@ Bootscore includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
-= 1.0 - May 12 2015 =
-* Initial release
+	= 1.0.2 - June 16 2019 =
+		* Bug fixes
+		* Updating the readme.txt
+		* Deleting the cookie consent
+
+	= 1.0.1 - June 1 2019 =
+		* Bug fixes
+		* Adding header-blog-logo-center.php
+		* Adding header-blog-logo-left.php
+
+	= 1.0.0 - April 12 2019 =
+		* Initial release
 
 
 == Credits ==

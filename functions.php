@@ -7,20 +7,6 @@
  * @package Bootscore
  */
  
- 
-// Hide Admin Bar in Frontend
-/*function hide_admin_bar_from_front_end()
-{
-    if (is_blog_admin()) {
-        return true;
-    }
-    return false;
-}
-add_filter('show_admin_bar', 'hide_admin_bar_from_front_end');*/
-// Hide Admin Bar in Frontend End
- 
- 
- 
 // Register Nav Walker class_alias
 require_once('inc/class-wp-bootstrap-navwalker.php');
 
@@ -233,16 +219,19 @@ function bootscore_scripts() {
 
 	// Bootstrap	
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/lib/bootstrap.min.css');
+	
 	// Fontawesome
 	wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/css/lib/fontawesome.min.css');
 
 	// Theme JS
 	wp_enqueue_script( 'bootscore-script', get_template_directory_uri() . '/js/theme.js', array(), '20151215', true );
+	
 	// Custom JS
 	wp_enqueue_script( 'bootscore-custom', get_template_directory_uri() . '/js/custom.js', array(), '20151215', true );
 	
 	// Bootstrap JS
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/lib/bootstrap.min.js', array(), '20151215', true );
+	
 	// Cookie Consent JS
 	wp_enqueue_script( 'cookie', get_template_directory_uri() . '/js/lib/cookie.js', array(), '20151215', true );
 	

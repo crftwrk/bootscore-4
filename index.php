@@ -19,7 +19,7 @@
 		<!-- Header Image -->
 		<div class="row">
 			<div class="col">
-				<div class="bootscore-banner height-50 d-flex align-items-center text-center bg-dark text-light rounded mb-4" style="background-image: url('<?php header_image(); ?>')">
+				<div class="bootscore-banner height-50 d-flex align-items-end bg-dark text-light rounded mb-4" style="background-image: url('<?php header_image(); ?>')">
 					<div class="container">
 						<h1><?php bloginfo('name'); ?></h1>
 						<p><?php bloginfo('description'); ?></p>

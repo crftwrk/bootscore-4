@@ -36,5 +36,5 @@ ul.comment-list li {
 /* comments width */
 
 div#comments .media-body {
-	max-width: 89%;
+	max-width: 100%;
 }
