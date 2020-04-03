@@ -3,10 +3,20 @@ body {
 }
 
 
-/* index.php custom image */
+#content {
+    min-height: 600px;
+}
 
-.bootscore-banner {
-	background-size: cover;
+::-moz-selection {
+   color:#fff;
+   background:var(--primary);
+   text-shadow: none;
+}
+
+::selection {
+   color:#fff;
+   background:var(--primary);
+   text-shadow: none;
 }
 
 
@@ -38,7 +48,6 @@ body {
 
 
 /* Full width*/
-
 .width-100 {
 	position: relative;
 	width: 100vw;

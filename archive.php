@@ -10,6 +10,7 @@
 	get_header();
 	?>
 <div id="primary" class="content-area">
+    <h1>Hallo Hallo</h1>
 	<main id="main" class="site-main">
 		<div class="row">
 			<div class="col">

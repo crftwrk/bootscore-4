@@ -1,0 +1,7 @@
+.toggler-icon-animated span, .toggler-icon span {
+	background: var(--secondary);
+}
+
+.toggler-icon-animated.open span {
+	background: var(--primary);
+}

@@ -15,7 +15,7 @@
 
 <footer>
 
-    <div class="bootscore-footer bg-light pt-5 pb-3 border-top">
+    <div class="bootscore-footer bg-light pt-5 pb-3">
         <div class="container">
             <div class="row">
 
@@ -79,7 +79,7 @@
             
         </div>
     </div>
-    <div class="bootscore-info bg-light text-secondary border-top pt-2 pb-2 text-center">
+    <div class="bootscore-info bg-light text-secondary border-top border-white pt-2 pb-2 text-center">
         <div class="container">
             <small>&copy;<?php echo Date('Y'); ?> - <?php bloginfo('name'); ?></small>    
         </div>

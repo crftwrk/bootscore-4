@@ -43,24 +43,14 @@ body {
 	}
 }
 
-.nav-scroller {
-	position: relative;
-	z-index: 2;
-	height: 2.75rem;
-	overflow-y: hidden;
+@media (max-width: 782px) {
+    .logged-in.admin-bar .offcanvas-collapse {
+        top: 103px;
+    }
 }
 
-.nav-scroller .nav {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: nowrap;
-	flex-wrap: nowrap;
-	padding-bottom: 1rem;
-	margin-top: -1px;
-	overflow-x: auto;
-	color: rgba(255, 255, 255, .75);
-	text-align: center;
-	white-space: nowrap;
-	-webkit-overflow-scrolling: touch;
+@media (min-width: 783px) {
+    .logged-in.admin-bar .offcanvas-collapse {
+        top: 89px;
+    }
 }

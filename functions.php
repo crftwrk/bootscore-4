@@ -17,7 +17,7 @@
 }
 add_filter('show_admin_bar', 'hide_admin_bar_from_front_end');*/
 // Hide Admin Bar in Frontend End
-// 
+
  
 // Register Nav Walker class_alias
 require_once('inc/class-wp-bootstrap-navwalker.php');
@@ -106,6 +106,8 @@ add_action( 'after_setup_theme', 'bootscore_content_width', 0 );
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
 function bootscore_widgets_init() {
+    
+    // Sidebar
 	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar', 'bootscore' ),
 		'id'            => 'sidebar-1',
@@ -147,7 +149,7 @@ function bootscore_widgets_init() {
         'description' => esc_html__('Add widgets here.', 'bootscore' ),
         'before_widget' => '<div class="footer_widget mb-4">',
         'after_widget' => '</div>',
-        'before_title' => '<h2 class="widget-title">',
+        'before_title' => '<h2 class="widget-title h4">',
         'after_title' => '</h2>'
     ));
     // Footer 1 End
@@ -159,7 +161,7 @@ function bootscore_widgets_init() {
         'description' => esc_html__('Add widgets here.', 'bootscore'),
         'before_widget' => '<div class="footer_widget mb-4">',
         'after_widget' => '</div>',
-        'before_title' => '<h2 class="widget-title">',
+        'before_title' => '<h2 class="widget-title h4">',
         'after_title' => '</h2>'
     ));
     // Footer 2 End
@@ -171,7 +173,7 @@ function bootscore_widgets_init() {
         'description' => esc_html__('Add widgets here.', 'bootscore'),
         'before_widget' => '<div class="footer_widget mb-4">',
         'after_widget' => '</div>',
-        'before_title' => '<h2 class="widget-title">',
+        'before_title' => '<h2 class="widget-title h4">',
         'after_title' => '</h2>'
     ));
     // Footer 3 End
@@ -183,7 +185,7 @@ function bootscore_widgets_init() {
         'description' => esc_html__('Add widgets here.', 'bootscore'),
         'before_widget' => '<div class="footer_widget mb-4">',
         'after_widget' => '</div>',
-        'before_title' => '<h2 class="widget-title">',
+        'before_title' => '<h2 class="widget-title h4">',
         'after_title' => '</h2>'
     ));
     // Footer 4 End
@@ -250,6 +252,11 @@ require get_template_directory() . '/inc/template-tags.php';
  * Functions which enhance the theme by hooking into WordPress.
  */
 require get_template_directory() . '/inc/template-functions.php';
+
+/**
+ * Functions which enhance the theme by hooking into woocommerce.
+ */
+//require get_template_directory() . '/woocommerce/woocommerce-functions.php';
 
 /**
  * Load Jetpack compatibility file.
@@ -395,3 +402,6 @@ add_filter('wpcf7_form_elements', function ($content) {
     return $content;
 });
 // Bootstrap Contactform 7 Checkboxes and Buttons End
+
+
+

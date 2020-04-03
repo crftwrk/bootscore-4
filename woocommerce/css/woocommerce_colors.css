@@ -1,0 +1,137 @@
+.card del .woocommerce-Price-amount.amount {
+    color: var(--danger) !important;
+}
+
+del {
+    color: var(--danger);
+}
+
+.woocommerce form .form-row.woocommerce-invalid label, .woocommerce form .form-row .required {
+    color: var(--danger);
+}
+
+.woocommerce form .form-row.woocommerce-invalid .select2-container, .woocommerce form .form-row.woocommerce-invalid input.input-text, .woocommerce form .form-row.woocommerce-invalid select {
+    border-color: var(--danger);
+}
+
+
+.woocommerce form .form-row.woocommerce-validated .select2-container, .woocommerce form .form-row.woocommerce-validated input.input-text, .woocommerce form .form-row.woocommerce-validated select {
+    border-color: var(--success);
+}
+
+
+.woocommerce div.product p.price, .woocommerce div.product span.price {
+    color: var(--success);
+}
+
+.card .woocommerce-Price-amount.amount {
+    color: var(--success);
+}
+
+.woocommerce div.product p.price del, .woocommerce div.product span.price del {
+    opacity: 1;
+}
+
+
+
+.card a.woocommerce-LoopProduct-link.woocommerce-loop-product__link {
+    color: currentColor;
+}
+
+
+@media (max-width: 768px) {
+
+    .woocommerce table.shop_table_responsive tr:nth-child(2n) td,
+    .woocommerce-page table.shop_table_responsive tr:nth-child(2n) td {
+        background-color: var(--light);
+    }
+
+}
+
+
+
+.woocommerce table.shop_table {
+    border-color:  rgba(0, 0, 0, .125);
+}
+
+.woocommerce table.shop_table td {
+    border-color: rgba(0, 0, 0, .125);
+}
+
+#add_payment_method .cart-collaterals .cart_totals tr td,
+#add_payment_method .cart-collaterals .cart_totals tr th,
+.woocommerce-cart .cart-collaterals .cart_totals tr td,
+.woocommerce-cart .cart-collaterals .cart_totals tr th,
+.woocommerce-checkout .cart-collaterals .cart_totals tr td,
+.woocommerce-checkout .cart-collaterals .cart_totals tr th {
+    border-color: rgba(0, 0, 0, .125);
+}
+
+
+
+#add_payment_method #payment div.payment_box, .woocommerce-cart #payment div.payment_box, .woocommerce-checkout #payment div.payment_box {
+    background-color: var(--light);
+    color: currentColor;
+}
+
+
+
+#add_payment_method #payment div.payment_box::before, .woocommerce-cart #payment div.payment_box::before, .woocommerce-checkout #payment div.payment_box::before {
+    content: "";
+    display: block;
+    border: 1em solid var(--light);
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    position: absolute;
+    top: -.75em;
+    left: 0;
+    margin: -1em 0 0 2em;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li {
+    border: 1px solid rgba(0,0,0,.125);
+    background-color: var(--light);
+
+}
+
+
+.woocommerce div.product .woocommerce-tabs ul.tabs::before {
+
+    border-bottom: 1px solid rgba(0,0,0,.125);
+
+}
+
+
+.woocommerce .blockUI.blockOverlay:before,.woocommerce .loader:before {
+    color: var(--primary);
+}
+
+
+
+a.remove.remove_from_cart_button {
+    color: var(--danger) !important;
+    border-color: var(--danger);
+}
+
+a.remove.remove_from_cart_button:hover {
+    color: #fff !important;
+    background-color: var(--danger);
+}
+
+
+.woocommerce-terms-and-conditions {
+    background: var(--light);
+}
+
+
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li a {
+    color: var(--primary);
+}
+
+
+button.single_add_to_cart_button.btn.btn-primary.disabled.wc-variation-selection-needed {
+    background-color: rgba(0,0,0,0);
+    color: var(--primary);
+}

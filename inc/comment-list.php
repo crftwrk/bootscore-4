@@ -109,4 +109,14 @@ function custom_reply_title( $defaults ){
 
 
 
-
+// Comment Cookie Checkbox
+function wp44138_change_comment_form_cookies_consent( $fields ) {
+    $consent  = empty( $commenter['comment_author_email'] ) ? '' : ' checked="checked"';
+    $fields['cookies'] = '<p class="comment-form-cookies-consent custom-control custom-checkbox">' .
+        '<input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" class="custom-control-input"' . $consent . ' />' .
+        '<label for="wp-comment-cookies-consent" class="custom-control-label">' . __( 'Save my name, email, and website in this browser for the next time I comment.', 'bootscore' ) . '</label>' .
+        '</p>';
+    return $fields;
+}
+add_filter( 'comment_form_default_fields', 'wp44138_change_comment_form_cookies_consent' );
+// Comment Cookie Checkbox End

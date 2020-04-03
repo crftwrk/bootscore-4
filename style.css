@@ -3,8 +3,8 @@ Theme Name: bootScore
 Theme URI: https://bootscore.me/
 Author: Bastian Kreiter
 Author URI: https://crftwrk.de
-Description: A powerful Bootstrap Starter Onepage or Multi-Page Theme. Examples: https://bootscore.me/#examples, Documentation: https://bootscore.me/category/documentation/. This theme gives you full control whatever you do and the full freedom to design whatever you want. It comes with some useful header scripts and a wide selection of category, page, post, author and archive templates as well as sidebar, header, footer and 404 widgets. A preloader is included. There are just minor customizer settings in the backend. All important settings can only be made by touching the code. Some CSS, HTML, PHP and JS Skills are required to customize it completely. Make bootScore your own!
-Version: 2.0.6
+Description: A powerful Bootstrap Starter Onepage or Multi-Page Theme with WooCommerce Support. Examples: https://bootscore.me/#examples, Documentation: https://bootscore.me/category/documentation/. This theme gives you full control whatever you do and the full freedom to design whatever you want. It comes with some useful header scripts and a wide selection of category, page, post, author and archive templates as well as sidebar, header, footer and 404 widgets. A preloader is included. There are just minor customizer settings in the backend. All important settings can only be made by touching the code. Some CSS, HTML, PHP and JS Skills are required to customize it completely. Make bootScore your own!
+Version: 3.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: bootscore
@@ -21,9 +21,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
 /* Theme Core CSS */
-@import url("css/theme_nav.css");
+@import url("css/theme_header.css");
 @import url("css/theme_body.css");
 @import url("css/theme_footer.css");
+@import url("css/theme_colors.css");
 @import url("css/theme_fonts.css");
 @import url("css/theme_404.css");
 @import url("css/theme_category.css");
@@ -37,14 +38,17 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import url("css/theme_cookiebar.css");				/* Activate the HTML-Code in footer.php in line 89 */
 @import url("css/theme_to_top.css");
 
-/* Theme nav presets */
-/*@import url("css/theme_nav_static.css");*/
-/*@import url("css/theme_nav_up_down.css");*/			/* Activate the script in js/theme.js in line 122 */
-/*@import url("css/theme_nav_transform.css");*/			/* Activate the script in js/theme.js in line 142 */
-/*@import url("css/theme_nav_overlay.css");*/			/* Activate the script in js/theme.js in line 166 */
-/*@import url("css/theme_nav_offcanvas.css");*/			/* Activate the script in js/theme.js in line 100, rename header.php in whateveryouwant.php and rename header-offcanvas.php into header.php */
-/*@import url("css/theme_nav_blog_logo_center.css");*/	/* Rename header.php in whateveryouwant.php and rename header-blog-logo-center.php into header.php */
-/*@import url("css/theme_nav_blog_logo_left.css");*/	/* Rename header.php in whateveryouwant.php and rename header-blog-logo-left.php into header.php */
+/* Theme Header presets */
+/*@import url("css/theme_header_static.css");*/
+/*@import url("css/theme_header_up_down.css");*/			/* Activate the script in js/theme.js in line 122 */
+/*@import url("css/theme_header_transform.css");*/			/* Activate the script in js/theme.js in line 142 */
+/*@import url("css/theme_header_overlay.css");*/			/* Activate the script in js/theme.js in line 166 */
+/*@import url("css/theme_header_offcanvas.css");*/			/* Activate the script in js/theme.js in line 100, rename header.php in whateveryouwant.php and rename header-offcanvas.php into header.php */
+/*@import url("css/theme_header_blog_logo_center.css");*/	/* Rename header.php in whateveryouwant.php and rename header-blog-logo-center.php into header.php */
+/*@import url("css/theme_header_blog_logo_left.css");*/	/* Rename header.php in whateveryouwant.php and rename header-blog-logo-left.php into header.php */
 
 /* Content CSS - Add as much as you want*/
 @import url("css/custom.css");
+
+
+	
