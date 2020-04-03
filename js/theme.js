@@ -208,6 +208,12 @@ jQuery(document).ready(function($) {
 			'overflow': 'visible'
 		})
 	}, 1500);
+    
+    
+    // Page transitions
+    window.addEventListener("beforeunload", function () {
+        document.body.classList.add("animate-out");
+    });
 
 
 	// Cookie consent
@@ -273,5 +279,11 @@ jQuery(document).ready(function($) {
 	$('input#wp-comment-cookies-consent').addClass('form-check-input');
 	$('label').addClass('form-check-label');
 
-
+    
+    
 }); // jQuery End
+
+
+
+
+

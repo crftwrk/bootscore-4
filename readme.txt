@@ -6,7 +6,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 Requires at least: 4.5
 Tested up to: 5.3
 Requires PHP: 5.6
-Stable tag: 2.0.5
+Stable tag: 2.0.6
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -40,6 +40,11 @@ Bootscore includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
+	= 2.0.6 - November 21 2019 =
+    
+        * Added bootstrap filter for Contactform7 Acceptance Checkbox in functions.php
+        * Added page transitions in theme_page_transition.css and theme.js. Does not work on iOS and Safari
+
 	= 2.0.5 - November 18 2019 =
 	
 		* Added bootstrap.min-sketch.css. For use rename to bootstrap.min.css. Customize here https://bootstrap.build/app/project/uhPrFvLSfVUW
@@ -55,9 +60,9 @@ Bootscore includes support for Infinite Scroll in Jetpack.
 	= 2.0.3 - November 12 2019 =
 	
 		* Bug fixes
-		* Cookie Consent moved from <footer> to "page" (still in footer.php)
-        * To Top Button moved from <footer> to "page" (still in footer.php)
-        * Adding responsive sizes to fonts in theme_fonts.css
+		* Cookie Consent moved from <footer> to .page (still in footer.php)
+        * To Top Button moved from <footer> to .page (still in footer.php)
+        * Adding responsive sizes to fonts display-1 to display-4 and <h1> to <h6> in theme_fonts.css
 
 	= 2.0.2 - September 13 2019 =
 	

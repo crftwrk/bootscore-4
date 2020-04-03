@@ -386,3 +386,12 @@ function bootscore_pw_form () {
 }
 add_filter("the_password_form","bootscore_pw_form");
 // Password protected form End
+
+
+
+// Bootstrap Contactform 7 Checkboxes and Buttons
+add_filter('wpcf7_form_elements', function ($content) {
+    $content = preg_replace('/<label><input type="(checkbox|radio)" name="(.*?)" value="(.*?)" \/><span class="wpcf7-list-item-label">/i', '<label class="custom-control custom-\1"><input type="\1" name="\2" value="\3" class="custom-control-input"><span class="wpcf7-list-item-label custom-control-label">', $content);
+    return $content;
+});
+// Bootstrap Contactform 7 Checkboxes and Buttons End
