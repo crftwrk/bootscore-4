@@ -94,8 +94,11 @@ jQuery(document).ready(function($) {
 	});
 
 
+
+
+
 	// Sub Menu Animation
-	$('.dropdown-menu').addClass('invisible'); //FIRST TIME INVISIBLE
+	/*$('.navbar-nav .dropdown-menu').addClass('invisible'); //FIRST TIME INVISIBLE
 
 	// ADD SLIDEDOWN ANIMATION TO DROPDOWN-MENU 
   	$('.dropdown').on('show.bs.dropdown', function(e){
@@ -106,7 +109,10 @@ jQuery(document).ready(function($) {
   	// ADD SLIDEUP ANIMATION TO DROPDOWN-MENU 
   	$('.dropdown').on('hide.bs.dropdown', function(e){
     	$(this).find('.dropdown-menu').first().stop(true, true).slideUp();
-  	});
+  	});*/
+
+
+
 
 
 	// Offcanvas Nav - activate the stylesheet in style.css in line 33, rename header.php in whateveryouwant.php and rename header-offcanvas.php into header.php
