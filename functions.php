@@ -212,6 +212,16 @@ function bootscore_widgets_init() {
     
 }
 add_action( 'widgets_init', 'bootscore_widgets_init' );
+// Widgets End
+
+
+
+
+// Shortcode in HTML-Widget
+add_filter( 'widget_text', 'do_shortcode' );
+// Shortcode in HTML-Widget End
+
+
 
 /**
  * Enqueue scripts and styles.
@@ -395,6 +405,43 @@ function bootscore_pw_form () {
 }
 add_filter("the_password_form","bootscore_pw_form");
 // Password protected form End
+
+
+
+
+
+
+
+
+// Allow HTML in term (category, tag) descriptions
+foreach ( array( 'pre_term_description' ) as $filter ) {
+	remove_filter( $filter, 'wp_filter_kses' );
+	if ( ! current_user_can( 'unfiltered_html' ) ) {
+		add_filter( $filter, 'wp_filter_post_kses' );
+	}
+}
+ 
+foreach ( array( 'term_description' ) as $filter ) {
+	remove_filter( $filter, 'wp_kses_data' );
+}
+// Allow HTML in term (category, tag) descriptions End
+
+
+
+
+
+
+//Adjust contact form 7 radios and checkboxes to match bootstrap 4 custom radio structure.
+add_filter('wpcf7_form_elements', function ($content) {
+    $content = preg_replace('/<label><input type="(checkbox|radio)" name="(.*?)" value="(.*?)" \/><span class="wpcf7-list-item-label">/i', '<label class="custom-control custom-\1"><input type="\1" name="\2" value="\3" class="custom-control-input"><span class="wpcf7-list-item-label custom-control-label">', $content);
+
+    return $content;
+});
+//Adjust contact form 7 radios and checkboxes to match bootstrap 4 custom radio structure. End
+
+
+
+
 
 
 

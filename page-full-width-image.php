@@ -32,7 +32,7 @@
                 </div>
 
                 <footer class="entry-footer">
-                    <?php bootscore_edit();?>
+                    <!--<?php bootscore_edit();?>-->
                 </footer>
 
                 <?php comments_template(); ?>

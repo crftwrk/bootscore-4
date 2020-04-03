@@ -6,7 +6,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 Requires at least: 4.5
 Tested up to: 5.3.2
 Requires PHP: 5.6
-Stable tag: 3.0.3
+Stable tag: 3.0.4
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -35,10 +35,17 @@ A powerful Bootstrap WordPress Starter Theme
 
 = Does this theme support any plugins? =
 
-Bootscore includes support for WooCommerce and Infinite Scroll in Jetpack.
+Bootscore includes support for Infinite Scroll in Jetpack.
 
 
 == Changelog ==
+
+    = 3.0.4 - March 04 2020 =
+        
+        * Removed Edit Link in page.php
+        * Removed Ajax add to cart from theme and made a Plugin (doesn´t work with Affiliate and Grouped Products)
+        * Changed Category and Tag Badges to secondary
+        * Added height-85 class
 
     = 3.0.3 - February 28 2020 =
     

@@ -187,7 +187,9 @@
                     <div class="cart-right" id="cart">
 
                         <a class="cart-header bg-light d-block p-3" data-toggle="cart" href="javascript:void(0)">
-                            <i class="fas fa-chevron-left"></i> <span><?php esc_html_e('Continue shopping' , 'bootscore'); ?></span>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-chevron-left"></i> <span class="ml-auto"><?php esc_html_e('Continue shopping' , 'bootscore'); ?></span>
+                            </div>
                         </a>
 
 
@@ -195,7 +197,7 @@
                         <div class="cart-list h-100">
 
                             <h2 class="p-3"><?php esc_html_e('Cart' , 'bootscore'); ?></h2>
-                            
+
 
 
 
@@ -229,15 +231,15 @@
                         <div class="cart-footer position-absolute d-block border-top text-center bg-white">
                             <div class="p-3">
 
-                                <div class="font-weight-bold lead text-success">                                    
+                                <div class="font-weight-bold lead text-success">
                                     <?php esc_html_e( 'Subtotal', 'woocommerce' ); ?>:
                                     <?php
                                     //echo '<div class="">Zwischensumme: ';
                                     echo '<span id="mcart-stotal">'.WC()->cart->get_cart_subtotal().'</span>';     
-                                    ?> 
-                                    
+                                    ?>
+
                                 </div>
-                                    
+
                                 <p class="text-secondary"><?php esc_html_e('To find out your shipping cost , Please proceed to checkout.' , 'bootscore'); ?></p>
                                 <a href="<?php echo get_permalink( wc_get_page_id( 'cart' ) ); ?>" class="btn btn-outline-primary btn-block"><?php esc_html_e('Edit cart' , 'bootscore'); ?></a>
                                 <a href="<?php echo get_permalink( wc_get_page_id( 'checkout' ) ); ?>" class="btn btn-primary btn-block"><?php esc_html_e('Proceed to checkout' , 'bootscore'); ?></a>
@@ -252,5 +254,3 @@
 
         </header>
         <!-- #masthead -->
-
-        

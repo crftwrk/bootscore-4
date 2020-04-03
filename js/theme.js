@@ -102,16 +102,16 @@ jQuery(document).ready(function ($) {
     // Sub Menu Animation
     $('.navbar-nav .dropdown-menu').addClass('invisible'); //FIRST TIME INVISIBLE
 
-	// ADD SLIDEDOWN ANIMATION TO DROPDOWN-MENU 
-  	$('.dropdown').on('show.bs.dropdown', function(e){
-    $('.dropdown-menu').removeClass('invisible');
-    	$(this).find('.dropdown-menu').first().stop(true, true).slideDown();
-  	});
+    // ADD SLIDEDOWN ANIMATION TO DROPDOWN-MENU 
+    $('.dropdown').on('show.bs.dropdown', function (e) {
+        $('.dropdown-menu').removeClass('invisible');
+        $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
+    });
 
-  	// ADD SLIDEUP ANIMATION TO DROPDOWN-MENU 
-  	$('.dropdown').on('hide.bs.dropdown', function(e){
-    	$(this).find('.dropdown-menu').first().stop(true, true).slideUp();
-  	});
+    // ADD SLIDEUP ANIMATION TO DROPDOWN-MENU 
+    $('.dropdown').on('hide.bs.dropdown', function (e) {
+        $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+    });
 
 
 
@@ -241,6 +241,7 @@ jQuery(document).ready(function ($) {
     // div height, add class to your content
     $(".height-50").css("height", 0.5 * $(window).height());
     $(".height-75").css("height", 0.75 * $(window).height());
+    $(".height-85").css("height", 0.85 * $(window).height());
     $(".height-100").css("height", 1.0 * $(window).height());
 
 
@@ -278,12 +279,25 @@ jQuery(document).ready(function ($) {
     //$('.button, .wpcf7-submit').addClass('btn btn-outline-primary');
     //$('.wp-block-button__link').addClass('btn btn-outline-primary');
 
-    // Comment Checkbox
-    //$('.comment-form-cookies-consent').addClass('form-group form-check');
-    //$('input#wp-comment-cookies-consent').addClass('form-check-input');
-    //$('label').addClass('form-check-label');
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 }); // jQuery End
+
+
+
+

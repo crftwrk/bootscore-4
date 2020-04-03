@@ -58,8 +58,11 @@ jQuery(document).ready(function ($) {
 
 
 
-
-
+    // Review Checkbox
+    $('.comment-form-cookies-consent').addClass('custom-control custom-checkbox');
+    $('#wp-comment-cookies-consent').addClass('custom-control-input');
+    $('.comment-form-cookies-consent label').addClass('custom-control-label');
+    // Review Checkbox End
 
 
 

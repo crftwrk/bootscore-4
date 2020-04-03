@@ -154,7 +154,7 @@ a.remove.remove_from_cart_button {
 
 
 
-
+/*
 
 .woocommerce #respond input#submit {
     color: var(--primary);
@@ -167,12 +167,16 @@ a.remove.remove_from_cart_button {
     color: #fff;
     background-color: var(--primary);
 }
+*/
 
 
+.woocommerce div.product .stock {
+    color: currentColor;
+}
 
-
-
-
+.woocommerce div.product .out-of-stock {
+    color: var(--danger);
+}
 
 
 

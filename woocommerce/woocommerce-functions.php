@@ -274,67 +274,9 @@ add_filter( 'woocommerce_ship_to_different_address_checked', '__return_false' );
 
 
 
-
-
-
-
-// Ajax add to cart https://quadmenu.com/add-to-cart-with-woocommerce-and-ajax-step-by-step/
-
-
-if (!defined('QLWCAJAX_PLUGIN_VERSION')) {
-  define('QLWCAJAX_PLUGIN_VERSION', '1.1.4');
-}
-
-
-if (!class_exists('QLWCAJAX')) {
-
-  class QLWCAJAX {
-
-    protected static $instance;
-
-    function ajax_dismiss_notice() {
-
-      if ($notice_id = ( isset($_POST['notice_id']) ) ? sanitize_key($_POST['notice_id']) : '') {
-
-        update_user_meta(get_current_user_id(), $notice_id, true);
-
-        wp_send_json($notice_id);
-      }
-
-      wp_die();
-    }
-
-    function add_product_js() { 
-
-      wp_register_script('woo-ajax-add-to-cart', get_template_directory_uri(__FILE__) . '/woocommerce/js/woo-ajax-add-to-cart.js', array('jquery', 'wc-add-to-cart'), QLWCAJAX_PLUGIN_VERSION, true);
-
-      if (function_exists('is_product') && is_product()) {
-        wp_enqueue_script('woo-ajax-add-to-cart');
-      }
-    }
-
-
-    function init() {
-      add_action('wp_enqueue_scripts', array($this, 'add_product_js'), 99);
-      /*add_action('wp_ajax_qlwcajax_dismiss_notice', array($this, 'ajax_dismiss_notice'));
-      add_action('admin_notices', array($this, 'add_notices'));
-      add_filter('plugin_action_links_' . plugin_basename(QLWCAJAX_PLUGIN_FILE), array($this, 'add_action_links'));*/
-    }
-
-    public static function instance() {
-      if (!isset(self::$instance)) {
-        self::$instance = new self();
-        self::$instance->init();
-      }
-      return self::$instance;
-    }
-
-  }
-
-  QLWCAJAX::instance();
-}
-// Ajax add to cart End
-
+// Remove cross-sells at cart
+remove_action( 'woocommerce_cart_collaterals', 'woocommerce_cross_sell_display' );
+// Remove cross-sells at cart End
 
 
 

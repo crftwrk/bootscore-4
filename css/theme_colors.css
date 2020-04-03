@@ -45,3 +45,8 @@ q {
 :focus {
     outline: none !important;
 }
+
+
+.wpcf7-not-valid {
+    border-color: var(--danger) !important;
+}
