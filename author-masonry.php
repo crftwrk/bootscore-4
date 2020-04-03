@@ -1,6 +1,6 @@
 <?php
 	/**
-	 * The template for displaying author pages
+	 * author Template: Masonry
 	 *
 	 * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
 	 *

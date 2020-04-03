@@ -1,6 +1,6 @@
 <?php
 	/**
-	 * Author Template: Sidebar left
+	 * Category Template: Equal Height Sidebar right
 	 *
 	 * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
 	 *
@@ -11,33 +11,33 @@
 	?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
+		<!-- Breadcrumb -->
+		<?php the_breadcrumb(); ?>
 		<div class="row">
-		<?php get_sidebar(); ?>
-			<div class="col order-first order-md-last">
-				<!-- Author Vcard -->
+			<div class="col">
+				<!-- Title & Description -->
 				<header class="page-header">
-					<div class="media mb-4">
-						<div class="mr-3">
-							<?php echo get_avatar( $curauth->ID ); ?>
-						</div>
-						<div class="media-body p-3 rounded bg-light">
-							<h1 class="mt-0"><?php the_author(); ?></h1>
-							<?php the_author_meta('description'); ?>  
+					<div class="card mb-4 bg-light border-0">
+						<div class="card-body">
+							<!-- Title -->
+							<h1 class="card-title"><?php single_cat_title(); ?></h1>
+							<!-- Category description -->
+							<?php the_archive_description( '<div class="taxonomy-description">', '</div>' ); ?>
 						</div>
 					</div>
 				</header>
 				<!-- .page-header -->
 				<!-- Grid Layout -->
-				<?php if (have_posts() ) : ?>
-				<?php while (have_posts() ) : the_post(); ?>
-				<div class="card horizontal mb-4">
-					<div class="row">
-						<!-- Featured Image-->
-						<?php if (has_post_thumbnail() )
-							echo '<div class="card-img-left-md col-lg-5">' . get_the_post_thumbnail(null, 'medium') . '</div>';
-							?>
-						<div class="col">
-							<div class="card-body">
+				<div class="row">
+					<?php if (have_posts() ) : ?>
+					<?php while (have_posts() ) : the_post(); ?>
+					<div class="col-md-12 col-lg-6 mb-4">
+						<div class="card h-100">
+							<!-- Featured Image-->
+							<?php if (has_post_thumbnail() )
+								echo '<div class="card-img-top">' . get_the_post_thumbnail(null, 'medium') . '</div>';
+								?>  
+							<div class="card-body d-flex flex-column">
 								<div class="mb-2">
 									<!-- Category Badge -->
 									<?php
@@ -50,10 +50,6 @@
 										}
 										echo $thelist;
 										?>
-									<!-- Category -->
-									<!--<?php
-										bootscore_category();
-										?>-->
 								</div>
 								<!-- Title -->
 								<h2 class="blog-post-title">
@@ -81,9 +77,9 @@
 							</div>
 						</div>
 					</div>
+					<?php endwhile; ?>
+					<?php endif; ?>
 				</div>
-				<?php endwhile; ?>
-				<?php endif; ?>
 				<!-- Pagination -->
 				<div>
 					<?php 
@@ -95,6 +91,7 @@
 				</div>
 			</div>
 			<!-- col -->
+			<?php get_sidebar(); ?>
 		</div>
 		<!-- row -->
 	</main>

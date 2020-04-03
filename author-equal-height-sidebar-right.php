@@ -1,6 +1,6 @@
 <?php
 	/**
-	 * Author Template: Sidebar left
+	 * Author Template: Equal Height Sidebar right
 	 *
 	 * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
 	 *
@@ -12,8 +12,7 @@
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
 		<div class="row">
-		<?php get_sidebar(); ?>
-			<div class="col order-first order-md-last">
+			<div class="col">
 				<!-- Author Vcard -->
 				<header class="page-header">
 					<div class="media mb-4">
@@ -28,16 +27,16 @@
 				</header>
 				<!-- .page-header -->
 				<!-- Grid Layout -->
-				<?php if (have_posts() ) : ?>
-				<?php while (have_posts() ) : the_post(); ?>
-				<div class="card horizontal mb-4">
-					<div class="row">
-						<!-- Featured Image-->
-						<?php if (has_post_thumbnail() )
-							echo '<div class="card-img-left-md col-lg-5">' . get_the_post_thumbnail(null, 'medium') . '</div>';
-							?>
-						<div class="col">
-							<div class="card-body">
+				<div class="row">
+					<?php if (have_posts() ) : ?>
+					<?php while (have_posts() ) : the_post(); ?>
+					<div class="col-md-12 col-lg-6 mb-4">
+						<div class="card h-100">
+							<!-- Featured Image-->
+							<?php if (has_post_thumbnail() )
+								echo '<div class="card-img-top">' . get_the_post_thumbnail(null, 'medium') . '</div>';
+								?>  
+							<div class="card-body d-flex flex-column">
 								<div class="mb-2">
 									<!-- Category Badge -->
 									<?php
@@ -50,10 +49,6 @@
 										}
 										echo $thelist;
 										?>
-									<!-- Category -->
-									<!--<?php
-										bootscore_category();
-										?>-->
 								</div>
 								<!-- Title -->
 								<h2 class="blog-post-title">
@@ -81,9 +76,9 @@
 							</div>
 						</div>
 					</div>
+					<?php endwhile; ?>
+					<?php endif; ?>
 				</div>
-				<?php endwhile; ?>
-				<?php endif; ?>
 				<!-- Pagination -->
 				<div>
 					<?php 
@@ -95,6 +90,7 @@
 				</div>
 			</div>
 			<!-- col -->
+			<?php get_sidebar(); ?>
 		</div>
 		<!-- row -->
 	</main>

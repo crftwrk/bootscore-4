@@ -6,7 +6,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 Requires at least: 4.5
 Tested up to: 5.2.1
 Requires PHP: 5.6
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -39,6 +39,12 @@ Bootscore includes support for Infinite Scroll in Jetpack.
 
 
 == Changelog ==
+
+	= 1.0.6 - July 22 2019 =
+		* Tags to badge-primary
+		* Internet Explorer Support. category-, archive- and author-equal-height.php set from card-deck to columns and removed flex css in theme-category.css
+		* Added category-, archive- and author-equal-height-sidebar-right.php Templates. 
+
 
 	= 1.0.5 - July 21 2019 =
 		* Bug fix Submenu Animation in theme.js (Buggy with Search Dropdown). Commented, can be activated in theme.js

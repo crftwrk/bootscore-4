@@ -180,7 +180,7 @@ endif;
 add_filter( "term_links-post_tag", 'add_tag_class');
 
 function add_tag_class($links) {
-    return str_replace('<a href="', '<a class="badge badge-secondary" href="', $links);
+    return str_replace('<a href="', '<a class="badge badge-primary" href="', $links);
 }
 // Tags End
 

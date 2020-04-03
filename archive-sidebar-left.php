@@ -1,6 +1,6 @@
 <?php
 	/**
-	 * The template for displaying archive pages
+	 * Archive Template: Sidebar Left
 	 *
 	 * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
 	 *

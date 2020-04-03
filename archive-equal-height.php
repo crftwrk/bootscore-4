@@ -1,6 +1,6 @@
 <?php
 	/**
-	 * The template for displaying archive pages
+	 * Archive Template: Equal Height
 	 *
 	 * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
 	 *
@@ -26,10 +26,11 @@
 				</header>
 				<!-- .page-header -->
 				<!-- Grid Layout -->
-				<div class="card-deck">
+				<div class="row">
 					<?php if (have_posts() ) : ?>
 					<?php while (have_posts() ) : the_post(); ?>
-					<div class="card">
+					<div class="col-md-6 col-lg-4 mb-4">
+					<div class="card h-100">
 						<!-- Featured Image-->
 						<?php if (has_post_thumbnail() )
 							echo '<div class="card-img-top">' . get_the_post_thumbnail(null, 'medium') . '</div>';
@@ -42,7 +43,7 @@
 									$i = 0;
 									foreach( get_the_category() as $category ) {
 									    if ( 0 < $i ) $thelist .= ' ';
-									    $thelist .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" class="badge badge-secondary">' . $category->name.'</a>';
+									    $thelist .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" class="badge badge-primary">' . $category->name.'</a>';
 									    $i++;
 									}
 									echo $thelist;
@@ -72,6 +73,7 @@
 							<!-- Tags -->
 							<?php bootscore_tags(); ?>
 						</div>
+					</div>
 					</div>
 					<?php endwhile; ?>
 					<?php endif; ?>

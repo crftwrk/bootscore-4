@@ -28,10 +28,11 @@
 				</header>
 				<!-- .page-header -->
 				<!-- Grid Layout -->
-				<div class="card-deck">
+				<div class="row">
 					<?php if (have_posts() ) : ?>
 					<?php while (have_posts() ) : the_post(); ?>
-					<div class="card">
+					<div class="col-md-6 col-lg-4 mb-4">
+					<div class="card h-100">
 						<!-- Featured Image-->
 						<?php if (has_post_thumbnail() )
 							echo '<div class="card-img-top">' . get_the_post_thumbnail(null, 'medium') . '</div>';
@@ -74,6 +75,7 @@
 							<!-- Tags -->
 							<?php bootscore_tags(); ?>
 						</div>
+					</div>
 					</div>
 					<?php endwhile; ?>
 					<?php endif; ?>
