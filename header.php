@@ -27,7 +27,7 @@
 	<body <?php body_class(); ?>>
 		<!-- Preloader -->
 		<div id="preloader" class="bg-light align-items-center justify-content-center position-fixed">
-			<div id="status" class="spinner-grow" role="status">
+			<div id="status" class="spinner-grow text-primary" role="status">
 				<span class="sr-only">Loading...</span>
 			</div>
 		</div>
@@ -35,7 +35,7 @@
 		<div id="page" class="site">
 		<header id="masthead" class="site-header">
 			<div id="to-top"></div>
-			<nav id="nav-main" class="navbar navbar-expand-lg navbar-light bg-light fixed-top border-bottom">
+			<nav id="nav-main" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 				<div class="container">
 					<!-- SVG Logo -->
 					<a class="navbar-brand" href="<?php echo esc_url( home_url() ); ?>"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/logo/logo.svg" alt="logo" class="logo" ></a>
@@ -49,8 +49,8 @@
 					</div>
 					<!-- Mobile Search Module -->
 					<div class="top-nav-search-mobile justify-content-end pr-3 d-lg-none">
-						<a class="btn btn-secondary btn-sm" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-search"></i></a>
-						<div class="dropdown-menu bg-light border-top-0 border-left-0 border-right-0 border-bottom-1 rounded-0" aria-labelledby="dropdownMenuLink">
+						<a class="btn btn-outline-secondary btn-sm" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-search"></i></a>
+						<div class="dropdown-menu bg-light border-top-0 border-left-0 border-right-0 border-bottom-0 rounded-0" aria-labelledby="dropdownMenuLink">
 							<div class="container">
 								<?php if ( is_active_sidebar( 'top-nav-search' )) : ?>
 								<div>
@@ -65,7 +65,8 @@
 						<div class="toggler-icon-animated"><span></span><span></span><span></span><span></span></div>
 					</button>
 					<!-- Nav Walker -->
-					<?php
+					
+                    <?php
 						wp_nav_menu( array(
 							'theme_location'    => 'primary',
 							'depth'             => 3,
@@ -76,9 +77,12 @@
 							'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
 							'walker'            => new WP_Bootstrap_Navwalker(),
 						) );
-						?>		
+				    ?>	
+                        
+                        
+                    
 					<!-- Large Top Module -->
-					<div class="top-module-1 d-none d-lg-block">
+					<div class="top-module-1 d-none d-lg-block ml-3">
 						<?php if ( is_active_sidebar( 'top-nav-module' )) : ?>
 						<div>
 							<?php dynamic_sidebar( 'top-nav-module' ); ?>
@@ -86,7 +90,7 @@
 						<?php endif; ?>
 					</div>
 					<!-- Large Top Search Module -->
-					<div class="top-nav-search d-none d-lg-block">
+					<div class="top-nav-search d-none d-lg-block ml-3">
 						<?php if ( is_active_sidebar( 'top-nav-search' )) : ?>
 						<div>
 							<?php dynamic_sidebar( 'top-nav-search' ); ?>
@@ -98,4 +102,4 @@
 			</nav>
 		</header>
 		<!-- #masthead -->
-		<div id="content" class="site-content container pb-5">
+	

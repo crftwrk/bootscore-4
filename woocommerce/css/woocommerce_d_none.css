@@ -1,0 +1,24 @@
+a.added_to_cart.wc-forward {
+    display: none;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li:nth-child(1):before {
+    display: none;
+}
+
+ul.tabs.wc-tabs li:after {
+    display: none;
+}
+
+.woocommerce-message::before {
+    display: none;
+}
+
+.woocommerce-info::before {
+    display: none;
+}
+
+span#select2-billing_country-container {
+    display: none;
+}
+

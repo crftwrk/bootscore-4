@@ -5,3 +5,40 @@
 .toggler-icon-animated.open span {
 	background: var(--primary);
 }
+
+::-moz-selection {
+   color:#fff;
+   background:var(--primary);
+}
+
+::selection {
+   color:#fff;
+   background:var(--primary);
+}
+
+
+pre {
+	background: var(--light);
+}
+
+blockquote {
+	background: var(--light);
+}
+
+
+
+q {
+    background-color: var(--light);
+}
+
+
+
+.wp-block-button {
+	color: var(--primary);
+}
+
+.wp-block-button:hover {
+	color: #fff;
+}
+
+

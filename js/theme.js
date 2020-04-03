@@ -16,7 +16,7 @@ jQuery(document).ready(function ($) {
                 if (target.length) {
                     $('html, body').animate({
                         // Change your offset according to your navbar height
-                        scrollTop: target.offset().top - 56
+                        scrollTop: target.offset().top - 55
                     }, 1000);
                     return !1
                 }
@@ -35,13 +35,13 @@ jQuery(document).ready(function ($) {
             e.preventDefault();
             $('html, body').animate({
                 // Change your offset according to your navbar height
-                scrollTop: $($(this).attr('href')).offset().top - 56
+                scrollTop: $($(this).attr('href')).offset().top - 55
             }, 1000, 'swing')
         });
         if (window.location.hash) {
             $('html, body').animate({
                 // Change your offset according to your navbar height
-                scrollTop: $(window.location.hash).offset().top - 56
+                scrollTop: $(window.location.hash).offset().top - 55
             }, 1000, 'swing')
         }
     });
@@ -100,7 +100,7 @@ jQuery(document).ready(function ($) {
 
 
     // Sub Menu Animation
-    /*$('.navbar-nav .dropdown-menu').addClass('invisible'); //FIRST TIME INVISIBLE
+    $('.navbar-nav .dropdown-menu').addClass('invisible'); //FIRST TIME INVISIBLE
 
 	// ADD SLIDEDOWN ANIMATION TO DROPDOWN-MENU 
   	$('.dropdown').on('show.bs.dropdown', function(e){
@@ -111,7 +111,7 @@ jQuery(document).ready(function ($) {
   	// ADD SLIDEUP ANIMATION TO DROPDOWN-MENU 
   	$('.dropdown').on('hide.bs.dropdown', function(e){
     	$(this).find('.dropdown-menu').first().stop(true, true).slideUp();
-  	});*/
+  	});
 
 
 

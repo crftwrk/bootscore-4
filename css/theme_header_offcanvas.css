@@ -14,14 +14,14 @@ body {
 	.offcanvas-collapse {
 		width: 44% !important;
 		right: -16px;
-		border-left: 1px solid rgba(222, 226, 230, 1);
+
 	}
 }
 
 @media (max-width: 991px) {
 	.offcanvas-collapse {
 		position: fixed;
-		top: 57px;
+		top: 56px;
 		/* Height of navbar */
 		padding-top: 0px;
 		bottom: 0;
@@ -29,7 +29,6 @@ body {
 		padding-right: 1rem;
 		padding-left: 1rem;
 		overflow-y: auto;
-		background-color: #f8f9fa;
 		transition: -webkit-transform .3s ease-in-out;
 		transition: transform .3s ease-in-out;
 		transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
@@ -45,12 +44,12 @@ body {
 
 @media (max-width: 782px) {
     .logged-in.admin-bar .offcanvas-collapse {
-        top: 103px;
+        top: 102px;
     }
 }
 
 @media (min-width: 783px) {
     .logged-in.admin-bar .offcanvas-collapse {
-        top: 89px;
+        top: 88px;
     }
 }

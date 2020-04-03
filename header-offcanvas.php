@@ -30,7 +30,7 @@
 	
     	<!-- Preloader -->
     	<div id="preloader" class="bg-light align-items-center justify-content-center position-fixed">
-			<div id="status" class="spinner-grow" role="status">
+			<div id="status" class="spinner-grow text-primary" role="status">
   				<span class="sr-only">Loading...</span>
 			</div>
     	</div>
@@ -42,7 +42,7 @@
 			
 			<div id="to-top"></div>
 			
-			<nav id="nav-main" class="navbar navbar-expand-lg navbar-light bg-light fixed-top border-bottom">
+			<nav id="nav-main" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 				
 				<div class="container">
 					
@@ -60,8 +60,8 @@
 					
 					<!-- Mobile Search Module -->
 					<div class="top-nav-search-mobile justify-content-end pr-3 d-lg-none">
-						<a class="btn btn-secondary btn-sm" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-search"></i></a>
-						<div class="dropdown-menu bg-light border-top-0 border-left-0 border-right-0 border-bottom-1 rounded-0" aria-labelledby="dropdownMenuLink">
+						<a class="btn btn-outline-secondary btn-sm" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-search"></i></a>
+						<div class="dropdown-menu bg-light border-top-0 border-left-0 border-right-0 border-bottom-0 rounded-0" aria-labelledby="dropdownMenuLink">
 							<div class="container">
 								<?php if ( is_active_sidebar( 'top-nav-search' )) : ?>
 								<div>
@@ -83,7 +83,7 @@
                	'theme_location'    => 'primary',
                	'depth'             => 2,
                	'container'         => 'div',
-               	'container_class'   => 'navbar-collapse offcanvas-collapse justify-content-end',
+               	'container_class'   => 'navbar-collapse offcanvas-collapse justify-content-end bg-light',
                	'container_id'      => 'bootscore-navbar-collapse',
                	'menu_class'        => 'nav navbar-nav',
                	'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
@@ -92,7 +92,7 @@
                ?>   
 										
 					<!-- Large Top Module -->
-					<div class="top-module-1 d-none d-lg-block">
+					<div class="top-module-1 d-none d-lg-block ml-3">
 						<?php if ( is_active_sidebar( 'top-nav-module' )) : ?>
 						<div>
 							<?php dynamic_sidebar( 'top-nav-module' ); ?>
@@ -101,7 +101,7 @@
 					</div>
 					
 					<!-- Large Top Search Module -->
-					<div class="top-nav-search d-none d-lg-block">
+					<div class="top-nav-search d-none d-lg-block ml-3">
 						<?php if ( is_active_sidebar( 'top-nav-search' )) : ?>
 						<div>
 							<?php dynamic_sidebar( 'top-nav-search' ); ?>
@@ -109,11 +109,10 @@
 						<?php endif; ?>
 					</div>
 					
-				</div>
-				<!-- container -->
+				</div><!-- container -->
+				
 			</nav>
 			
-		</header>
-		<!-- #masthead -->
+		</header><!-- #masthead -->
 		
-		<div id="content" class="site-content container pb-5">
+		

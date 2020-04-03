@@ -31,6 +31,7 @@ function bootscore() {
 
 
 
+
 //Scripts and Styles
 function wc_scripts() {
 
@@ -128,36 +129,11 @@ if ( ! function_exists( 'understrap_woocommerce_support' ) ) {
 }*/
 
 
-/**
- * First unhook the WooCommerce wrappers
- */
-//remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10 );
-//remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10 );
 
-/**
- * Then hook in your own functions to display the wrappers your theme requires
- */
-/*add_action( 'woocommerce_before_main_content', 'understrap_woocommerce_wrapper_start', 10 );
-add_action( 'woocommerce_after_main_content', 'understrap_woocommerce_wrapper_end', 10 );
-if ( ! function_exists( 'understrap_woocommerce_wrapper_start' ) ) {
-	function understrap_woocommerce_wrapper_start() {
-		$container = get_theme_mod( 'understrap_container_type' );
-		echo '<div class="col" id="woocommerce-wrapper">';
-		echo '<div class="' . esc_attr( $container ) . '" id="content" tabindex="-1">';
-		echo '<div class="row">';
-		get_template_part( 'global-templates/left-sidebar-check' );
-		echo '<main class="site-main" id="main">';
-	}
-}
-if ( ! function_exists( 'understrap_woocommerce_wrapper_end' ) ) {
-	function understrap_woocommerce_wrapper_end() {
-		echo '</main><!-- #main -->';
-		get_template_part( 'global-templates/right-sidebar-check' );
-		echo '</div><!-- .row -->';
-		echo '</div><!-- Container end -->';
-		echo '</div><!-- Wrapper end -->';
-	}
-}*/
+
+
+
+
 
 
 /**
@@ -345,6 +321,32 @@ add_filter( 'woocommerce_ship_to_different_address_checked', '__return_false' );
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Remove CSS and/or JS for Select2 used by WooCommerce, see https://gist.github.com/Willem-Siebe/c6d798ccba249d5bf080.
+add_action( 'wp_enqueue_scripts', 'wsis_dequeue_stylesandscripts_select2', 100 );
+
+function wsis_dequeue_stylesandscripts_select2() {
+    if ( class_exists( 'woocommerce' ) ) {
+        wp_dequeue_style( 'selectWoo' );
+        wp_deregister_style( 'selectWoo' );
+
+        wp_dequeue_script( 'selectWoo');
+        wp_deregister_script('selectWoo');
+    } 
+} 
+// Remove CSS and/or JS for Select2 END
 
 
 

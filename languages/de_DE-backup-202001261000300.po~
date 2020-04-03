@@ -4,11 +4,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: _s 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2020-01-16 15:34+0000\n"
+"POT-Creation-Date: 2020-01-16 16:03+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2020-01-16 16:03+0000\n"
+"PO-Revision-Date: 2020-01-16 16:06+0000\n"
 "Last-Translator: craftwerk <pst@crftwrk.de>\n"
 "Language-Team: Deutsch\n"
 "X-Generator: Loco https://localise.biz/\n"
@@ -37,6 +37,30 @@ msgstr "Suchergebnisse für: %s"
 #: header-blog-logo-center.php:89 header-blog-logo-left.php:92
 msgid "Menu"
 msgstr "Menü"
+
+#: header.php:79
+msgid "Close menu"
+msgstr "Menü schliessen"
+
+#: header.php:185
+msgid "Continue shopping"
+msgstr "Weiter einkaufen"
+
+#: header.php:192
+msgid "Cart"
+msgstr "Warenkorb"
+
+#: header.php:235
+msgid "To find out your shipping cost , Please proceed to checkout."
+msgstr "Um Deine Versandkosten zu berechnen, gehe bitte zur Kasse."
+
+#: header.php:236
+msgid "Edit cart"
+msgstr "Warenkorb bearbeiten"
+
+#: header.php:237
+msgid "Proceed to checkout"
+msgstr "Zur Kasse"
 
 #. Name of the template
 msgid "No Sidebar"
@@ -319,7 +343,7 @@ msgstr ""
 msgid "All"
 msgstr "Alle"
 
-#: woocommerce/loop/orderby.php:27
+#: woocommerce/loop/orderby.php:27 woocommerce-01/loop/orderby.php:27
 msgid "Shop order"
 msgstr ""
 

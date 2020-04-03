@@ -11,7 +11,7 @@
 
 ?>
 
-	</div><!-- #content -->
+	
 
 <footer>
 
@@ -79,16 +79,16 @@
             
         </div>
     </div>
-    <div class="bootscore-info bg-light text-secondary border-top border-white pt-2 pb-2 text-center">
+    <div class="bootscore-info bg-light text-secondary border-top py-2 text-center">
         <div class="container">
-            <small>&copy;<?php echo Date('Y'); ?> - <?php bloginfo('name'); ?></small>    
+            <small>&copy;&nbsp;<?php echo Date('Y'); ?> - <?php bloginfo('name'); ?></small>    
         </div>
     </div>
 
 </footer>
 
     <!-- Cookie Consent -->
-    <div id="gdpr-box" class="cookies-accept bg-light text-center border-top pt-3 pb-3">
+    <div id="gdpr-box" class="cookies-accept bg-light text-center py-3">
 		<div class="container">
 			<?php esc_html_e('Cookies help us deliver our services. By using our services, you agree to our use of cookies.', 'bootscore'); ?>&nbsp;<a href="<?php bloginfo('site_url'); ?><?php esc_html_e('/privacy', 'bootscore'); ?>" class="privacylink"><?php esc_html_e('More Information', 'bootscore'); ?></a>&nbsp;&nbsp;&nbsp;<button class="gdpr-button-accept btn btn-primary btn-sm"><?php esc_html_e('Accept', 'bootscore'); ?></button>		
 		</div>

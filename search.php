@@ -9,25 +9,26 @@
 	
 	get_header();
 	?>
-<section id="primary" class="content-area">
-	<main id="main" class="site-main">
-		<div class="row">
-			<div class="col">
-				<?php if ( have_posts() ) : ?>
-				<header class="page-header">
-					<div class="card mb-4 bg-light border-0">
-						<div class="card-body pb-1">
-							<h1 class="card-title">
-								<?php
+<div id="content" class="site-content container py-5 mt-5">
+    <div id="primary" class="content-area">
+
+        <div class="row">
+            <div class="col">
+
+                <main id="main" class="site-main">
+
+                    <?php if ( have_posts() ) : ?>
+
+                    <header class="page-header mb-4">
+                        <h1>
+                            <?php
 									/* translators: %s: search query. */
 									printf( esc_html__( 'Search Results for: %s', 'bootscore' ), '<span class="text-secondary">' . get_search_query() . '</span>' );
 									?>
-							</h1>
-						</div>
-					</div>
-				</header>
-				<!-- .page-header -->
-				<?php
+                        </h1>
+                    </header>
+
+                    <?php
 					/* Start the Loop */
 					while ( have_posts() ) :
 						the_post();
@@ -49,14 +50,14 @@
 					
 					endif;
 					?>
-			</div>
-			<!-- col -->
-			<?php get_sidebar(); ?>
-		</div>
-		<!-- row -->
-	</main>
-	<!-- #main -->
-</section>
-<!-- #primary -->
+
+                </main><!-- #main -->
+
+            </div><!-- col -->
+            <?php get_sidebar(); ?>
+        </div><!-- row -->
+
+    </div><!-- #primary -->
+</div><!-- #content -->
 <?php
 get_footer();

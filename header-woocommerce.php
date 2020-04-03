@@ -56,7 +56,7 @@
                     <!-- Mobile Search Module -->
                     <div class="top-nav-search-mobile ml-2 d-lg-none">
                         <a class="btn btn-outline-secondary" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-search"></i></a>
-                        <div class="dropdown-menu bg-light border-top-0 border-left-0 border-right-0 border-bottom-1 rounded-0" aria-labelledby="dropdownMenuLink">
+                        <div class="dropdown-menu bg-light border-top-0 border-left-0 border-right-0 border-bottom-0 rounded-0" aria-labelledby="dropdownMenuLink">
                             <div class="container">
                                 <?php if ( is_active_sidebar( 'top-nav-search' )) : ?>
                                 <div>
@@ -68,8 +68,8 @@
                     </div>
 
                     <!-- SVG Logo -->
-                    <a class="navbar-brand d-md-none" href="<?php echo esc_url( home_url() ); ?>"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/logo/logo-sm.svg" alt="logo" class="logo"></a>
-                    <a class="navbar-brand d-none d-md-block" href="<?php echo esc_url( home_url() ); ?>"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/logo/logo.svg" alt="logo" class="logo"></a>
+                    <a class="woocommerce navbar-brand d-md-none" href="<?php echo esc_url( home_url() ); ?>"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/logo/logo-sm.svg" alt="logo" class="logo"></a>
+                    <a class="woocommerce navbar-brand d-none d-md-block" href="<?php echo esc_url( home_url() ); ?>"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/logo/logo.svg" alt="logo" class="logo"></a>
 
 
                     <div class="navbar-collapse offcanvas-collapse-left" id="navbar">
@@ -102,7 +102,7 @@
 
 
                     <!-- Mobile Top Module -->
-                    <div class="top-module-1 flex-fill justify-content-end d-flex pr-3 d-lg-none">
+                    <div class="top-module-1 flex-fill justify-content-end d-flex mr-2 d-lg-none">
                         <?php if ( is_active_sidebar( 'top-nav-module' )) : ?>
                         <div>
                             <?php dynamic_sidebar( 'top-nav-module' ); ?>
@@ -138,7 +138,7 @@
 
 
                     <!-- Large Top Module -->
-                    <div class="top-module-1 d-none d-lg-block">
+                    <div class="top-module-1 d-none d-lg-block ml-3">
                         <?php if ( is_active_sidebar( 'top-nav-module' )) : ?>
                         <div>
                             <?php dynamic_sidebar( 'top-nav-module' ); ?>
@@ -147,7 +147,7 @@
                     </div>
 
                     <!-- Large Top Search Module -->
-                    <div class="top-nav-search d-none d-lg-block">
+                    <div class="top-nav-search d-none d-lg-block ml-2">
                         <?php if ( is_active_sidebar( 'top-nav-search' )) : ?>
                         <div>
                             <?php dynamic_sidebar( 'top-nav-search' ); ?>
@@ -230,8 +230,9 @@
                                     //echo '<div class="">Zwischensumme: ';
                                     echo '<span id="mcart-stotal">'.WC()->cart->get_cart_subtotal().'</span>';     
                                     ?> 
+                                    
                                 </div>
-
+                                    
                                 <p class="text-secondary"><?php esc_html_e('To find out your shipping cost , Please proceed to checkout.' , 'bootscore'); ?></p>
                                 <a href="<?php echo get_permalink( wc_get_page_id( 'cart' ) ); ?>" class="btn btn-outline-primary btn-block"><?php esc_html_e('Edit cart' , 'bootscore'); ?></a>
                                 <a href="<?php echo get_permalink( wc_get_page_id( 'checkout' ) ); ?>" class="btn btn-primary btn-block"><?php esc_html_e('Proceed to checkout' , 'bootscore'); ?></a>
@@ -247,4 +248,4 @@
         </header>
         <!-- #masthead -->
 
-        <div id="content" class="site-content container pb-5">
+        

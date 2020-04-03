@@ -6,7 +6,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 Requires at least: 4.5
 Tested up to: 5.3.2
 Requires PHP: 5.6
-Stable tag: 3.0.0
+Stable tag: 3.0.1
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -40,17 +40,23 @@ Bootscore includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
+    = 3.0.1 - January 30 2020 =
+    
+        * Moved container from header.php to page-, single-, category-, author- and archive.php
+        * WooCommerce Germanized support
+        * Insert alert in 404.php and search content-none.php
+        * Lighten up the design
+        * Bootstrap styles to Contactform 7 Alerts
+        * Deleted all category- and author.php. Use archive.php instead
+        * Deleted header-blog-logo-center.php, header-blog-logo-left.php and header-fluid.php
+        * cleaned up the functions.php
+        * Bug fixes
+
     = 3.0.0 - January 21 2020 =
     
         * WooCommerce Support, please read documentation how to use it https://bootscore.me/category/documentation/
         * Added theme_colors.css with bootstrap variables
-        * Updated .pot file German Sie
-        * Moved container from header.php to page-, single-, category-, author- and archive.php
-        * Insert alert in 404.php and search content-none.php
-        * Lighten up the design
-        * Bootstrap styles to Contactform 7 Alerts
         * Bootstrap custom-checkbox in comment cookie
-        * Bug fixes
 
 	= 2.0.6 - November 21 2019 =
     

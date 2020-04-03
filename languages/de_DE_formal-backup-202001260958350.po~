@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2020-01-16 18:31+0000\n"
+"PO-Revision-Date: 2020-01-25 16:51+0000\n"
 "Last-Translator: craftwerk <pst@crftwrk.de>\n"
 "Language-Team: Deutsch (Sie)\n"
 "X-Generator: Loco https://localise.biz/\n"
@@ -69,7 +69,7 @@ msgstr "Ohne Sidebar"
 #: single-sidebar-none.php:38 single-full-width-image.php:43 single.php:37
 #: single-sidebar-left.php:40
 msgid " by "
-msgstr "von"
+msgstr " von "
 
 #. Name of the template
 msgid "Full width image"
@@ -337,6 +337,8 @@ msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
+"Anscheinend können wir nicht finden, wonach Sie suchen. Suchen Sie bitte mit "
+"anderen Schlagwörtern."
 
 #: languages/translations-isopost.php:1
 msgid "All"

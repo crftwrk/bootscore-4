@@ -1,15 +1,7 @@
-
+/* Theme Header */
+@import url("css/theme_header_woocommerce.css");
 
 /* Woocommerce CSS */
 @import url("css/woocommerce.css");
 @import url("css/woocommerce_colors.css");
-
-
-
-/* Theme Header */
-@import url("css/theme_header_woocommerce.css");
-
-
-
-
-	
+@import url("css/woocommerce_d_none.css");

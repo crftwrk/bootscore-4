@@ -14,8 +14,11 @@
     
     get_header();
     ?>
+
+<div id="content" class="site-content container py-5 mt-4">
 <div id="primary" class="content-area">
     <main id="main" class="site-main">
+        
         <!-- Breadcrumb -->
         <?php woocommerce_breadcrumb(); ?>
         <div class="row">
@@ -26,9 +29,8 @@
             <?php get_sidebar(); ?>
             <!-- row -->
         </div>
-        <!-- #main -->
-    </main>
-    <!-- #primary -->
-</div>
+    </main><!-- #main -->
+</div><!-- #primary -->
+    </div><!-- #content -->
 <?php
 get_footer();

@@ -4,17 +4,22 @@
 	 */
 	  
 	 get_header();  ?>
-<div id="primary" class="content-area">
-	<main id="main" class="site-main">
-		<!-- Breadcrumb -->
-		<?php the_breadcrumb(); ?>
-		<div class="row">
-			<div class="col">
-				<header class="entry-header">
-					<?php the_post(); ?>
-					<!-- Category Badge -->
-					<div class="mb-2">
-					<?php
+<div id="content" class="site-content container py-5 mt-4">
+    <div id="primary" class="content-area">
+
+        <?php the_breadcrumb(); ?>
+
+        <div class="row">
+            <div class="col">
+
+                <main id="main" class="site-main">
+
+                    <header class="entry-header">
+                        <?php the_post(); ?>
+                        
+                        <!-- Category Badge -->
+                        <div class="mb-2">
+                            <?php
 						$thelist = '';
 						$i = 0;
 						foreach( get_the_category() as $category ) {
@@ -24,60 +29,55 @@
 						}
 						echo $thelist;
 						?>
-						</div>
-					<!-- Category link -->
-					<!--<?php the_category(', ') ?><?php the_terms( $post->ID, 'isopost_categories', ' ', ' / ' ); ?>-->
-					<!-- Title -->
-					<?php the_title('<h1>', '</h1>'); ?>
-					<!-- Meta -->
-					<p class="entry-meta">
-						<small class="text-secondary">
-						<?php
+                        </div>
+                        
+                        <?php the_title('<h1>', '</h1>'); ?>
+                        <p class="entry-meta">
+                            <small class="text-secondary">
+                                <?php
 							bootscore_date();
 							_e(' by ', 'bootscore'); the_author_posts_link();
 							bootscore_comment_count();
 							bootscore_edit();							
 							 ?>
-						</small>
-						<!-- .entry-meta -->
-					</p>
-					<!-- Featured Image-->
-					<?php bootscore_post_thumbnail(); ?>
-					<!-- .entry-header -->
-				</header>
-				<div class="entry-content">
-					<!-- Content -->
-					<?php the_content(); ?>
-					<!-- .entry-content -->
-				</div>
-				<footer class="entry-footer">
-					<!-- Tags & Edit Link -->
-					<p>
-						<?php bootscore_tags(); ?>
-					</p>
-					<!-- Pagination -->
-					<nav aria-label="Page navigation example">
-						<ul class="pagination justify-content-center">
-							<li class="page-item">
-								<?php previous_post_link('%link'); ?>
-							</li>
-							<li class="page-item">
-								<?php next_post_link('%link'); ?>
-							</li>
-						</ul>
-					</nav>
-					<!-- .entry-footer -->
-				</footer>
-				<!-- Comments -->
-				<?php comments_template(); ?>
-				<!-- col -->
-			</div>
-			<!-- Sidebar -->
-			<?php get_sidebar(); ?>
-			<!-- row -->
-		</div>
-		<!-- #main -->
-	</main>
-	<!-- #primary -->	
-</div>
+                            </small>
+                            
+                        </p>
+                        <?php bootscore_post_thumbnail(); ?>
+                    </header>
+                    
+                    <div class="entry-content">
+                        <?php the_content(); ?>
+                    </div>
+
+                    <footer class="entry-footer">
+                        
+                        <p>
+                            <?php bootscore_tags(); ?>
+                        </p>
+                        
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item">
+                                    <?php previous_post_link('%link'); ?>
+                                </li>
+                                <li class="page-item">
+                                    <?php next_post_link('%link'); ?>
+                                </li>
+                            </ul>
+                        </nav>
+                        
+                    </footer>
+                    
+                    <?php comments_template(); ?>
+
+                </main> <!-- #main -->
+
+            </div><!-- col -->
+            <?php get_sidebar(); ?>
+        </div><!-- row -->
+
+    </div><!-- #primary -->
+</div><!-- #content -->
+
 <?php get_footer(); ?>

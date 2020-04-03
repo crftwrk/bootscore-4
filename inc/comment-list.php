@@ -40,7 +40,7 @@ if ( ! function_exists( 'bootscore_comment' ) ) :
                     <?php if ( 0 != $args['avatar_size'] ) echo get_avatar( $comment, $args['avatar_size'] ); ?>
                 </a>
 
-                <div class="media-body p-3 rounded bg-light">
+                <div class="media-body p-3 rounded border">
                     <div class="media-body-wrap">
 
 

@@ -9,11 +9,11 @@
 	
 	?>
 <section class="no-results not-found">
-	<div class="card mb-4 bg-light border-0">
-		<div class="card-body">
-			<header class="page-header">
+
+			<header class="page-header mb-4">
 				<h1 class="page-title"><?php esc_html_e( 'Nothing Found for', 'bootscore' ); ?> <span class="text-secondary"><?php echo $s ?></span></h1>
 			</header>
+    
 			<!-- .page-header -->
 			<div class="page-content">
 				<?php
@@ -34,7 +34,7 @@
 					
 					elseif ( is_search() ) :
 						?>
-				<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'bootscore' ); ?></p>
+				<p class="alert alert-primary mb-4"><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'bootscore' ); ?></p>
 				<?php
 					get_search_form();
 					
@@ -46,9 +46,6 @@
 					
 					endif;
 					?>
-			</div>
-		</div>
-	</div>
-	<!-- .page-content -->
+			</div><!-- .page-content -->
+    
 </section>
-<!-- .no-results -->

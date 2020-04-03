@@ -94,7 +94,7 @@ body {
 }
 
 .navbar-toggler {
-    z-index: 0;
+    z-index: 0 !important;
 }
 
 
@@ -175,7 +175,7 @@ body {
 
 
 @media (max-width: 991px) {
-    .navbar-brand {
+    .woocommerce.navbar-brand {
         position: absolute;
         left: 50%;
         transform: translate(-50%, 0);
@@ -189,8 +189,8 @@ body {
 
 .opac {
     background-color: rgba(0, 0, 0, .6);
-    backdrop-filter: grayscale(100%) blur(5px);
-    -webkit-backdrop-filter: grayscale(100%) blur(5px);
+    backdrop-filter: grayscale(100%) blur(7px);
+    -webkit-backdrop-filter: grayscale(100%) blur(7px);
     position: fixed;
     top: 0;
     left: 0;

@@ -18,6 +18,13 @@
 add_filter('show_admin_bar', 'hide_admin_bar_from_front_end');*/
 // Hide Admin Bar in Frontend End
 
+
+// WooCommerce
+//require get_template_directory() . '/woocommerce/woocommerce-functions.php';
+// WooCommerce End
+
+
+
  
 // Register Nav Walker class_alias
 require_once('inc/class-wp-bootstrap-navwalker.php');
@@ -112,7 +119,7 @@ function bootscore_widgets_init() {
 		'name'          => esc_html__( 'Sidebar', 'bootscore' ),
 		'id'            => 'sidebar-1',
 		'description'   => esc_html__( 'Add widgets here.', 'bootscore' ),
-		'before_widget' => '<section id="%1$s" class="widget %2$s card card-body mb-4 border-0 bg-light">',
+		'before_widget' => '<section id="%1$s" class="widget %2$s card card-body mb-4 bg-light border-0">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title card-title border-bottom py-2">',
 		'after_title'   => '</h2>',
@@ -123,7 +130,7 @@ function bootscore_widgets_init() {
         'name' => esc_html__('Top Nav Search', 'bootscore' ),
         'id' => 'top-nav-search',
         'description' => esc_html__('Add widgets here.', 'bootscore' ),
-        'before_widget' => '<div class="top-nav-search pl-lg-3">',
+        'before_widget' => '<div class="top-nav-search">',
         'after_widget' => '</div>',
         'before_title' => '<h2 class="card-header widget-title">',
         'after_title' => '</h2>'
@@ -135,7 +142,7 @@ function bootscore_widgets_init() {
         'name' => esc_html__('Top Nav Module', 'bootscore' ),
         'id' => 'top-nav-module',
         'description' => esc_html__('Add widgets here.', 'bootscore' ),
-        'before_widget' => '<div class="top-nav-module pl-3">',
+        'before_widget' => '<div class="top-nav-module">',
         'after_widget' => '</div>',
         'before_title' => '<h2 class="card-header widget-title">',
         'after_title' => '</h2>'
@@ -253,10 +260,7 @@ require get_template_directory() . '/inc/template-tags.php';
  */
 require get_template_directory() . '/inc/template-functions.php';
 
-/**
- * Functions which enhance the theme by hooking into woocommerce.
- */
-//require get_template_directory() . '/woocommerce/woocommerce-functions.php';
+
 
 /**
  * Load Jetpack compatibility file.
@@ -350,8 +354,6 @@ remove_filter('the_excerpt', 'wpautop');
 
 // Breadcrumb
 function the_breadcrumb() {
-
-	// Code
 	if(!is_home()) {
 		echo '<nav class="breadcrumb mb-4">';
 		echo '<a href="'.home_url('/').'">'.('<i class="fas fa-home"></i>').'</a><span class="divider">&nbsp;/&nbsp;</span>';
@@ -396,12 +398,7 @@ add_filter("the_password_form","bootscore_pw_form");
 
 
 
-// Bootstrap Contactform 7 Checkboxes and Buttons
-add_filter('wpcf7_form_elements', function ($content) {
-    $content = preg_replace('/<label><input type="(checkbox|radio)" name="(.*?)" value="(.*?)" \/><span class="wpcf7-list-item-label">/i', '<label class="custom-control custom-\1"><input type="\1" name="\2" value="\3" class="custom-control-input"><span class="wpcf7-list-item-label custom-control-label">', $content);
-    return $content;
-});
-// Bootstrap Contactform 7 Checkboxes and Buttons End
+
 
 
 
