@@ -92,25 +92,25 @@ jQuery(document).ready(function ($) {
     // CSS Toggler
     $('.navbar-toggler').on('click', function () {
         $('.toggler-icon-animated').toggleClass('open')
-            //$('.opac').toggleClass('visible')
+        //$('.opac').toggleClass('visible')
     });
 
     // Close Search collapse on click / touch outside
     $('.site-content').on('click touchstart', function () {
         $(".top-nav-search-mobile .dropdown-menu.show").removeClass('show')
     });
-    
+
     // Overlay
     $('.opac').on('click touchstart', function () {
         $('.opac').removeClass('visible')
     });
-    
+
     $('.toggler-icon-animated').on('click', function () {
-            $('.opac').toggleClass('visible')
+        $('.opac').toggleClass('visible')
     });
 
 
-    
+
     // Sub Menu Animation
     $('.navbar-nav .dropdown-menu').addClass('invisible'); //FIRST TIME INVISIBLE
 
@@ -147,8 +147,8 @@ jQuery(document).ready(function ($) {
     $('.site-content, .opac').on('click touchstart', function () {
         $('.offcanvas-collapse').removeClass('open')
     });*/
-    
-    
+
+
 
 
 
@@ -309,18 +309,48 @@ jQuery(document).ready(function ($) {
         $('.wpcf7-response-output').addClass('alert alert-warning');
     }, false);
     document.addEventListener('wpcf7mailfailed', function (event) {
-        $('.wpcf7-response-output').addClass('alert alert-warning');
+        $('.wpcf7-response-output, .wpcf7-response-output.wpcf7-display-none.wpcf7-acceptance-missing').addClass('alert alert-warning');
     }, false);
     document.addEventListener('wpcf7mailsent', function (event) {
         $('.wpcf7-response-output').addClass('alert alert-success');
         $('.wpcf7-response-output').removeClass('alert-danger');
     }, false);
+
+    // Acceptance
+
+    if (!$('.wpcf7-response-output.wpcf7-display-none').hasClass('wpcf7-acceptance-missing')) {
+        $('.wpcf7-response-output.wpcf7-display-none').addClass('alert alert-danger')
+    }
     // Contactform 7 End
-    
 
 
-    
-    
-    
+    // Acceptance red Test
+
+    document.addEventListener('wpcf7invalid', function (event) {
+        $('label.custom-control.custom-checkbox').addClass('not-valid');
+    }, false);
+    document.addEventListener('wpcf7mailsent', function (event) {
+        $('label.custom-control.custom-checkbox').removeClass('not-valid checked');
+    }, false);
+
+
+    $('input#2').change(function () {
+        if ($(this).is(":checked")) {
+            $('label.custom-control.custom-checkbox').addClass('checked');
+        } else {
+            $('label.custom-control.custom-checkbox.not-valid').removeClass('checked');
+        }
+    });
+
+
+
+    // Acceptance red Test End
+
+
+
+
+
+
+
 
 }); // jQuery End

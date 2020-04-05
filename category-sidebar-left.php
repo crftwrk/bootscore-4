@@ -1,6 +1,6 @@
 <?php
 	/**
-	 * The template for displaying archive pages
+	 * Category Template: Sidebar Left
 	 *
 	 * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
 	 *
@@ -10,20 +10,22 @@
 	get_header();
 	?>
 
+
 <div id="content" class="site-content container py-5 mt-5">
     <div id="primary" class="content-area">
 
         <div class="row">
-            <div class="col">
+            <?php get_sidebar(); ?>
+            <div class="col order-first order-md-last">
 
                 <main id="main" class="site-main">
 
-                    <!-- Title & Description -->
                     <header class="page-header mb-4">
-                        <h1><?php the_archive_title(); ?></h1>
+                        <h1><?php single_cat_title(); ?></h1>
                         <?php the_archive_description( '<div class="archive-description">', '</div>' ); ?>
                     </header>
 
+                    <!-- .page-header -->
                     <!-- Grid Layout -->
                     <?php if (have_posts() ) : ?>
                     <?php while (have_posts() ) : the_post(); ?>
@@ -77,7 +79,6 @@
                     </div>
                     <?php endwhile; ?>
                     <?php endif; ?>
-
                     <!-- Pagination -->
                     <div>
                         <?php 
@@ -88,15 +89,13 @@
 						?>
                     </div>
 
+
                 </main><!-- #main -->
 
             </div><!-- col -->
-
-            <?php get_sidebar(); ?>
         </div><!-- row -->
 
     </div><!-- #primary -->
 </div><!-- #content -->
-
 <?php
 get_footer();

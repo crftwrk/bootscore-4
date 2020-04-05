@@ -6,48 +6,6 @@ span.wpcf7-not-valid-tip {
     display: none;
 }
 
-/*
-div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
-    border: 0;
-}
-
-*/
-
-
-
-/*
-div.wpcf7 .ajax-loader {
-    background-image: none;
-    width: 16px;
-    height: 16px;
-    border: none;
-    padding: 0;
-    margin: -65px 0 0 10px;
-    vertical-align: middle;
-
-}*/
-
-
-
-/*
-div.wpcf7 .ajax-loader {
-    display: inline-block;
-    background-image: none;
-    width: 1rem;
-    height: 1rem;
-    background-color: #fff;
-    border-radius: 50%;
-    opacity: 0;
-    -webkit-animation: spinner-grow .75s linear infinite;
-    animation: spinner-grow .75s linear infinite;
-    position: absolute;
-    top: 11px;
-    left: 10px;
-}*/
-
-
-
-
 div.wpcf7 .ajax-loader {
     background-image: none;
     width: 0rem;
@@ -63,13 +21,26 @@ div.wpcf7 .ajax-loader.is-active {
     margin: 0 .5rem 0 0;
 }
 
-
-
-
 .screen-reader-response {
     display: none;
 }
 
 
+.wpcf7-display-none {
+    display: none;
+}
 
 
+
+.wpcf7-not-valid {
+    border-color: var(--danger) !important;
+}
+
+label.custom-control.custom-checkbox.not-valid {
+    color: var(--danger);
+}
+
+
+label.custom-control.custom-checkbox.not-valid.checked {
+    color: currentColor;
+}

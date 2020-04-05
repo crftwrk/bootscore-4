@@ -21,10 +21,8 @@
                 <main id="main" class="site-main">
 
                     <header class="page-header mb-4">
-                        <?php
-								the_archive_title( '<h1 class="page-title mb-0">', '</h1>' );
-								the_archive_description( '<div class="archive-description">', '</div>' );
-								?>
+                        <h1><?php the_archive_title(); ?></h1>
+                        <?php the_archive_description( '<div class="archive-description">', '</div>' ); ?>
                     </header>
 
                     <!-- .page-header -->

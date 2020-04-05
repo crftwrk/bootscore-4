@@ -65,7 +65,7 @@
             		<?php
                			wp_nav_menu( array(
                				'theme_location'    => 'secondary',
-               				'depth'             => 2,
+               				'depth'             => 1,
                				'container'         => 'div',
                				'container_class'   => 'footer-menu',
                				'container_id'      => 'footer-menu',
