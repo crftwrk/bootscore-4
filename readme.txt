@@ -1,4 +1,4 @@
-=== Bootscore ===
+=== bootScore ===
 
 Contributors: craftwerk
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
@@ -39,6 +39,14 @@ Bootscore includes support for Infinite Scroll in Jetpack.
 
 
 == Changelog ==
+
+
+    = 3.0.9 - April 07 2020 =
+        
+        * Added spinner loader to offcanvas cart
+        * Hide Offcanvas cart-footer when cart is empty 
+        * Removed Contactform 7 support and made a Plugin of it
+        * Changed spinner-grow to spinner-border (iOS not working)
 
     = 3.0.8 - April 05 2020 =
         

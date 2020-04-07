@@ -289,6 +289,9 @@ label.custom-control-label {
 
 /* Ajax spinner */
 
+
+/* spinner-grow */
+/*
 .woocommerce .blockUI.blockOverlay:before,
 .woocommerce .loader:before {
 
@@ -321,8 +324,52 @@ label.custom-control-label {
     -webkit-animation: spinner-grow .75s linear infinite;
     animation: spinner-grow .75s linear infinite;
 }
+*/
 
 
+/* spinner-border */
+
+
+
+
+.woocommerce .blockUI.blockOverlay:before,
+.woocommerce .loader:before,
+.cart-right .blockUI.blockOverlay:before,
+.cart-right .loader:before {
+
+    height: 3em;
+    width: 3em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -.5em;
+    margin-top: -.5em;
+    display: block;
+    content: "";
+    -webkit-animation: none;
+    -moz-animation: none;
+    animation: none;
+    background: none;
+    background-size: cover;
+    line-height: 1;
+    text-align: center;
+    font-size: 2em;
+
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    vertical-align: text-bottom;
+    border: .13em solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    -webkit-animation: spinner-border .75s linear infinite;
+    animation: spinner-border .75s linear infinite
+}
+
+
+
+
+/* Ajax spinner End */
 
 
 a.remove.remove_from_cart_button {

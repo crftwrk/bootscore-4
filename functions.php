@@ -431,22 +431,6 @@ foreach ( array( 'term_description' ) as $filter ) {
 
 
 
-//Adjust contact form 7 radios and checkboxes to match bootstrap 4 custom radio structure.
-add_filter('wpcf7_form_elements', function ($content) {
-    $content = preg_replace('/<label><input type="(checkbox|radio)" name="(.*?)" value="(.*?)" \/><span class="wpcf7-list-item-label">/i', '<label class="custom-control custom-\1"><input type="\1" name="\2" value="\3" class="custom-control-input"><span class="wpcf7-list-item-label custom-control-label">', $content);
-
-    return $content;
-});
-//Adjust contact form 7 radios and checkboxes to match bootstrap 4 custom radio structure. End
-
-
-
-// Disable Contactform 7 Styles
-add_action( 'wp_print_styles', 'wps_deregister_styles', 100 );
-function wps_deregister_styles() {
-    wp_deregister_style( 'contact-form-7' );
-}
-// Disable Contactform 7 Styles End
 
 
 

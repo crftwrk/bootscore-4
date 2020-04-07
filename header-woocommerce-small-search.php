@@ -30,7 +30,7 @@
 
     <!-- Preloader -->
     <div id="preloader" class="bg-light align-items-center justify-content-center position-fixed">
-        <div id="status" class="spinner-grow text-primary" role="status">
+        <div id="status" class="spinner-border text-primary" role="status">
             <span class="sr-only">Loading...</span>
         </div>
     </div>
@@ -228,8 +228,8 @@
                         </div>
 
 
-                        <div class="cart-footer position-absolute d-block border-top text-center bg-white">
-                            <div class="p-3">
+                        <div class="cart-footer position-absolute border-top text-center bg-white">
+                            <div class="p-3">                                
 
                                 <div class="font-weight-bold lead text-success">
                                     <?php esc_html_e( 'Subtotal', 'woocommerce' ); ?>:

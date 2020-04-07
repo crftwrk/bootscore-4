@@ -97,10 +97,7 @@ del {
     border-bottom: 1px solid rgba(0, 0, 0, .125)
 }
 
-.woocommerce .blockUI.blockOverlay:before,
-.woocommerce .loader:before {
-    color: var(--primary)
-}
+
 
 a.remove.remove_from_cart_button {
     color: var(--danger) !important;
@@ -187,3 +184,25 @@ a.remove.remove_from_cart_button {
     backdrop-filter: grayscale(100%) blur(7px);
     -webkit-backdrop-filter: grayscale(100%) blur(7px);
 }
+
+
+
+
+
+
+.woocommerce .blockUI.blockOverlay,
+.woocommerce .loader,
+.cart-right .blockUI.blockOverlay,
+.cart-right .loader {
+    background-color: #fff !important;
+}
+
+.woocommerce .blockUI.blockOverlay:before,
+.woocommerce .loader:before,
+.cart-right .blockUI.blockOverlay:before,
+.cart-right .loader:before {
+    color: var(--primary);        
+}
+
+
+

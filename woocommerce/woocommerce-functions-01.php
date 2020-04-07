@@ -334,19 +334,3 @@ function add_body_class_for_ajax_add_to_cart() {
     <?php
 }
 // Hide empty Offcanvas cart-footer End
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

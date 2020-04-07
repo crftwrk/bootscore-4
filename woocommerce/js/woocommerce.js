@@ -57,9 +57,23 @@ jQuery(document).ready(function ($) {
     $('#wp-comment-cookies-consent').addClass('custom-control-input');
     $('.comment-form-cookies-consent label').addClass('custom-control-label');
     // Review Checkbox End
-    
+
+
+
+
+
 
 
 
 
 }); // jQuery End
+
+
+
+
+
+
+
+
+
+
