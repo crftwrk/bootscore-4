@@ -187,7 +187,11 @@
                             </div>
                         </a>
 
-
+                        <div class="cart-loader bg-white position-absolute d-flex align-items-center justify-content-center">
+                            <div class="loader-icon ">
+                                <div class="spinner-border text-primary"></div>
+                            </div>
+                        </div>
 
                         <div class="cart-list h-100">
 
@@ -199,11 +203,6 @@
 
                             <!--Cart Offcanvas -->
                             <?php
-                            // echo '<ul>'; // (Used for testing)
-                                //echo '<li><a class="parents mini-cart-count" href="'.wc_get_cart_url().'"><i class="fa fa-shopping-cart"></i> Cart - ';
-                                ## Ajax refresh: Cart subtotal near the cart icon
-                                //echo '<span id="mcart-stotal">'.WC()->cart->get_cart_subtotal().'</span>';
-                                //echo '</a>';
                                 echo '<div class="mega_menu cart">';
                                 echo '<div class="mega_sub">';
                                 echo '<span id="mcart-widget">';
@@ -211,8 +210,6 @@
                                 woocommerce_mini_cart();
                                 echo '</span>';
                                 echo '</div></div>';
-                            
-                                // echo '</li></ul>'; // (Used for testing)
                             ?>
                             <!-- Cart Offcanvas End -->
 

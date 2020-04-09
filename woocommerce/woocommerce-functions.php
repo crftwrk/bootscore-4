@@ -6,16 +6,12 @@
  */
 
 
-
-
 // Woocommerce Templates
 function mytheme_add_woocommerce_support() {
 add_theme_support( 'woocommerce' );
 }
 add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
 // Woocommerce Templates END
-
-
 
 
 // Woocommerce Lightbox
@@ -27,9 +23,6 @@ function bootscore() {
     add_theme_support( 'wc-product-gallery-slider' );
 }
 // Woocommerce Lightbox
-
-
-
 
 
 //Scripts and Styles
@@ -53,13 +46,6 @@ add_action( 'wp_enqueue_scripts', 'wc_scripts' );
 //Scripts and styles End
 
 
-
-// Disable all WooCommerce Styles
-//add_filter( 'woocommerce_enqueue_styles', '__return_false' );
-// Disable all WooCommerce Styles End
-
-
-
 // Minicart Header
 function my_header_add_to_cart_fragment( $fragments ) {
  
@@ -81,7 +67,6 @@ add_filter( 'woocommerce_add_to_cart_fragments', 'my_header_add_to_cart_fragment
 // Minicrt Header END
 
 
-
 // Minicrt Offcanvas
 add_filter( 'woocommerce_add_to_cart_fragments', 'wc_mini_cart_ajax_refresh' );
 function wc_mini_cart_ajax_refresh( $fragments ){
@@ -98,11 +83,6 @@ function wc_mini_cart_ajax_refresh( $fragments ){
     return $fragments;
 }
 // Minicrt Offcanvas END
-
-
-
-
-
 
 
 // Forms
@@ -214,11 +194,6 @@ if ( ! is_admin() && ! function_exists( 'wc_review_ratings_enabled' ) ) {
 // Forms end
 
 
-
-
-
-
-
 // WooCommerce Breadcrumb
 add_filter( 'woocommerce_breadcrumb_defaults', 'jk_woocommerce_breadcrumbs' );
 function jk_woocommerce_breadcrumbs() {
@@ -231,9 +206,7 @@ function jk_woocommerce_breadcrumbs() {
             'home'        => _x( 'Home', 'breadcrumb', 'woocommerce' ),
         );
 }
-
-
-
+// WooCommerce Breadcrumb End
 
 
 // Optional Telephone
@@ -248,9 +221,6 @@ endif;
 // Optional Telephone End
 
 
-
-
-
 // Bootstrap Billing forms
 function iap_wc_bootstrap_form_field_args ($args, $key, $value) { 
   
@@ -261,24 +231,14 @@ add_filter('woocommerce_form_field_args','iap_wc_bootstrap_form_field_args', 10,
 // Bootstrap Billing forms End
 
 
-
-
-
 // Ship to a different address closed by default
 add_filter( 'woocommerce_ship_to_different_address_checked', '__return_false' );
 // Ship to a different address closed by default End
 
 
-
-
-
-
-
 // Remove cross-sells at cart
 remove_action( 'woocommerce_cart_collaterals', 'woocommerce_cross_sell_display' );
 // Remove cross-sells at cart End
-
-
 
 
 // Remove CSS and/or JS for Select2 used by WooCommerce, see https://gist.github.com/Willem-Siebe/c6d798ccba249d5bf080.
@@ -294,20 +254,6 @@ function wsis_dequeue_stylesandscripts_select2() {
     } 
 } 
 // Remove CSS and/or JS for Select2 END
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // Hide empty Offcanvas cart-footer
@@ -334,19 +280,3 @@ function add_body_class_for_ajax_add_to_cart() {
     <?php
 }
 // Hide empty Offcanvas cart-footer End
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

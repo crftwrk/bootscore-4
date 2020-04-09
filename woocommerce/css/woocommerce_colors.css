@@ -117,10 +117,7 @@ a.remove.remove_from_cart_button:hover {
     color: var(--primary)
 }
 
-button.single_add_to_cart_button.btn.btn-primary.disabled.wc-variation-selection-needed {
-    background-color: rgba(0, 0, 0, 0);
-    color: var(--primary)
-}
+
 
 .woocommerce-checkout .shop_table {
     background-color: rgba(255, 255, 255, 0) !important
@@ -195,6 +192,7 @@ a.remove.remove_from_cart_button {
 .cart-right .blockUI.blockOverlay,
 .cart-right .loader {
     background-color: #fff !important;
+    opacity: 1 !important;
 }
 
 .woocommerce .blockUI.blockOverlay:before,

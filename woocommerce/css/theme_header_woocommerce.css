@@ -1,191 +1,130 @@
-/*html,
-body {
-    overflow-x: hidden;
-}*/
-
-
-
-
-/*
-@media (min-width:576px) and (max-width:1023px) {
-    .navbar > .container {
-        padding-right: 16px !important;
-        padding-left: 16px !important
-    }
-}
-*/
-
-
-
-
-@media (max-width: 991px) {
+@media (max-width:991px) {
     .offcanvas-collapse-left {
         position: fixed;
         top: 0;
-        /* Height of navbar */
         bottom: 0;
-        /*width: 350px;*/
-        /*padding-right: 1rem;
-        padding-left: 1rem;*/
-        /*overflow-y: auto;*/
         background-color: #fff;
         transition: -webkit-transform .3s ease-in-out;
         transition: transform .3s ease-in-out;
         transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
-        /*-webkit-transform: translateX(-366px);
-        transform: translateX(-366px);*/
         left: 16px;
-        z-index: 9;
+        z-index: 9
     }
 
     .offcanvas-collapse-left.open {
         -webkit-transform: translateX(-1rem);
-        transform: translateX(-1rem);
-        /* Account for horizontal padding on navbar */
+        transform: translateX(-1rem)
     }
 
     .vert-menu {
-        overflow-y: auto;
+        overflow-y: auto
     }
-
-
 }
 
-
-@media (max-width: 782px) {
+@media (max-width:782px) {
     .logged-in.admin-bar .offcanvas-collapse-left {
-        top: 46px;
+        top: 46px
     }
 }
 
-@media (min-width: 783px) {
+@media (min-width:783px) {
     .logged-in.admin-bar .offcanvas-collapse-left {
-        top: 32px;
+        top: 32px
     }
 }
 
-
-
-@media (max-width: 415px) {
+@media (max-width:415px) {
     .offcanvas-collapse-left {
         width: 100%;
         -webkit-transform: translateX(-107%);
-        transform: translateX(-107%);
+        transform: translateX(-107%)
     }
 }
 
-
-@media (min-width: 416px) and (max-width: 991px) {
+@media (min-width:416px) and (max-width:991px) {
     .offcanvas-collapse-left {
         width: 350px;
         -webkit-transform: translateX(-366px);
-        transform: translateX(-366px);
+        transform: translateX(-366px)
     }
 }
 
 .bootscore-cart {
-    cursor: pointer;
+    cursor: pointer
 }
-
 
 .input-group-append .btn,
 .input-group-prepend .btn {
-    z-index: 0 !important;
+    z-index: 0 !important
 }
 
 .navbar-toggler {
-    z-index: 0 !important;
+    z-index: 0 !important
 }
 
-
-
-@media (max-width: 782px) {
+@media (max-width:782px) {
     .logged-in.admin-bar .cart-right {
-        top: 46px;
+        top: 46px
     }
 }
 
-@media (min-width: 783px) {
+@media (min-width:783px) {
     .logged-in.admin-bar .cart-right {
-        top: 32px;
+        top: 32px
     }
 }
-
 
 .cart-right {
     position: fixed;
     top: 0;
-    /* Height of navbar */
     bottom: 0;
-    /*width: 350px;*/
-    /*padding-right: 1rem;
-    padding-left: 1rem;*/
-    /*overflow-y: auto;*/
     background-color: #fff;
     transition: -webkit-transform .3s ease-in-out;
     transition: transform .3s ease-in-out;
     transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
-    /*-webkit-transform: translateX(366px);
-    transform: translateX(366px);*/
     right: -16px;
     padding-bottom: 267px;
-    z-index: 2;
-    /*transition-delay: .2s;*/
+    z-index: 2
 }
-
 
 .cart-list {
     overflow-y: auto;
     position: relative;
-    overflow-x: hidden;
+    overflow-x: hidden
 }
 
 .cart-right.open {
     -webkit-transform: translateX(-1rem);
-    transform: translateX(-1rem);
-    /* Account for horizontal padding on navbar */
+    transform: translateX(-1rem)
 }
 
-
-@media (max-width: 415px) {
+@media (max-width:415px) {
     .cart-right {
         width: 100%;
         -webkit-transform: translateX(100%);
-        transform: translateX(100%);
-
+        transform: translateX(100%)
     }
 }
 
-
-@media (min-width: 416px) {
+@media (min-width:416px) {
     .cart-right {
         width: 350px;
         -webkit-transform: translateX(366px);
-        transform: translateX(366px);
+        transform: translateX(366px)
     }
 }
 
 .cart-footer {
-    bottom: 0;
+    bottom: 0
 }
 
-
-
-
-
-
-@media (max-width: 991px) {
+@media (max-width:991px) {
     .woocommerce.navbar-brand {
         position: absolute;
         left: 50%;
-        transform: translate(-50%, 0);
+        transform: translate(-50%, 0)
     }
 }
-
-
-
-
-
 
 .opac {
     background-color: rgba(0, 0, 0, .6);
@@ -198,41 +137,33 @@ body {
     bottom: 0;
     opacity: 0;
     visibility: hidden;
-    transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out
 }
-
 
 .opac.visible {
     opacity: 1;
     visibility: visible;
     cursor: pointer;
-    transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out
 }
 
-
-
-
-
-
 ul.woocommerce-mini-cart.cart_list.product_list_widget {
-    padding: 0;
+    padding: 0
 }
 
 ul.woocommerce-mini-cart.cart_list.product_list_widget li {
     padding: 1rem;
     border-top: 1px solid rgba(0, 0, 0, .125);
-    min-height: 112px;
+    min-height: 112px
 }
 
-
 p.woocommerce-mini-cart__total.total {
-    display: none;
+    display: none
 }
 
 p.woocommerce-mini-cart__buttons.buttons {
-    display: none;
+    display: none
 }
-
 
 .cart-right img.attachment-woocommerce_thumbnail.size-woocommerce_thumbnail,
 .cart-right img.woocommerce-placeholder.wp-post-image {
@@ -240,25 +171,12 @@ p.woocommerce-mini-cart__buttons.buttons {
     border: 1px solid rgba(0, 0, 0, .125);
     border-radius: .25rem;
     margin-right: 1rem;
-    float: left;
+    float: left
 }
-
-/*
-.cart-right p.woocommerce-mini-cart__empty-message {
-    padding: 1rem;
-}*/
-
-/*
-.cart-right .woocommerce ul.cart_list li img, .woocommerce ul.product_list_widget li img {
-    float: left;
-    margin-left: 0px;
-    width: 80px;
-}
-*/
 
 li.woocommerce-mini-cart-item.mini_cart_item a {
     display: block;
-    font-weight: 700;
+    font-weight: 700
 }
 
 .woocommerce ul.cart_list li::after,
@@ -269,30 +187,40 @@ li.woocommerce-mini-cart-item.mini_cart_item a {
 .woocommerce-page ul.cart_list li::before,
 .woocommerce-page ul.product_list_widget li::after,
 .woocommerce-page ul.product_list_widget li::before {
-    display: none;
-    /*height: 0px;*/
+    display: none
 }
 
-
-/*
-.menu-header:hover, .cart-header:hover {
-    text-decoration: none;
-}
-*/
-
-
-
-
-/* hide empty cart-footer*/
 .cart-footer {
-    display: none;
+    display: none
 }
 
 .has_items .cart-footer {
-    display: block;
+    display: block
 }
 
+.cart-loader {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1
+}
 
+.cart-footer,
+.cart-list {
+    z-index: -2
+}
 
+.cart-right.open .cart-loader {
+    opacity: 0;
+    transition: opacity .3s, visibility .3s;
+    transition-delay: 1s;
+    visibility: hidden
+}
 
-
+.cart-right .cart-loader {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity .1s;
+    transition-delay: .3s
+}

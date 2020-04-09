@@ -59,21 +59,4 @@ jQuery(document).ready(function ($) {
     // Review Checkbox End
 
 
-
-
-
-
-
-
-
 }); // jQuery End
-
-
-
-
-
-
-
-
-
-
