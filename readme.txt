@@ -42,7 +42,7 @@ Bootscore includes support for Infinite Scroll in Jetpack.
 
     = 3.1.0 - April 09 2020 =
         
-        * Added author.php
+        * Added author.php 
         * Updated shipping-calculator.php
         * Added overlay spinner loader to offcanvas cart
 
