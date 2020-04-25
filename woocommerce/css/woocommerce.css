@@ -517,3 +517,26 @@ button#place_order {
     width: 100%;
     margin-top: 1rem;
 }
+
+
+
+
+.woocommerce table.shop_attributes td {
+    font-style: normal;
+}
+
+
+
+.woocommerce table.shop_attributes td {
+    border-bottom: 1px solid;
+}
+
+
+.woocommerce table.shop_attributes th {
+    border-bottom: 1px solid;
+}
+
+
+.woocommerce table.shop_attributes {
+    border-top: 1px solid;
+}

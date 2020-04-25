@@ -57,6 +57,12 @@ jQuery(document).ready(function ($) {
     $('#wp-comment-cookies-consent').addClass('custom-control-input');
     $('.comment-form-cookies-consent label').addClass('custom-control-label');
     // Review Checkbox End
-
+    
+    // Shipping Calculator
+    $('input#calc_shipping_state').addClass('form-control');
+    // Shipping Calculator End
+    
+    
+    
 
 }); // jQuery End

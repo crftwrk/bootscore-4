@@ -203,4 +203,20 @@ a.remove.remove_from_cart_button {
 }
 
 
+.woocommerce table.shop_attributes tr:nth-child(even) td, .woocommerce table.shop_attributes tr:nth-child(even) th {
+    background: var(--light);
+}
 
+.woocommerce table.shop_attributes td {
+    border-color: rgba(0,0,0,.125);
+}
+
+
+.woocommerce table.shop_attributes th {
+    border-color: rgba(0,0,0,.125);
+}
+
+
+.woocommerce table.shop_attributes {
+    border-color: rgba(0,0,0,.125);
+}
