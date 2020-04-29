@@ -365,7 +365,7 @@ remove_filter('the_excerpt', 'wpautop');
 // Breadcrumb
 function the_breadcrumb() {
 	if(!is_home()) {
-		echo '<nav class="breadcrumb mb-4">';
+		echo '<nav class="breadcrumb mb-4 mt-2">';
 		echo '<a href="'.home_url('/').'">'.('<i class="fas fa-home"></i>').'</a><span class="divider">&nbsp;/&nbsp;</span>';
 		if (is_category() || is_single()) {
 			the_category(' <span class="divider">&nbsp;/&nbsp;</span> ');

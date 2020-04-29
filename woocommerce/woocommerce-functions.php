@@ -199,7 +199,7 @@ add_filter( 'woocommerce_breadcrumb_defaults', 'jk_woocommerce_breadcrumbs' );
 function jk_woocommerce_breadcrumbs() {
     return array(
             'delimiter'   => ' &nbsp;&#47;&nbsp; ',
-            'wrap_before' => '<nav class="breadcrumb mb-4" itemprop="breadcrumb">',
+            'wrap_before' => '<nav class="breadcrumb mb-4 mt-2" itemprop="breadcrumb">',
             'wrap_after'  => '</nav>',
             'before'      => '',
             'after'       => '',

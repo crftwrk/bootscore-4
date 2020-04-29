@@ -220,3 +220,7 @@ a.remove.remove_from_cart_button {
 .woocommerce table.shop_attributes {
     border-color: rgba(0,0,0,.125);
 }
+
+.pswp__ui--fit .pswp__caption, .pswp__ui--fit .pswp__top-bar {
+    background-color: rgba(0,0,0,0) !important;
+}

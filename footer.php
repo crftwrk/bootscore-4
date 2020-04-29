@@ -98,7 +98,7 @@
 
     <!-- To Top Button -->
     <div class="top-button">
-        <a href="#to-top" class="btn btn-primary btn-sm shadow"><i class="fas fa-chevron-up"></i><a>
+        <a href="#to-top" class="btn btn-primary shadow"><i class="fas fa-chevron-up"></i><a>
     </div>
     <!-- To Top Button End -->
 

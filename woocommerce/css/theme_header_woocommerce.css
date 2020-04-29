@@ -49,6 +49,14 @@
     }
 }
 
+
+@media (max-width: 991px) {
+    #nav-main {
+        min-height: 56px;
+    }
+}
+
+
 .bootscore-cart {
     cursor: pointer
 }

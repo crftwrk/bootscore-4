@@ -11,6 +11,7 @@
        url('../fonts/roboto-v18-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/roboto-v18-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
 }
+
 /* roboto-700 - latin */
 @font-face {
   font-family: 'Roboto';
@@ -25,7 +26,6 @@
        url('../fonts/roboto-v18-latin-700.svg#Roboto') format('svg'); /* Legacy iOS */
 }
 
-
 body {
 	font-family: 'Roboto', sans-serif;
 	word-wrap: break-word;
@@ -36,14 +36,12 @@ body {
     font-weight: 700 !important;
 }
 
-
 .breadcrumb {
     hyphens: auto;
     -webkit-hyphens: auto;
   	-moz-hyphens: auto;
   	-ms-hyphens: auto;
 }
-
 
 @media (max-width: 1200px) {
     .display-1 {

@@ -231,7 +231,7 @@ jQuery(document).ready(function ($) {
     window.addEventListener("beforeunload", function () {
         document.body.classList.add("animate-out");
     });
-
+    
 
     // Cookie consent
     jQuery('.gdpr-button-accept').click(function () {
@@ -301,11 +301,6 @@ jQuery(document).ready(function ($) {
 
 
 
-
-
-
-
-
-
-
 }); // jQuery End
+
+

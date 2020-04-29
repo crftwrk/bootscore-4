@@ -29,6 +29,10 @@
 	}
 }
 
+/* a hide racaptcha v3 badge */
+.grecaptcha-badge {
+    display: none !important;
+}
 
 
 /* a hover */
