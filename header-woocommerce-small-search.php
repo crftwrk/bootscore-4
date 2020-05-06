@@ -90,7 +90,7 @@
                	                    'container'         => 'div',
                	                    'container_class'   => 'navbar-collapse offcanvas-collapse',
                	                    'container_id'      => 'bootscore-navbar-collapse',
-               	                    'menu_class'        => 'nav navbar-nav',
+               	                    'menu_class'        => 'nav navbar-nav pb-5 pb-lg-0',
                	                    'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
                	                    'walker'            => new WP_Bootstrap_Navwalker(),
                                 ) );

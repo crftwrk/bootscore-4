@@ -151,9 +151,6 @@ jQuery(document).ready(function ($) {
 
 
 
-
-
-
     // Header up on scroll down, down on scroll up - activate the stylesheet in style.css in line 30
     /*var lastScrollTop = 0;
     $(window).scroll(function (event) {

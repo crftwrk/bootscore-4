@@ -6,7 +6,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 Requires at least: 4.5
 Tested up to: 5.4
 Requires PHP: 5.6
-Stable tag: 3.1.2
+Stable tag: 3.1.3
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -31,6 +31,11 @@ A powerful Bootstrap WordPress Starter Theme
 3. Click Activate to use your new theme right away.
 
 
+== Documentation ==
+
+https://bootscore.me/category/documentation/
+
+
 == Frequently Asked Questions ==
 
 = Does this theme support any plugins? =
@@ -39,6 +44,13 @@ Bootscore includes support for Infinite Scroll in Jetpack.
 
 
 == Changelog ==
+
+    = 3.1.3 - May 06 2020 =
+    
+        * Updated woocommerce/myaccount/form-login.php
+        * Removed google-analytics.js. Paste GA code in footer widget instead.
+        * Adding excerpt to pages
+        * Bug fixes
 
     = 3.1.2 - April 29 2020 =
     
@@ -213,6 +225,3 @@ Bootscore includes support for Infinite Scroll in Jetpack.
 * Ajax add to cart https://quadmenu.com/add-to-cart-with-woocommerce-and-ajax-step-by-step/
 
 
-== Documentation ==
-
-https://bootscore.me/category/documentation/

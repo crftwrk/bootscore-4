@@ -247,9 +247,6 @@ function bootscore_scripts() {
 	
 	// Cookie Consent JS
 	wp_enqueue_script( 'cookie', get_template_directory_uri() . '/js/lib/cookie.js', array(), '20151215', true );
-    
-	// Google Analytics JS
-	wp_enqueue_script( 'ganalytics', get_template_directory_uri() . '/js/google-analytics.js', array(), '20151215', true );
 	
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -360,6 +357,10 @@ add_filter('excerpt_more', 'new_excerpt_more');
 // Read more in List, removes <p> around excerpt
 remove_filter('the_excerpt', 'wpautop');
 // Read more in List, removes <p> around excerpt End
+
+// Excerpt to pages
+add_post_type_support( 'page', 'excerpt' );
+// Excerpt to pages End
 
 
 // Breadcrumb

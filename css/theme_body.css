@@ -255,6 +255,15 @@ q::before {
 }
 
 
+.blocks-gallery-grid .blocks-gallery-image figcaption, .blocks-gallery-grid .blocks-gallery-item figcaption, .wp-block-gallery .blocks-gallery-image figcaption, .wp-block-gallery .blocks-gallery-item figcaption {
+    overflow: auto;
+    padding: .5rem;
+    font-size: 1rem;
+    background: rgba(0,0,0,.6);
+    backdrop-filter: grayscale(100%) blur(7px);
+    -webkit-backdrop-filter: grayscale(100%) blur(7px);
+}
+
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
