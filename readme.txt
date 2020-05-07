@@ -1,16 +1,16 @@
 === bootScore ===
 
 Contributors: craftwerk
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+Tags: featured-images, threaded-comments, translation-ready
 
 Requires at least: 4.5
 Tested up to: 5.4
 Requires PHP: 5.6
-Stable tag: 3.1.3
+Stable tag: 3.1.4
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Bootscore WordPress Theme, Copyright 2019 Bastian Kreiter.
+Bootscore WordPress Theme, Copyright 2019 - 2020 Bastian Kreiter.
 
 
 === Plugin Name ===
@@ -44,6 +44,12 @@ Bootscore includes support for Infinite Scroll in Jetpack.
 
 
 == Changelog ==
+
+    = 3.1.4 - May 07 2020 =
+    
+        * Allow HTML in author bio and category description
+        * Open comment author website link in new tab, comment-list.php
+        * Removed README.md
 
     = 3.1.3 - May 06 2020 =
     

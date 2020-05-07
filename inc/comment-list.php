@@ -27,43 +27,45 @@ if ( ! function_exists( 'bootscore_comment' ) ) :
 
         if ( 'pingback' == $comment->comment_type || 'trackback' == $comment->comment_type ) : ?>
 
-            <li id="comment-<?php comment_ID(); ?>" <?php comment_class( 'media' ); ?>>
-            <div class="comment-body">
-                <?php _e( 'Pingback:', 'bootscore' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( __( 'Edit', 'bootscore' ), '<span class="edit-link">', '</span>' ); ?>
-            </div>
+<li id="comment-<?php comment_ID(); ?>" <?php comment_class( 'media' ); ?>>
+    <div class="comment-body">
+        <?php _e( 'Pingback:', 'bootscore' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( __( 'Edit', 'bootscore' ), '<span class="edit-link">', '</span>' ); ?>
+    </div>
 
-        <?php else : ?>
+    <?php else : ?>
 
-        <li id="comment-<?php comment_ID(); ?>" <?php comment_class( empty( $args['has_children'] ) ? '' : 'parent' ); ?>>
-            <article id="div-comment-<?php comment_ID(); ?>" class="comment-body media my-3">
-                <a class="mr-3" href="#">
-                    <?php if ( 0 != $args['avatar_size'] ) echo get_avatar( $comment, $args['avatar_size'] ); ?>
-                </a>
+<li id="comment-<?php comment_ID(); ?>" <?php comment_class( empty( $args['has_children'] ) ? '' : 'parent' ); ?>>
+    <article id="div-comment-<?php comment_ID(); ?>" class="comment-body media my-3">
+        <a class="mr-3" href="#">
+            <?php if ( 0 != $args['avatar_size'] ) echo get_avatar( $comment, $args['avatar_size'] ); ?>
+        </a>
 
-                <div class="media-body p-3 rounded border">
-                    <div class="media-body-wrap">
-
-
-                        <div class="mt-0"><?php printf( __( '%s <span class="says d-none">says:</span>', 'bootscore' ), sprintf( '<h3 class="">%s</h3>', get_comment_author_link() ) ); ?></div>
-                            <small><div class="comment-meta text-secondary">
-                                <!--<a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>">-->
-                                    <time datetime="<?php comment_time( 'c' ); ?>">
-                                        <?php printf( _x( '%1$s at %2$s', '1: date, 2: time', 'bootscore' ), get_comment_date(), get_comment_time() ); ?>
-                                    </time>
-                                <!--</a>-->
-                                <?php edit_comment_link( __( 'Edit', 'bootscore' ), '<span class="edit-link">', '</span>' ); ?>
-                        </div></small>
+        <div class="media-body p-3 rounded border">
+            <div class="media-body-wrap">
 
 
-                        <?php if ( '0' == $comment->comment_approved ) : ?>
-                            <p class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'bootscore' ); ?></p>
-                        <?php endif; ?>
+                <div class="mt-0"><?php printf( __( '%s <span class="says d-none">says:</span>', 'bootscore' ), sprintf( '<h3 class="">%s</h3>', get_comment_author_link() ) ); ?></div>
+                <small>
+                    <div class="comment-meta text-muted">
 
-                        <div class="comment-content card-block">
-                            <?php comment_text(); ?>
-                        </div><!-- .comment-content -->
+                        <time datetime="<?php comment_time( 'c' ); ?>">
+                            <?php printf( _x( '%1$s at %2$s', '1: date, 2: time', 'bootscore' ), get_comment_date(), get_comment_time() ); ?>
+                        </time>
 
-                        <?php comment_reply_link(
+                        <?php edit_comment_link( __( 'Edit', 'bootscore' ), '<span class="edit-link">', '</span>' ); ?>
+                    </div>
+                </small>
+
+
+                <?php if ( '0' == $comment->comment_approved ) : ?>
+                <p class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'bootscore' ); ?></p>
+                <?php endif; ?>
+
+                <div class="comment-content card-block">
+                    <?php comment_text(); ?>
+                </div><!-- .comment-content -->
+
+                <?php comment_reply_link(
                             array_merge(
                                 $args, array(
                                     'add_below' => 'div-comment',
@@ -75,12 +77,12 @@ if ( ! function_exists( 'bootscore_comment' ) ) :
                             )
                         ); ?>
 
-                    </div>
-                </div><!-- .media-body -->
+            </div>
+        </div><!-- .media-body -->
 
-            </article><!-- .comment-body -->
+    </article><!-- .comment-body -->
 
-            <?php
+    <?php
         endif;
     }
 endif; // ends check for bootscore_comment()
@@ -120,3 +122,15 @@ function wp44138_change_comment_form_cookies_consent( $fields ) {
 }
 add_filter( 'comment_form_default_fields', 'wp44138_change_comment_form_cookies_consent' );
 // Comment Cookie Checkbox End
+
+
+
+// Open comment author link in new tab
+add_filter( 'get_comment_author_link', 'open_comment_author_link_in_new_window' );
+function open_comment_author_link_in_new_window( $author_link ) {
+    return str_replace( "<a", "<a target='_blank'", $author_link );
+}
+// Open comment author link in new tab End
+
+
+
