@@ -10,7 +10,7 @@
     bottom: 30px;
     opacity: 0;
     transition: opacity 1s;
-    z-index: 91;
+    z-index: 9;
 }
 
 .top-button.visible {

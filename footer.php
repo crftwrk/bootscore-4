@@ -18,42 +18,49 @@
     <div class="bootscore-footer bg-light pt-5 pb-3">
         <div class="container">
             
+            <!-- Top Footer Widget -->
+            <?php if ( is_active_sidebar( 'top-footer' )) : ?>
+                <div>
+                    <?php dynamic_sidebar( 'top footer' ); ?>
+                </div>
+            <?php endif; ?>            
+            
             <div class="row">
 
-                <!-- Footer Widgets -->
-                <div class="col-md-3">
+                <!-- Footer 1 Widget -->
+                <div class="col-md-6 col-lg-3">
                     <?php if ( is_active_sidebar( 'footer-1' )) : ?>
                         <div>
                             <?php dynamic_sidebar( 'footer-1' ); ?>
                         </div>
-                        <?php endif; ?>
+                    <?php endif; ?>
                 </div>
 
                 <!-- Footer 2 Widget -->
-                <div class="col-md-3">
+                <div class="col-md-6 col-lg-3">
                     <?php if ( is_active_sidebar( 'footer-2' )) : ?>
                         <div>
                             <?php dynamic_sidebar( 'footer-2' ); ?>
                         </div>
-                        <?php endif; ?>
+                    <?php endif; ?>
                 </div>
 
                 <!-- Footer 3 Widget -->
-                <div class="col-md-3">
+                <div class="col-md-6 col-lg-3">
                     <?php if ( is_active_sidebar( 'footer-3' )) : ?>
                         <div>
                             <?php dynamic_sidebar( 'footer-3' ); ?>
                         </div>
-                        <?php endif; ?>
+                    <?php endif; ?>
                 </div>
 
                 <!-- Footer 4 Widget -->
-                <div class="col-md-3">
+                <div class="col-md-6 col-lg-3">
                     <?php if ( is_active_sidebar( 'footer-4' )) : ?>
                         <div>
                             <?php dynamic_sidebar( 'footer-4' ); ?>
                         </div>
-                        <?php endif; ?>
+                    <?php endif; ?>
                 </div>
                 <!-- Footer Widgets End -->
 

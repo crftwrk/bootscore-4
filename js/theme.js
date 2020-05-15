@@ -126,10 +126,8 @@ jQuery(document).ready(function ($) {
     });
 
 
-
-
-
-    // Header Offcanvas - activate the stylesheet in style.css in line 33, rename header.php in whateveryouwant.php and rename header-offcanvas.php into header.php
+    
+    // Header Offcanvas - activate the stylesheet in style.css in line 43, rename header.php in whateveryouwant.php and rename header-offcanvas.php into header.php
     /*$(function () {
         'use strict'
 
@@ -149,9 +147,7 @@ jQuery(document).ready(function ($) {
     });*/
 
 
-
-
-    // Header up on scroll down, down on scroll up - activate the stylesheet in style.css in line 30
+    // Header up on scroll down, down on scroll up - activate the stylesheet in style.css in line 41
     /*var lastScrollTop = 0;
     $(window).scroll(function (event) {
     	var st = $(this).scrollTop();
@@ -169,9 +165,7 @@ jQuery(document).ready(function ($) {
     });*/
 
 
-
-
-    // Header transform - activate the stylesheet in style.css in line 31
+    // Header transform - activate the stylesheet in style.css in line 42
     /*$("#nav-main").addClass("on-top clear");
     $(window).scroll(function () {
     	var scroll = $(window).scrollTop();
@@ -193,20 +187,6 @@ jQuery(document).ready(function ($) {
     });*/
 
 
-
-
-    // Header overlay- activate the stylesheet in style.css in line 32
-    /*$('.navbar-toggler').on('click', function () {
-    	$('#bootscore-navbar-collapse ul').toggleClass('fade-in')
-    });
-    
-    $('.nav-link').on('click', function () {
-    	$('#bootscore-navbar-collapse ul').removeClass('fade-in')
-    });*/
-
-
-
-
     // Preloader
     $(window).on('load', function () {
         $('#status').fadeOut();
@@ -223,12 +203,6 @@ jQuery(document).ready(function ($) {
         })
     }, 1500);
 
-
-    // Page transitions
-    window.addEventListener("beforeunload", function () {
-        document.body.classList.add("animate-out");
-    });
-    
 
     // Cookie consent
     jQuery('.gdpr-button-accept').click(function () {
@@ -257,36 +231,13 @@ jQuery(document).ready(function ($) {
 
 
     // Mobile Search Button hide if empty
-    if ($('#searchform').length != 0) {
+    if ($('.searchform').length != 0) {
         $('.top-nav-search-mobile, .top-nav-search-large').addClass('visible');
     }
-    // Mobile Search Button hide if empty End
-
-
-    // Tooltips
-    /*$(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-    })*/
-
-
-    // Hide Search Dropdown on scroll. Only if blog-header is used.
-    /*$(function() {
-    	var header = $(".dropdown-menu");
-    	$(window).scroll(function() {
-    		var scroll = $(window).scrollTop();
-
-    		if (scroll >= 0) {
-    			header.removeClass('show');
-    		} else {
-    			header.removeClass("show");
-    		}
-    	});
-    });*/
 
 
     // Forms
-    $('select, #billing_state').addClass('custom-select');
-
+    $('select, #billing_state').addClass('custom-select');    
+    
+    
 }); // jQuery End
-
-

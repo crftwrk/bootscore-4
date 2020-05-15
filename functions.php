@@ -7,25 +7,12 @@
  * @package Bootscore
  */
 
-// Hide Admin Bar in Frontend
-/*function hide_admin_bar_from_front_end()
-{
-    if (is_blog_admin()) {
-        return true;
-    }
-    return false;
-}
-add_filter('show_admin_bar', 'hide_admin_bar_from_front_end');*/
-// Hide Admin Bar in Frontend End
-
 
 // WooCommerce
 //require get_template_directory() . '/woocommerce/woocommerce-functions.php';
 // WooCommerce End
 
 
-
- 
 // Register Nav Walker class_alias
 require_once('inc/class-wp-bootstrap-navwalker.php');
 
@@ -148,6 +135,18 @@ function bootscore_widgets_init() {
         'after_title' => '</h2>'
     ));
     // Top Nav Module End
+    
+        // Top Footer
+    register_sidebar(array(
+        'name' => esc_html__('Top Footer', 'bootscore' ),
+        'id' => 'top-footer',
+        'description' => esc_html__('Add widgets here.', 'bootscore' ),
+        'before_widget' => '<div class="footer_widget mb-5">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>'
+    ));
+    // Top Footer End
     
     // Footer 1
     register_sidebar(array(

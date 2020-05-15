@@ -6,7 +6,7 @@ Tags: featured-images, threaded-comments, translation-ready
 Requires at least: 4.5
 Tested up to: 5.4
 Requires PHP: 5.6
-Stable tag: 3.1.5
+Stable tag: 3.1.6
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -44,6 +44,21 @@ Bootscore includes support for Infinite Scroll in Jetpack.
 
 
 == Changelog ==
+
+    = 3.1.6 - May 15 2020 =
+    
+        * Removed theme_header_overlay.css
+        * Removed theme_header_static.css
+        * Removed header-woocommerce-large-search.php
+        * Added top-footer widget
+        * Removed hide admin bar in frontend
+        * Changed col into col-md-8 in page.php and single.php to main. Made problems with too wide content like tables etc. The sidebar was pushed down. Use No Sidebar template instead if you do not want to show a sidebar.
+        * Removed id from searchform
+        * Changed footer col
+        * Set body font to !important to overwrite the default bootstrap.min.css
+        * Removed page transition
+        * Edited form-billing.php template in /woocommerce/checkout/
+        * Edited form-shipping.php template in /woocommerce/checkout/
 
     = 3.1.5 - May 09 2020 =
     
@@ -226,7 +241,6 @@ Bootscore includes support for Infinite Scroll in Jetpack.
 
 * Based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 * normalize.css https://necolas.github.io/normalize.css/, (C) 2012-2016 Nicolas Gallagher and Jonathan Neal, [MIT](https://opensource.org/licenses/MIT)
-
 * Bootstrap https://getbootstrap.com/docs/4.0/about/license/
 * WP Bootstrap Navwalker by Edward McIntyre: https://github.com/twittem/wp-bootstrap-navwalker
 * jQuery https://jquery.org/license/

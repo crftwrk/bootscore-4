@@ -27,7 +27,7 @@
 }
 
 body {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', sans-serif !important;
 	word-wrap: break-word;
 	-ms-word-wrap: break-word;
 }

@@ -29,7 +29,7 @@
 <body <?php body_class(); ?>>
 
     <!-- Preloader -->
-    <div id="preloader" class="bg-light align-items-center justify-content-center position-fixed">
+    <div id="preloader" class="bg-white align-items-center justify-content-center position-fixed">
         <div id="status" class="spinner-border text-primary" role="status">
             <span class="sr-only">Loading...</span>
         </div>

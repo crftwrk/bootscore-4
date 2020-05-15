@@ -19,7 +19,7 @@
     <div id="primary" class="content-area">
 
         <div class="row">
-            <div class="col">
+            <div class="col-md-8">
 
                 <main id="main" class="site-main">
 
