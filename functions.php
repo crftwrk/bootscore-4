@@ -202,7 +202,7 @@ function bootscore_widgets_init() {
         'name' => esc_html__('404 Page', 'bootscore' ),
         'id' => '404-page',
         'description' => esc_html__('Add widgets here.', 'bootscore'),
-        'before_widget' => '<div class="footer_widget">',
+        'before_widget' => '<div class="mb-4">',
         'after_widget' => '</div>',
         'before_title' => '<h1 class="widget-title">',
         'after_title' => '</h1>'

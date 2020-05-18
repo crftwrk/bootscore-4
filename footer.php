@@ -98,7 +98,7 @@
     <!-- Cookie Consent -->
     <div id="gdpr-box" class="cookies-accept bg-light text-center py-3">
 		<div class="container">
-			<?php esc_html_e('Cookies help us deliver our services. By using our services, you agree to our use of cookies.', 'bootscore'); ?>&nbsp;<a href="<?php bloginfo('site_url'); ?><?php esc_html_e('/privacy', 'bootscore'); ?>" class="privacylink"><?php esc_html_e('More Information', 'bootscore'); ?></a>&nbsp;&nbsp;&nbsp;<button class="gdpr-button-accept btn btn-primary btn-sm"><?php esc_html_e('Accept', 'bootscore'); ?></button>		
+			<?php esc_html_e('Cookies help us deliver our services. By using our services, you agree to our use of cookies.', 'bootscore'); ?>&nbsp;<a href="<?php bloginfo('site_url'); ?><?php esc_html_e('/privacy-policy', 'bootscore'); ?>" class="privacylink"><?php esc_html_e('More Information', 'bootscore'); ?></a>&nbsp;&nbsp;&nbsp;<button class="gdpr-button-accept btn btn-primary btn-sm"><?php esc_html_e('Accept', 'bootscore'); ?></button>		
 		</div>
 	</div>
     <!-- Cookie Consent End -->

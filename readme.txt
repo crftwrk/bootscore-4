@@ -6,7 +6,7 @@ Tags: featured-images, threaded-comments, translation-ready
 Requires at least: 4.5
 Tested up to: 5.4
 Requires PHP: 5.6
-Stable tag: 3.1.6
+Stable tag: 3.1.7
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -44,6 +44,12 @@ Bootscore includes support for Infinite Scroll in Jetpack.
 
 
 == Changelog ==
+
+    = 3.1.7 - May 18 2020 =
+    
+        * Removed h1 - h6 and display-1 - display-4 font-weight: 700; 
+        * Removed pre installed Google Roboto font
+        * Changed cookie consent link "More Information" to WordPress default privacy slug "privacy-policy" and "datenschutzerklaerung" in footer.php. Translate the link 
 
     = 3.1.6 - May 15 2020 =
     
