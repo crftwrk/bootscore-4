@@ -118,9 +118,10 @@
                         <a class="btn btn-link text-secondary pr-0 mr-1" title="<?php esc_html_e('Account', 'bootscore'); ?>" href="<?php echo get_permalink( wc_get_page_id( 'myaccount' ) ); ?>"><i class="fas fa-user"></i></a>
                         <!-- Mini Cart Header Mobile -->
                         <span class="bootscore-cart btn btn-link text-secondary pr-0 no-underline">
+                            <i class="fas fa-shopping-bag"></i>
                             <?php if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
 									$count = WC()->cart->cart_contents_count;
-									?><span class="cart-content" title="<?php _e( 'bootscore-cart ansehen' ); ?>"><?php 
+									?><span class="cart-content"><?php 
 									if ( $count > 0 ) {
 									    ?>
                                 <span class="cart-content-count bagde badge-danger"><?php echo esc_html( $count ); ?></span>
@@ -132,10 +133,7 @@
                         <!-- Mini Cart Header Mobile End-->
                     </div>
                     <!-- Woocommerce Mobile End -->
-
-
-
-
+                    
 
                     <!-- Large Top Module -->
                     <div class="top-module-1 d-none d-lg-block">
@@ -167,6 +165,7 @@
 
                     <!-- Mini Cart Header-->
                     <span class="bootscore-cart btn btn-outline-secondary d-none d-lg-block ml-2" title="<?php esc_html_e('View your shopping cart', 'bootscore'); ?>">
+                        <i class="fas fa-shopping-bag"></i>
                         <?php if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
 									$count = WC()->cart->cart_contents_count;
 									?><span class="cart-content"><?php 
@@ -202,10 +201,6 @@
 
                             <h2 class="p-3"><?php esc_html_e('Cart' , 'bootscore'); ?></h2>
 
-
-
-
-
                             <!--Cart Offcanvas -->
                             <?php
                                 echo '<div class="mega_menu cart">';
@@ -217,10 +212,6 @@
                                 echo '</div></div>';
                             ?>
                             <!-- Cart Offcanvas End -->
-
-
-
-
 
                         </div>
 
@@ -237,7 +228,7 @@
 
                                 </div>
 
-                                <p class="text-secondary"><?php esc_html_e('To find out your shipping cost , Please proceed to checkout.' , 'bootscore'); ?></p>
+                                <p class="text-muted"><?php esc_html_e('To find out your shipping cost , Please proceed to checkout.' , 'bootscore'); ?></p>
                                 <a href="<?php echo get_permalink( wc_get_page_id( 'cart' ) ); ?>" class="btn btn-outline-primary btn-block"><?php esc_html_e('Edit cart' , 'bootscore'); ?></a>
                                 <a href="<?php echo get_permalink( wc_get_page_id( 'checkout' ) ); ?>" class="btn btn-primary btn-block"><?php esc_html_e('Proceed to checkout' , 'bootscore'); ?></a>
                             </div>

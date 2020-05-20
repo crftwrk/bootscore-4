@@ -94,6 +94,12 @@ function bootscore_content_width() {
 }
 add_action( 'after_setup_theme', 'bootscore_content_width', 0 );
 
+
+
+
+
+// Make widgets pluggable
+if ( ! function_exists( 'bootscore_widgets_init' ) ) :
 /**
  * Register widget area.
  *
@@ -101,6 +107,30 @@ add_action( 'after_setup_theme', 'bootscore_content_width', 0 );
  */
 function bootscore_widgets_init() {
     
+    // Top Nav Module
+    register_sidebar(array(
+        'name' => esc_html__('Top Nav Module', 'bootscore' ),
+        'id' => 'top-nav-module',
+        'description' => esc_html__('Add widgets here.', 'bootscore' ),
+        'before_widget' => '<div class="top-nav-module ml-3">',
+        'after_widget' => '</div>',
+        'before_title' => '<div class="widget-title d-none">',
+        'after_title' => '</div>'
+    ));
+    // Top Nav Module End
+	
+    // Top Nav Search
+    register_sidebar(array(
+        'name' => esc_html__('Top Nav Search', 'bootscore' ),
+        'id' => 'top-nav-search',
+        'description' => esc_html__('Add widgets here.', 'bootscore' ),
+        'before_widget' => '<div class="top-nav-search ml-lg-3">',
+        'after_widget' => '</div>',
+        'before_title' => '<div class="widget-title d-none">',
+        'after_title' => '</div>'
+    ));
+    // Top Nav Search End
+
     // Sidebar
 	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar', 'bootscore' ),
@@ -111,32 +141,9 @@ function bootscore_widgets_init() {
 		'before_title'  => '<h2 class="widget-title card-title border-bottom py-2">',
 		'after_title'   => '</h2>',
 	) );
-	
-    // Top Nav Search
-    register_sidebar(array(
-        'name' => esc_html__('Top Nav Search', 'bootscore' ),
-        'id' => 'top-nav-search',
-        'description' => esc_html__('Add widgets here.', 'bootscore' ),
-        'before_widget' => '<div class="top-nav-search ml-lg-3">',
-        'after_widget' => '</div>',
-        'before_title' => '<h2 class="card-header widget-title">',
-        'after_title' => '</h2>'
-    ));
-    // Top Nav Search End
-
-    // Top Nav Module
-    register_sidebar(array(
-        'name' => esc_html__('Top Nav Module', 'bootscore' ),
-        'id' => 'top-nav-module',
-        'description' => esc_html__('Add widgets here.', 'bootscore' ),
-        'before_widget' => '<div class="top-nav-module ml-3">',
-        'after_widget' => '</div>',
-        'before_title' => '<h2 class="card-header widget-title">',
-        'after_title' => '</h2>'
-    ));
-    // Top Nav Module End
+    // Sidebar End
     
-        // Top Footer
+    // Top Footer
     register_sidebar(array(
         'name' => esc_html__('Top Footer', 'bootscore' ),
         'id' => 'top-footer',
@@ -195,8 +202,7 @@ function bootscore_widgets_init() {
         'after_title' => '</h2>'
     ));
     // Footer 4 End
-    
-    
+     
     // 404 Page
     register_sidebar(array(
         'name' => esc_html__('404 Page', 'bootscore' ),
@@ -213,6 +219,8 @@ function bootscore_widgets_init() {
 add_action( 'widgets_init', 'bootscore_widgets_init' );
 // Widgets End
 
+endif;
+// Make Widgets pluggable End
 
 
 

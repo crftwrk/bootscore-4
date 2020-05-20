@@ -47,15 +47,17 @@ add_action( 'wp_enqueue_scripts', 'wc_scripts' );
 
 
 // Minicart Header
+if ( ! function_exists( 'my_header_add_to_cart_fragment' ) ) :
+
 function my_header_add_to_cart_fragment( $fragments ) {
  
     ob_start();
     $count = WC()->cart->cart_contents_count;
-    ?><span class="cart-content"><i class="fas fa-shopping-bag"></i><?php
+    ?><span class="cart-content"><?php
     if ( $count > 0 ) {
         ?>
-        <span class="cart-content-count badge badge-danger"><?php echo esc_html( $count ); ?></span><span class="cart-total ml-1 d-none d-md-inline"><?php echo WC()->cart->get_cart_total(); ?></span>
-        <?php            
+    <span class="cart-content-count badge badge-danger"><?php echo esc_html( $count ); ?></span><span class="cart-total ml-1 d-none d-md-inline"><?php echo WC()->cart->get_cart_total(); ?></span>
+    <?php            
     }
         ?></span><?php
  
@@ -64,6 +66,9 @@ function my_header_add_to_cart_fragment( $fragments ) {
     return $fragments;
 }
 add_filter( 'woocommerce_add_to_cart_fragments', 'my_header_add_to_cart_fragment' );
+
+endif;
+
 // Minicrt Header END
 
 
@@ -268,15 +273,16 @@ function add_body_class_for_cart_items( $classes ) {
 add_action( 'wp_footer', 'add_body_class_for_ajax_add_to_cart' );
 function add_body_class_for_ajax_add_to_cart() {
     ?>
-        <script type="text/javascript">
-            (function($){
-                $('body').on( 'added_to_cart', function(){
-                    if( ! $(this).hasClass('has_items') )
-                        $(this).addClass('has_items');
-                        console.log('added_to_cart');
-                });
-            })(jQuery);
-        </script>
-    <?php
+<script type="text/javascript">
+    (function($) {
+        $('body').on('added_to_cart', function() {
+            if (!$(this).hasClass('has_items'))
+                $(this).addClass('has_items');
+            console.log('added_to_cart');
+        });
+    })(jQuery);
+
+</script>
+<?php
 }
 // Hide empty Offcanvas cart-footer End

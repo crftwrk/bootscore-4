@@ -6,7 +6,7 @@ Tags: featured-images, threaded-comments, translation-ready
 Requires at least: 4.5
 Tested up to: 5.4
 Requires PHP: 5.6
-Stable tag: 3.1.7
+Stable tag: 3.1.8
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -44,6 +44,12 @@ Bootscore includes support for Infinite Scroll in Jetpack.
 
 
 == Changelog ==
+
+    = 3.1.8 - May 20 2020 =
+    
+        * Widgets are pluggable now to extend ore remove widget areas in child-theme
+        * The WooCommerce Ajax Mini Cart is now pluggable to overwrite function in child-theme
+        * Moved cart icon from woocommerce-functions.php to header-woocommerce.php
 
     = 3.1.7 - May 18 2020 =
     
