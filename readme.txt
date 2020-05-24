@@ -45,6 +45,11 @@ Bootscore includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
+    = 3.1.9 - May 24 2020 =
+    
+        * Edited mini-cart.php and offcanvas cart in header-woocommerce.php
+        * Bug fixes
+
     = 3.1.8 - May 20 2020 =
     
         * Widgets are pluggable now to extend ore remove widget areas in child-theme

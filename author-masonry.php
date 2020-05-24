@@ -30,7 +30,7 @@
             <div class="card-columns">
                 <?php if (have_posts() ) : ?>
                 <?php while (have_posts() ) : the_post(); ?>
-                <div class="card">
+                <div class="card mb-4">
 
                     <?php the_post_thumbnail('medium', array('class' => 'card-img-top')); ?>
 

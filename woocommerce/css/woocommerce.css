@@ -119,9 +119,7 @@ span.badge.badge-danger.sale {
     display: block
 }
 
-.card .woocommerce-Price-amount.amount {
-    font-size: 1.25rem
-}
+
 
 ins {
     text-decoration: none
@@ -221,33 +219,9 @@ label.custom-control-label {
     animation: spinner-border .75s linear infinite
 }
 
-a.remove.remove_from_cart_button {
-    padding: .25rem .5rem;
-    font-size: .875rem;
-    line-height: 1.5;
-    border-radius: .2rem
-}
 
-a.remove.remove_from_cart_button {
-    display: inline-block !important;
-    font-weight: 400;
-    text-align: center;
-    vertical-align: middle;
-    user-select: none;
-    background-color: transparent;
-    border: 1px solid transparent;
-    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
-}
 
-a.remove.remove_from_cart_button:hover {
-    text-decoration: none
-}
 
-a.remove.remove_from_cart_button {
-    float: right;
-    height: auto;
-    width: auto
-}
 
 .woocommerce-variation.single_variation {
     margin-bottom: 2rem
@@ -274,11 +248,6 @@ ul.tabs.wc-tabs {
     margin-right: 0
 }
 
-.woocommerce ul.cart_list li img,
-.woocommerce ul.product_list_widget li img {
-    margin-left: 0
-}
-
 span.password-input {
     width: 100%
 }
@@ -288,11 +257,6 @@ span.password-input {
 }
 
 .wc-gzd-product-name-left img {
-    border-radius: .25rem;
-    border: 1px solid transparent
-}
-
-td.product-thumbnail img {
     border-radius: .25rem;
     border: 1px solid transparent
 }
@@ -349,4 +313,9 @@ button#place_order {
 
 .woocommerce table.shop_attributes {
     border-top: 1px solid
+}
+
+.product_meta .sku_wrapper::after, .product_meta .posted_in::after {
+    content: "\A";
+    white-space: pre;
 }

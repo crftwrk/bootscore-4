@@ -56,7 +56,7 @@ function my_header_add_to_cart_fragment( $fragments ) {
     ?><span class="cart-content"><?php
     if ( $count > 0 ) {
         ?>
-    <span class="cart-content-count badge badge-danger"><?php echo esc_html( $count ); ?></span><span class="cart-total ml-1 d-none d-md-inline"><?php echo WC()->cart->get_cart_total(); ?></span>
+    <span class="cart-content-count badge badge-danger"><?php echo esc_html( $count ); ?></span><span class="cart-total ml-1 d-none d-md-inline"><?php echo WC()->cart->get_cart_subtotal(); ?></span>
     <?php            
     }
         ?></span><?php
@@ -261,28 +261,16 @@ function wsis_dequeue_stylesandscripts_select2() {
 // Remove CSS and/or JS for Select2 END
 
 
-// Hide empty Offcanvas cart-footer
-add_filter( 'body_class', 'add_body_class_for_cart_items' );
-function add_body_class_for_cart_items( $classes ) {
-    if( ! WC()->cart->is_empty() )
-        $classes[] = 'has_items';
+// Mini cart widget buttons
+remove_action( 'woocommerce_widget_shopping_cart_buttons', 'woocommerce_widget_shopping_cart_button_view_cart', 10 );
+remove_action( 'woocommerce_widget_shopping_cart_buttons', 'woocommerce_widget_shopping_cart_proceed_to_checkout', 20 );
 
-    return $classes;
+function my_woocommerce_widget_shopping_cart_button_view_cart() {
+    echo '<a href="' . esc_url( wc_get_cart_url() ) . '" class="btn btn-outline-primary btn-block">' . esc_html__( 'View cart', 'woocommerce' ) . '</a>';
 }
-
-add_action( 'wp_footer', 'add_body_class_for_ajax_add_to_cart' );
-function add_body_class_for_ajax_add_to_cart() {
-    ?>
-<script type="text/javascript">
-    (function($) {
-        $('body').on('added_to_cart', function() {
-            if (!$(this).hasClass('has_items'))
-                $(this).addClass('has_items');
-            console.log('added_to_cart');
-        });
-    })(jQuery);
-
-</script>
-<?php
+function my_woocommerce_widget_shopping_cart_proceed_to_checkout() {
+    echo '<a href="' . esc_url( wc_get_checkout_url() ) . '" class="btn btn-primary btn-block">' . esc_html__( 'Checkout', 'woocommerce' ) . '</a>';
 }
-// Hide empty Offcanvas cart-footer End
+add_action( 'woocommerce_widget_shopping_cart_buttons', 'my_woocommerce_widget_shopping_cart_button_view_cart', 10 );
+add_action( 'woocommerce_widget_shopping_cart_buttons', 'my_woocommerce_widget_shopping_cart_proceed_to_checkout', 20 );
+// Mini cart widget buttons End

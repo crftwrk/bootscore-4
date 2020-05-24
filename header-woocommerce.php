@@ -179,8 +179,6 @@
                     </span>
                     <!-- Mini Cart Header End-->
 
-
-
                     <div class="opac"></div>
 
                     <div class="cart-right" id="cart">
@@ -212,26 +210,7 @@
                                 echo '</div></div>';
                             ?>
                             <!-- Cart Offcanvas End -->
-
-                        </div>
-
-
-                        <div class="cart-footer position-absolute border-top text-center bg-white">
-                            <div class="p-3">
-
-                                <div class="font-weight-bold lead text-success">
-                                    <?php esc_html_e( 'Subtotal', 'woocommerce' ); ?>:
-                                    <?php
-                                    //echo '<div class="">Zwischensumme: ';
-                                    echo '<span id="mcart-stotal">'.WC()->cart->get_cart_subtotal().'</span>';     
-                                    ?>
-
-                                </div>
-
-                                <p class="text-muted"><?php esc_html_e('To find out your shipping cost , Please proceed to checkout.' , 'bootscore'); ?></p>
-                                <a href="<?php echo get_permalink( wc_get_page_id( 'cart' ) ); ?>" class="btn btn-outline-primary btn-block"><?php esc_html_e('Edit cart' , 'bootscore'); ?></a>
-                                <a href="<?php echo get_permalink( wc_get_page_id( 'checkout' ) ); ?>" class="btn btn-primary btn-block"><?php esc_html_e('Proceed to checkout' , 'bootscore'); ?></a>
-                            </div>
+                            
                         </div>
 
                     </div>
