@@ -75,7 +75,7 @@ do_action( 'woocommerce_before_mini_cart' ); ?>
                                 <?php echo apply_filters( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
                                 'woocommerce_cart_item_remove_link',
                                 sprintf(
-                                    '<a href="%s" class="remove_from_cart_button btn btn-outline-danger btn-sm" aria-label="%s" data-product_id="%s" data-cart_item_key="%s" data-product_sku="%s"><i class="fas fa-times"></i></a>',
+                                    '<a href="%s" class="remove_from_cart_button btn btn-outline-danger btn-sm" aria-label="%s" data-product_id="%s" data-cart_item_key="%s" data-product_sku="%s">x</a>',
                                     esc_url( wc_get_cart_remove_url( $cart_item_key ) ),
                                     esc_attr__( 'Remove this item', 'woocommerce' ),
                                     esc_attr( $product_id ),

@@ -6,7 +6,7 @@ Tags: featured-images, threaded-comments, translation-ready
 Requires at least: 4.5
 Tested up to: 5.4
 Requires PHP: 5.6
-Stable tag: 3.1.8
+Stable tag: 3.2.0
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -44,6 +44,12 @@ Bootscore includes support for Infinite Scroll in Jetpack.
 
 
 == Changelog ==
+
+    = 3.2.0 - May 26 2020 =
+    
+        * Breadcrumb and WooCommerce breadcrumb are pluggable now
+        * Styled WooCommerce buttons
+        * Bug fixes
 
     = 3.1.9 - May 24 2020 =
     

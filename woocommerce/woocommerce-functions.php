@@ -200,17 +200,19 @@ if ( ! is_admin() && ! function_exists( 'wc_review_ratings_enabled' ) ) {
 
 
 // WooCommerce Breadcrumb
-add_filter( 'woocommerce_breadcrumb_defaults', 'jk_woocommerce_breadcrumbs' );
-function jk_woocommerce_breadcrumbs() {
-    return array(
-            'delimiter'   => ' &nbsp;&#47;&nbsp; ',
-            'wrap_before' => '<nav class="breadcrumb mb-4 mt-2" itemprop="breadcrumb">',
-            'wrap_after'  => '</nav>',
-            'before'      => '',
-            'after'       => '',
-            'home'        => _x( 'Home', 'breadcrumb', 'woocommerce' ),
-        );
-}
+if ( ! function_exists( 'bs_woocommerce_breadcrumbs' ) ) :
+    add_filter( 'woocommerce_breadcrumb_defaults', 'bs_woocommerce_breadcrumbs' );
+    function bs_woocommerce_breadcrumbs() {
+        return array(
+                'delimiter'   => ' &nbsp;&#47;&nbsp; ',
+                'wrap_before' => '<nav class="breadcrumb mb-4 mt-2" itemprop="breadcrumb">',
+                'wrap_after'  => '</nav>',
+                'before'      => '',
+                'after'       => '',
+                'home'        => _x( 'Home', 'breadcrumb', 'woocommerce' ),
+            );
+    }
+endif;
 // WooCommerce Breadcrumb End
 
 

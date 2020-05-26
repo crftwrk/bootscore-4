@@ -58,6 +58,12 @@
     margin: 1rem auto
 }
 
+.woocommerce ul.cart_list li .star-rating,
+.woocommerce ul.product_list_widget li .star-rating {
+    float: none;
+    margin: .5rem 0;
+}
+
 .woocommerce-input-wrapper {
     width: 100%
 }
@@ -118,8 +124,6 @@ span.badge.badge-danger.sale {
 .woocommerce-price-suffix {
     display: block
 }
-
-
 
 ins {
     text-decoration: none
@@ -219,10 +223,6 @@ label.custom-control-label {
     animation: spinner-border .75s linear infinite
 }
 
-
-
-
-
 .woocommerce-variation.single_variation {
     margin-bottom: 2rem
 }
@@ -281,13 +281,17 @@ span.password-input {
     border-radius: .25rem !important
 }
 
-.woocommerce #respond input#submit {
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button {
     font-size: 1rem;
     line-height: 1.5;
     padding: .375rem .75rem;
     font-weight: 400;
     border-radius: .25rem;
-    border: 1px solid
+    border: 1px solid;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
 }
 
 .place-order div {
@@ -315,7 +319,8 @@ button#place_order {
     border-top: 1px solid
 }
 
-.product_meta .sku_wrapper::after, .product_meta .posted_in::after {
+.product_meta .sku_wrapper::after,
+.product_meta .posted_in::after {
     content: "\A";
     white-space: pre;
 }
