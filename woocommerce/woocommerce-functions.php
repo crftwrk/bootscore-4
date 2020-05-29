@@ -68,26 +68,7 @@ function my_header_add_to_cart_fragment( $fragments ) {
 add_filter( 'woocommerce_add_to_cart_fragments', 'my_header_add_to_cart_fragment' );
 
 endif;
-
 // Minicrt Header END
-
-
-// Minicrt Offcanvas
-add_filter( 'woocommerce_add_to_cart_fragments', 'wc_mini_cart_ajax_refresh' );
-function wc_mini_cart_ajax_refresh( $fragments ){
-    ## 1. Refreshing mini cart subtotal amount
-    $fragments['#mcart-stotal'] = '<span id="mcart-stotal">'.WC()->cart->get_cart_subtotal().'</span>';
-
-    ## 2. Refreshing cart subtotal
-    ob_start();
-    echo '<span id="mcart-widget">';
-    woocommerce_mini_cart();
-    echo '</span>';
-    $fragments['#mcart-widget'] = ob_get_clean();
-
-    return $fragments;
-}
-// Minicrt Offcanvas END
 
 
 // Forms

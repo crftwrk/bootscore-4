@@ -39,7 +39,7 @@ do_action( 'woocommerce_before_mini_cart' ); ?>
 				?>
 				<div class="woocommerce-mini-cart-item border-top <?php echo esc_attr( apply_filters( 'woocommerce_mini_cart_item_class', 'mini_cart_item', $cart_item, $cart_item_key ) ); ?>">
 					
-                    <div class="p-3">
+                    <div class="py-3">
                     
                         <div class="row">
                         
@@ -75,7 +75,7 @@ do_action( 'woocommerce_before_mini_cart' ); ?>
                                 <?php echo apply_filters( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
                                 'woocommerce_cart_item_remove_link',
                                 sprintf(
-                                    '<a href="%s" class="remove_from_cart_button btn btn-outline-danger btn-sm" aria-label="%s" data-product_id="%s" data-cart_item_key="%s" data-product_sku="%s">x</a>',
+                                    '<a href="%s" class="remove_from_cart_button btn btn-outline-danger btn-sm" aria-label="%s" data-product_id="%s" data-cart_item_key="%s" data-product_sku="%s">X</a>',
                                     esc_url( wc_get_cart_remove_url( $cart_item_key ) ),
                                     esc_attr__( 'Remove this item', 'woocommerce' ),
                                     esc_attr( $product_id ),
@@ -100,9 +100,9 @@ do_action( 'woocommerce_before_mini_cart' ); ?>
 		?>
 	</div>
 
-<div class="cart-footer position-fixed border-top text-center bg-white">
+<div class="cart-footer border-top text-center">
     
-    <div class="p-3">
+    <div class="py-3">
 
 	<p class="woocommerce-mini-cart__total total lead mb-1">
 		<?php
@@ -130,7 +130,7 @@ do_action( 'woocommerce_before_mini_cart' ); ?>
 
 <?php else : ?>
 
-	<p class="woocommerce-mini-cart__empty-message alert alert-info mx-3"><?php esc_html_e( 'No products in the cart.', 'woocommerce' ); ?></p>
+	<p class="woocommerce-mini-cart__empty-message alert alert-info"><?php esc_html_e( 'No products in the cart.', 'woocommerce' ); ?></p>
 
 <?php endif; ?>
 

@@ -46,8 +46,6 @@
 
                 <div class="container">
 
-
-
                     <!-- Toggler -->
                     <button class="navbar-toggler" type="button" data-toggle="offcanvas">
                         <div class="toggler-icon"><span></span><span></span><span></span><span></span></div>
@@ -199,25 +197,14 @@
 
                             <h2 class="p-3"><?php esc_html_e('Cart' , 'bootscore'); ?></h2>
 
-                            <!--Cart Offcanvas -->
-                            <?php
-                                echo '<div class="mega_menu cart">';
-                                echo '<div class="mega_sub">';
-                                echo '<span id="mcart-widget">';
-                                ## Ajax refresh: Mini cart widget
-                                woocommerce_mini_cart();
-                                echo '</span>';
-                                echo '</div></div>';
-                            ?>
-                            <!-- Cart Offcanvas End -->
+                            <div class="widget_shopping_cart_content"><?php woocommerce_mini_cart(); ?></div>
                             
                         </div>
 
                     </div>
 
-                </div>
-                <!-- container -->
+                </div><!-- container -->
+                
             </nav>
 
-        </header>
-        <!-- #masthead -->
+        </header><!-- #masthead -->

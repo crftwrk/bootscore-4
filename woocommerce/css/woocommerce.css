@@ -291,7 +291,7 @@ span.password-input {
     font-weight: 400;
     border-radius: .25rem;
     border: 1px solid;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
 }
 
 .place-order div {
@@ -323,4 +323,16 @@ button#place_order {
 .product_meta .posted_in::after {
     content: "\A";
     white-space: pre;
+}
+
+.woocommerce .widget_shopping_cart .total,
+.woocommerce.widget_shopping_cart .total {
+    border-top: none;
+}
+
+@media (max-width: 768px) {
+    td.actions {
+        border-bottom-right-radius: calc(.25rem - 1px);
+        border-bottom-left-radius: calc(.25rem - 1px);
+    }
 }

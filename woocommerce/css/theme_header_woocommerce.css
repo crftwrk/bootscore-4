@@ -118,8 +118,9 @@
 	}
 }
 
-.cart-footer {
-	bottom: 0
+.cart-list .cart-footer {
+    position: fixed;
+    bottom: 0;
 }
 
 @media (max-width:991px) {
@@ -177,6 +178,19 @@
 	transition: opacity .1s;
 	transition-delay: .3s
 }
+
+.cart-list .woocommerce-mini-cart__empty-message.alert {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.cart-list .woocommerce-mini-cart-item, .cart-list .cart-footer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+
 
 .variation dt {
     float: left;

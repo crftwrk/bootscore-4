@@ -1,20 +1,20 @@
 # Copyright (C) 2017 Automattic
 # This file is distributed under the GNU General Public License v2 or later.
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: _s 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2020-05-18 16:30+0000\n"
+"POT-Creation-Date: 2020-05-18 16:37+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2020-05-18 16:30+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
-"Language-Team: German (Formal)\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
 "X-Generator: Loco https://localise.biz/\n"
-"Language: de_DE_formal\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Loco-Version: 2.3.4; wp-5.4.1"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;"
 
 #: category-equal-height.php:67 category-sidebar-left.php:72
 #: author-masonry.php:70 archive.php:70 author-equal-height.php:74
@@ -25,57 +25,57 @@ msgstr ""
 #: archive-masonry.php:63 category-equal-height-sidebar-right.php:66
 #: template-parts/content-search.php:60
 msgid "Read more"
-msgstr "Weiterlesen"
+msgstr ""
 
 #. translators: %s: search query.
 #: search.php:26
 #, php-format
 msgid "Search Results for: %s"
-msgstr "Suchergebnisse für: %s"
+msgstr ""
 
 #. Name of the template
 msgid "No Sidebar"
-msgstr "Ohne Sidebar"
+msgstr ""
 
 #: single-sidebar-none.php:36 single-full-width-image.php:47 single.php:39
 #: single-sidebar-left.php:42
 msgid " by "
-msgstr " von "
+msgstr ""
 
 #. Name of the template
 msgid "Full width image"
-msgstr "Bild in voller Breite"
+msgstr ""
 
 #: page.php:40 page-blank-without-container.php:21 page-sidebar-none.php:30
 #: page-sidebar-left.php:35 page-blank-with-container.php:21
 msgid "Pages:"
-msgstr "Seiten:"
+msgstr ""
 
 #: functions.php:60
 msgid "Main Menu"
-msgstr "Hauptmenü"
+msgstr ""
 
 #: functions.php:61
 msgid "Footer Menu"
-msgstr "Footer Menü"
+msgstr ""
 
 #: functions.php:106
 msgid "Sidebar"
-msgstr "Sidebar"
+msgstr ""
 
 #: functions.php:108 functions.php:119 functions.php:131 functions.php:143
 #: functions.php:155 functions.php:167 functions.php:179 functions.php:191
 #: functions.php:204
 msgid "Add widgets here."
-msgstr "Widgets hier einfügen"
+msgstr ""
 
 #: functions.php:117
 msgid "Top Nav Search"
-msgstr "Top Nav Suche"
+msgstr ""
 
 #: functions.php:129
 msgid "Top Nav Module"
-msgstr "Top Nav Modul"
+msgstr ""
 
 #: functions.php:141
 msgid "Top Footer"
@@ -83,58 +83,58 @@ msgstr ""
 
 #: functions.php:153
 msgid "Footer 1"
-msgstr "Footer 1"
+msgstr ""
 
 #: functions.php:165
 msgid "Footer 2"
-msgstr "Footer 2"
+msgstr ""
 
 #: functions.php:177
 msgid "Footer 3"
-msgstr "Footer 3"
+msgstr ""
 
 #: functions.php:189
 msgid "Footer 4"
-msgstr "Footer 4"
+msgstr ""
 
 #: functions.php:202
 msgid "404 Page"
-msgstr "404 Seite"
+msgstr ""
 
 #: functions.php:400
 msgid "Password"
-msgstr "Passwort"
+msgstr ""
 
 #: functions.php:401
 msgid "Submit"
-msgstr "Senden"
+msgstr ""
 
 #. Name of the template
 msgid "Sidebar left"
-msgstr "Sidebar links"
+msgstr ""
 
 #: 404.php:22
 msgid "Page not found."
-msgstr "Seite nicht gefunden"
+msgstr ""
 
 #: 404.php:27
 msgid "Back Home &raquo;"
-msgstr "Zur Startseite &raquo;"
+msgstr ""
 
 #. Name of the template
 msgid "Blank without container"
-msgstr "Blank ohne container"
+msgstr ""
 
 #. Name of the template
 msgid "Full Width Image"
-msgstr "Bild in voller Breite"
+msgstr ""
 
 #. %s: post title
 #: comments.php:34
 #, php-format
 msgctxt "comments title"
 msgid "One Comment &ldquo;%s&rdquo;"
-msgstr "Ein Kommentar &ldquo;%s&rdquo;"
+msgstr ""
 
 #. 1: number of comments, 2: post title
 #: comments.php:38
@@ -142,188 +142,184 @@ msgstr "Ein Kommentar &ldquo;%s&rdquo;"
 msgctxt "comments title"
 msgid "%1$s Comment on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s Comments on &ldquo;%2$s&rdquo;"
-msgstr[0] "%1$s Kommentare bei &ldquo;%2$s&rdquo;"
-msgstr[1] "%1$s Kommentare bei &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
 
 #: comments.php:55 comments.php:73
 msgid "Comment navigation"
-msgstr "Kommentar Navigation"
+msgstr ""
 
 #: comments.php:58 comments.php:76
 msgid "Older Comments"
-msgstr "Ältere Kommentare"
+msgstr ""
 
 #: comments.php:59 comments.php:77
 msgid "Newer Comments"
-msgstr "Neueste Kommentare"
+msgstr ""
 
 #: comments.php:91
 msgid "Comments are closed."
-msgstr "Kommentare sind geschlossen"
+msgstr ""
 
 #. %s: post title
 #: comments.php:98 inc/template-tags.php:92
 msgid "Leave a Comment"
-msgstr "Kommentar schreiben"
+msgstr ""
 
 #: comments.php:99
 #, php-format
 msgid "Leave a Comment to %s"
-msgstr "Schreibe Kommentar für %s"
+msgstr ""
 
 #: comments.php:100
 msgid "Cancel"
-msgstr "Abbrechen"
+msgstr ""
 
 #: comments.php:101
 msgid "Post Comment"
-msgstr "Kommentar posten"
+msgstr ""
 
 #: comments.php:103
 msgid "Start typing..."
-msgstr "Schreiben Sie Ihren Kommentar..."
+msgstr ""
 
 #: comments.php:121 woocommerce/single-product-reviews.php:89
 msgid "Name*"
-msgstr "Name*"
+msgstr ""
 
 #: comments.php:125 woocommerce/single-product-reviews.php:95
 msgid "Email* (will not be published)"
-msgstr "Email* (wird nicht veröffentlicht)"
+msgstr ""
 
 #: comments.php:130
 msgid "Website"
-msgstr "Webseite"
+msgstr ""
 
 #: footer.php:101
 msgid ""
 "Cookies help us deliver our services. By using our services, you agree to "
 "our use of cookies."
 msgstr ""
-"Cookies erleichtern die Bereitstellung unserer Dienste. Mit der Nutzung "
-"unserer Dienste erklären Sie sich damit einverstanden, dass wir Cookies "
-"verwenden."
 
 #: footer.php:101
-msgid "/privacy-policy/"
-msgstr "/datenschutzerklaerung/"
+msgctxt "/datenschutzerklaerung"
+msgid "/privacy-policy"
+msgstr ""
 
 #: footer.php:101
 msgid "More Information"
-msgstr "Weitere Informationen"
+msgstr ""
 
 #: footer.php:101
 msgid "Accept"
-msgstr "Verstanden"
+msgstr ""
 
 #. Name of the template
 msgid "Left Sidebar"
-msgstr "Linke Sidebar"
+msgstr ""
 
 #. Name of the template
 msgid "Blank with container"
-msgstr "Blank mit container"
+msgstr ""
 
 #: header-woocommerce.php:79
 msgid "Close menu"
-msgstr "Menü schliessen"
+msgstr ""
 
 #: header-woocommerce.php:118 header-woocommerce.php:165
 msgid "Account"
-msgstr "Mein Konto"
+msgstr ""
 
 #: header-woocommerce.php:169
 msgid "View your shopping cart"
-msgstr "Warenkorb ansehen"
+msgstr ""
 
 #: header-woocommerce.php:191
 msgid "Continue shopping"
-msgstr "Weiter einkaufen"
+msgstr ""
 
 #: header-woocommerce.php:203
 msgid "Cart"
-msgstr "Warenkorb"
+msgstr ""
 
 #: header-woocommerce.php:240
 msgid "To find out your shipping cost , Please proceed to checkout."
-msgstr "Um Ihre Versandkosten zu berechnen, gehen Sie bitte zur Kasse."
+msgstr ""
 
 #: header-woocommerce.php:241
 msgid "Edit cart"
-msgstr "Warenkorb bearbeiten"
+msgstr ""
 
 #: header-woocommerce.php:242
 msgid "Proceed to checkout"
-msgstr "Zur Kasse"
+msgstr ""
 
 #: searchform.php:4
 msgid "Search"
-msgstr "Suche"
+msgstr ""
 
 #: inc/class-wp-bootstrap-navwalker.php:366
 msgid "Add a menu"
-msgstr "Menü hinzufügen"
+msgstr ""
 
 #. translators: used between list items, there is a space after the comma
 #: inc/template-tags.php:20
 msgid ", "
-msgstr ","
+msgstr ""
 
 #. translators: %s: post author.
 #: inc/template-tags.php:67
 #, php-format
 msgctxt "post author"
 msgid "by %s"
-msgstr "von %s"
+msgstr ""
 
 #. %s: Name of current post. Only visible to screen readers
 #: inc/template-tags.php:121 inc/comment-list.php:32 inc/comment-list.php:55
 msgid "Edit"
-msgstr "Bearbeiten"
+msgstr ""
 
 #: inc/template-tags.php:149
 msgid "Leave a comment"
-msgstr "Kommentar schreiben"
+msgstr ""
 
 #. translators: 1: list of tags.
 #: inc/template-tags.php:173
 #, php-format
 msgid "Tagged %1$s"
-msgstr "Tagged %1$s"
+msgstr ""
 
 #: inc/comment-list.php:32
 msgid "Pingback:"
-msgstr "Oingback:"
+msgstr ""
 
 #: inc/comment-list.php:47
 #, php-format
 msgid "%s <span class=\"says d-none\">says:</span>"
-msgstr "%s <span class=\"says d-none\">sagt:</span>"
+msgstr ""
 
 #: inc/comment-list.php:52
 #, php-format
 msgctxt "1: date, 2: time"
 msgid "%1$s at %2$s"
-msgstr "%1$s um %2$s"
+msgstr ""
 
 #: inc/comment-list.php:61
 msgid "Your comment is awaiting moderation."
-msgstr "Ihr Kommentar wartet auf Moderation."
+msgstr ""
 
 #: inc/comment-list.php:119
 msgid ""
 "Save my name, email, and website in this browser for the next time I comment."
 msgstr ""
-"Meinen Namen, E-Mail und Website in diesem Browser speichern, bis ich wieder "
-"kommentiere."
 
 #: woocommerce/single-product-reviews.php:134
 msgid "Your review...*"
-msgstr "Ihre Bewertung...*"
+msgstr ""
 
 #: template-parts/content-none.php:14
 msgid "Nothing Found for"
-msgstr "Nichts gefunden für"
+msgstr ""
 
 #. translators: 1: link to WP admin new post page.
 #: template-parts/content-none.php:25
@@ -331,28 +327,22 @@ msgstr "Nichts gefunden für"
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
-"Bereit Ihren ersten Post zu veröffentlichen? <a href=\"%1$s\">Starten Sie "
-"hier</a>."
 
 #: template-parts/content-none.php:37
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
-"Nichts entspricht Ihren Suchkriterien. Bitte versuchen Sie es mit anderen "
-"Stichwörtern erneut."
 
 #: template-parts/content-none.php:43
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
-"Anscheinend können wir nicht finden, wonach Sie suchen. Suchen Sie bitte mit "
-"anderen Schlagwörtern."
 
 #: languages/translations-isopost.php:1
 msgid "All"
-msgstr "Alle"
+msgstr ""
 
 #: woocommerce/loop/orderby.php:27
 msgid "Shop order"
@@ -360,7 +350,7 @@ msgstr ""
 
 #. Name of the theme
 msgid "bootScore"
-msgstr "bootScore"
+msgstr ""
 
 #. Description of the theme
 msgid ""
@@ -375,25 +365,15 @@ msgid ""
 " Some CSS, HTML, PHP and JS Skills are required to customize it completely. "
 "Make bootScore your own!"
 msgstr ""
-"A powerful Bootstrap Starter Onepage or Multi-Page Theme with WooCommerce "
-"Support. Examples: https://bootscore.me/#examples, Documentation: https:"
-"//bootscore.me/category/documentation/. This theme gives you full control "
-"whatever you do and the full freedom to design whatever you want. It comes "
-"with some useful header scripts and a wide selection of category, page, post,"
-" author and archive templates as well as sidebar, header, footer and 404 "
-"widgets. A preloader is included. There are just minor customizer settings "
-"in the backend. All important settings can only be made by touching the code."
-" Some CSS, HTML, PHP and JS Skills are required to customize it completely. "
-"Make bootScore your own!"
 
 #. URI of the theme
 msgid "https://bootscore.me/"
-msgstr "https://bootscore.me/"
+msgstr ""
 
 #. Author of the theme
 msgid "Bastian Kreiter"
-msgstr "Bastian Kreiter"
+msgstr ""
 
 #. Author URI of the theme
 msgid "https://crftwrk.de"
-msgstr "https://crftwrk.de"
+msgstr ""
