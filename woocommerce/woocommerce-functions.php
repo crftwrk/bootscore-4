@@ -257,3 +257,15 @@ function my_woocommerce_widget_shopping_cart_proceed_to_checkout() {
 add_action( 'woocommerce_widget_shopping_cart_buttons', 'my_woocommerce_widget_shopping_cart_button_view_cart', 10 );
 add_action( 'woocommerce_widget_shopping_cart_buttons', 'my_woocommerce_widget_shopping_cart_proceed_to_checkout', 20 );
 // Mini cart widget buttons End
+
+
+// Cart empty messaga alert
+remove_action( 'woocommerce_cart_is_empty', 'wc_empty_cart_message', 10 );
+add_action( 'woocommerce_cart_is_empty', 'custom_empty_cart_message', 10 );
+
+function custom_empty_cart_message() {
+    $html  = '<div class="cart-empty alert alert-info">';
+    $html .= wp_kses_post( apply_filters( 'wc_empty_cart_message', __( 'Your cart is currently empty.', 'woocommerce' ) ) );
+    echo $html . '</div>';
+}
+// Cart empty messaga alert End
