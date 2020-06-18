@@ -16,7 +16,6 @@
    background:var(--primary);
 }
 
-
 pre {
 	background: var(--light);
 }
@@ -25,13 +24,9 @@ blockquote {
 	background: var(--light);
 }
 
-
-
 q {
     background-color: var(--light);
 }
-
-
 
 .wp-block-button {
 	color: var(--primary);
@@ -41,9 +36,6 @@ q {
 	color: #fff;
 }
 
-
 :focus {
     outline: none !important;
 }
-
-

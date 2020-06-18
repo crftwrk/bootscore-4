@@ -4,7 +4,7 @@ Theme URI: https://bootscore.me/
 Author: Bastian Kreiter
 Author URI: https://crftwrk.de
 Description: A powerful Bootstrap Starter Onepage or Multi-Page Theme with WooCommerce Support. Examples: https://bootscore.me/#examples, Documentation: https://bootscore.me/category/documentation/. This theme gives you full control whatever you do and the full freedom to design whatever you want. It comes with some useful header scripts and a wide selection of category, page, post, author and archive templates as well as sidebar, header, footer and 404 widgets. A preloader is included. There are just minor customizer settings in the backend. All important settings can only be made by touching the code. Some CSS, HTML, PHP and JS Skills are required to customize it completely. Make bootScore your own!
-Version: 3.2.2
+Version: 3.2.3
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: bootscore
@@ -38,9 +38,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import url("css/theme_to_top.css");
 
 /* Theme Header presets */
-/*@import url("css/theme_header_up_down.css");*/			/* Activate the script in js/theme.js in line 150 */
-/*@import url("css/theme_header_transform.css");*/			/* Activate the script in js/theme.js in line 168 */
-/*@import url("css/theme_header_offcanvas.css");*/			/* Activate the script in js/theme.js in line 131, rename header.php in whateveryouwant.php and rename header-offcanvas.php into header.php */
+/*@import url("css/theme_header_transform.css");*/			/* Activate the script in js/theme.js in line 130 */
+/*@import url("css/theme_header_up_down.css");*/			/* Activate the script in js/theme.js in line 151 */
+/*@import url("css/theme_header_offcanvas.css");*/			/* Activate the script in js/theme.js in line 170, rename header.php in whateveryouwant.php and rename header-offcanvas.php into header.php */
 
 /* Content CSS - Add as much as you want*/
 @import url("css/custom.css");

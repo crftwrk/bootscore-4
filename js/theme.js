@@ -126,28 +126,29 @@ jQuery(document).ready(function ($) {
     });
 
 
-    
-    // Header Offcanvas - activate the stylesheet in style.css in line 43, rename header.php in whateveryouwant.php and rename header-offcanvas.php into header.php
-    /*$(function () {
-        'use strict'
 
-        $('[data-toggle="offcanvas"]').on('click', function () {
-            $('.offcanvas-collapse').toggleClass('open')
-        })
-    })
-
-    // Close nav collapse on click sub-menu nav-link
-    $('.navbar-nav>li>a:not(.dropdown-toggle), a.dropdown-item').on('click', function () {
-        $('.offcanvas-collapse').removeClass('open')
+    // Header transform - activate the stylesheet in style.css in line 41
+    /*$("#nav-main").addClass("on-top clear");
+    $(window).scroll(function () {
+    	var scroll = $(window).scrollTop();
+    	if (scroll > 0) {
+    		$("#nav-main").removeClass("on-top clear")
+    	} else {
+    		$("#nav-main").addClass("on-top clear")
+    	}
     });
-
-    // Close Offcanvas, opac on click / touch outside
-    $('.site-content, .opac').on('click touchstart', function () {
-        $('.offcanvas-collapse').removeClass('open')
+    // Header transform toggle
+    $('.clear .navbar-toggler').on('click', function () {
+    	$('#nav-main.on-top').toggleClass('clear')
+    });
+    // Nav transform on click / touch outside
+    $('.content').on('click touchstart', function () {
+    	$("#nav-main.on-top").addClass('clear')
     });*/
 
 
-    // Header up on scroll down, down on scroll up - activate the stylesheet in style.css in line 41
+
+    // Header up on scroll down, down on scroll up - activate the stylesheet in style.css in line 42
     /*var lastScrollTop = 0;
     $(window).scroll(function (event) {
     	var st = $(this).scrollTop();
@@ -165,25 +166,23 @@ jQuery(document).ready(function ($) {
     });*/
 
 
-    // Header transform - activate the stylesheet in style.css in line 42
-    /*$("#nav-main").addClass("on-top clear");
-    $(window).scroll(function () {
-    	var scroll = $(window).scrollTop();
-    	if (scroll > 0) {
-    		$("#nav-main").removeClass("on-top clear")
-    	} else {
-    		$("#nav-main").addClass("on-top clear")
-    	}
+
+    // Header Offcanvas - activate the stylesheet in style.css in line 43, rename header.php in whateveryouwant.php and rename header-offcanvas.php into header.php
+    /*$(function () {
+        'use strict'
+
+        $('[data-toggle="offcanvas"]').on('click', function () {
+            $('.offcanvas-collapse').toggleClass('open')
+        })
+    })
+    // Close nav collapse on click sub-menu nav-link
+    $('.navbar-nav>li>a:not(.dropdown-toggle), a.dropdown-item').on('click', function () {
+        $('.offcanvas-collapse').removeClass('open')
     });
 
-    // Header transform toggle
-    $('.clear .navbar-toggler').on('click', function () {
-    	$('#nav-main.on-top').toggleClass('clear')
-    });
-    
-    // Nav transform on click / touch outside
-    $('.content').on('click touchstart', function () {
-    	$("#nav-main.on-top").addClass('clear')
+    // Close Offcanvas, opac on click / touch outside
+    $('.site-content, .opac').on('click touchstart', function () {
+        $('.offcanvas-collapse').removeClass('open')
     });*/
 
 
@@ -237,7 +236,7 @@ jQuery(document).ready(function ($) {
 
 
     // Forms
-    $('select, #billing_state').addClass('custom-select');    
-    
-    
+    $('select, #billing_state').addClass('custom-select');
+
+
 }); // jQuery End

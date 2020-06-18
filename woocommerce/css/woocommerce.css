@@ -331,8 +331,20 @@ button#place_order {
 }
 
 @media (max-width: 768px) {
-    td.actions {
+    td.actions, .woocommerce table.shop_table_responsive tr:nth-child(2n) td, .woocommerce-page table.shop_table_responsive tr:nth-child(2n) td {
         border-bottom-right-radius: calc(.25rem - 1px);
         border-bottom-left-radius: calc(.25rem - 1px);
     }
+}
+
+ul.tabs.wc-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+ul.tabs.wc-tabs {
+  -ms-overflow-style: none;
+}
+
+.price .woocommerce-Price-amount.amount {
+    font-size: 1.25rem;
 }

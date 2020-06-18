@@ -285,14 +285,18 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 }
 
 
-// Amount of posts in category
-function wpsites_query( $query ) {
-if ( $query->is_archive() && $query->is_main_query() && !is_admin() ) {
-        $query->set( 'posts_per_page', 12 );
+// Amount of posts/products in category
+if ( ! function_exists( 'wpsites_query' ) ) :
+
+    function wpsites_query( $query ) {
+    if ( $query->is_archive() && $query->is_main_query() && !is_admin() ) {
+            $query->set( 'posts_per_page', 24 );
+        }
     }
-}
-add_action( 'pre_get_posts', 'wpsites_query' );
-// Amount of posts in category End
+    add_action( 'pre_get_posts', 'wpsites_query' );
+
+endif;
+// Amount of posts/products in category End
 
 
 // Pagination Categories
@@ -436,7 +440,5 @@ foreach ( array( 'term_description' ) as $filter ) {
 remove_filter('pre_user_description', 'wp_filter_kses');
 add_filter( 'pre_user_description', 'wp_filter_post_kses');
 // Allow HTML in author bio End
-
-
 
 
