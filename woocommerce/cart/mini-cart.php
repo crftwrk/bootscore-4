@@ -115,7 +115,7 @@ do_action( 'woocommerce_before_mini_cart' ); ?>
 		?>
 	</p>
     
-    <p class="text-muted small"><?php esc_html_e('To find out your shipping cost , Please proceed to checkout.' , 'bootscore'); ?></p>
+    <p class="text-muted small shipping-text"><?php esc_html_e('To find out your shipping cost , Please proceed to checkout.' , 'bootscore'); ?></p>
                              
 
 	<?php do_action( 'woocommerce_widget_shopping_cart_before_buttons' ); ?>

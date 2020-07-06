@@ -6,7 +6,7 @@ Tags: featured-images, threaded-comments, translation-ready
 Requires at least: 4.5
 Tested up to: 5.4
 Requires PHP: 5.6
-Stable tag: 3.2.3
+Stable tag: 3.2.4
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -45,9 +45,13 @@ Bootscore includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
+    = 3.2.4 - July 06 2020 =
+    
+        * Fixed Gravatar image in author.php
+
     = 3.2.3 - June 18 2020 =
     
-        + Changed all get_stylesheet_template_uri to get_stylesheet_directory_uri. Now you can simple replace logo and favicons on child theme by place a copy of the img folder and replace your ig files.
+        + Changed all get_stylesheet_template_uri to get_stylesheet_directory_uri. Now you can simple replace logo and favicons on child theme by place a copy of the img folder and replace your image files.
         * Amount of posts/products in category is pluggable now
         * Changed number of posts per page in functions.php from 12 to 24
         * CSS improvements
