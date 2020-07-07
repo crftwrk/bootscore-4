@@ -34,7 +34,7 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
 
         <h2><?php esc_html_e( 'Login', 'woocommerce' ); ?></h2>
 
-        <div class="card mt-3">
+        <div class="card mt-3 mb-4">
 
             <form class="card-body" method="post">
 
