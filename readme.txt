@@ -6,7 +6,7 @@ Tags: featured-images, threaded-comments, translation-ready
 Requires at least: 4.5
 Tested up to: 5.4
 Requires PHP: 5.6
-Stable tag: 3.2.4
+Stable tag: 3.2.5
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -44,6 +44,10 @@ Bootscore includes support for Infinite Scroll in Jetpack.
 
 
 == Changelog ==
+
+    = 3.2.5 - July 09 2020 =
+    
+        * Updated form-add-payment-method.php and single-product-reviews.php
 
     = 3.2.4 - July 06 2020 =
     

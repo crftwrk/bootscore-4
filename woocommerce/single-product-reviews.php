@@ -12,7 +12,7 @@
  *
  * @see     https://docs.woocommerce.com/document/template-structure/
  * @package WooCommerce/Templates
- * @version 3.6.0
+ * @version 4.3.0
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -25,9 +25,9 @@ if ( ! comments_open() ) {
 
 ?>
 <div id="reviews" class="woocommerce-Reviews">
-    <div id="comments">
-        <h2 class="woocommerce-Reviews-title">
-            <?php
+	<div id="comments">
+		<h2 class="woocommerce-Reviews-title">
+			<?php
 			$count = $product->get_review_count();
 			if ( $count && wc_review_ratings_enabled() ) {
 				/* translators: 1: reviews count 2: product name */
@@ -37,14 +37,14 @@ if ( ! comments_open() ) {
 				esc_html_e( 'Reviews', 'woocommerce' );
 			}
 			?>
-        </h2>
+		</h2>
 
-        <?php if ( have_comments() ) : ?>
-        <ol class="commentlist">
-            <?php wp_list_comments( apply_filters( 'woocommerce_product_review_list_args', array( 'callback' => 'woocommerce_comments' ) ) ); ?>
-        </ol>
+		<?php if ( have_comments() ) : ?>
+			<ol class="commentlist">
+				<?php wp_list_comments( apply_filters( 'woocommerce_product_review_list_args', array( 'callback' => 'woocommerce_comments' ) ) ); ?>
+			</ol>
 
-        <?php
+			<?php
 			if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) :
 				echo '<nav class="woocommerce-pagination">';
 				paginate_comments_links(
@@ -60,23 +60,23 @@ if ( ! comments_open() ) {
 				echo '</nav>';
 			endif;
 			?>
-        <?php else : ?>
-        <p class="woocommerce-noreviews"><?php esc_html_e( 'There are no reviews yet.', 'woocommerce' ); ?></p>
-        <?php endif; ?>
-    </div>
+		<?php else : ?>
+			<p class="woocommerce-noreviews"><?php esc_html_e( 'There are no reviews yet.', 'woocommerce' ); ?></p>
+		<?php endif; ?>
+	</div>
 
-    <?php if ( get_option( 'woocommerce_review_rating_verification_required' ) === 'no' || wc_customer_bought_product( '', get_current_user_id(), $product->get_id() ) ) : ?>
-    <div id="review_form_wrapper">
-        <div id="review_form">
-            <?php
+	<?php if ( get_option( 'woocommerce_review_rating_verification_required' ) === 'no' || wc_customer_bought_product( '', get_current_user_id(), $product->get_id() ) ) : ?>
+		<div id="review_form_wrapper">
+			<div id="review_form">
+				<?php
 				$commenter    = wp_get_current_commenter();
 				$comment_form = array(
 					/* translators: %s is product title */
 					'title_reply'         => have_comments() ? esc_html__( 'Add a review', 'woocommerce' ) : sprintf( esc_html__( 'Be the first to review &ldquo;%s&rdquo;', 'woocommerce' ), get_the_title() ),
 					/* translators: %s is product title */
 					'title_reply_to'      => esc_html__( 'Leave a Reply to %s', 'woocommerce' ),
-					'title_reply_before'  => '<h2 id="reply-title" class="comment-reply-title">',
-					'title_reply_after'   => '</h2>',
+					'title_reply_before'  => '<h3 id="reply-title" class="comment-reply-title">',
+					'title_reply_after'   => '</h3>',
 					'comment_notes_after' => '',
 					'label_submit'        => esc_html__( 'Submit', 'woocommerce' ),
 					'logged_in_as'        => '',
@@ -91,7 +91,7 @@ if ( ! comments_open() ) {
 						'value'    => $commenter['comment_author'],
 						'required' => $name_email_required,
 					),
-					'email' => array(
+					'email'  => array(
 						'label'    => __( 'Email* (will not be published)', 'bootscore' ),
 						'type'     => 'email',
 						'value'    => $commenter['comment_author_email'],
@@ -109,7 +109,7 @@ if ( ! comments_open() ) {
 						$field_html .= '&nbsp;<span class="required">*</span>';
 					}*/
 
-					$field_html .= '</label><input placeholder="' . esc_attr( $field['label'] ) . '" class="form-control" id="' . esc_attr( $key ) . '" name="' . esc_attr( $key ) . '" type="' . esc_attr( $field['type'] ) . '" value="' . esc_attr( $field['value'] ) . '" size="30" ' . ( $field['required'] ? 'required' : '' ) . ' /></p>';
+					$field_html .= '</label><input id="' . esc_attr( $key ) . '" placeholder="' . esc_attr( $field['label'] ) . '" class="form-control" name="' . esc_attr( $key ) . '" type="' . esc_attr( $field['type'] ) . '" value="' . esc_attr( $field['value'] ) . '" size="30" ' . ( $field['required'] ? 'required' : '' ) . ' /></p>';
 
 					$comment_form['fields'][ $key ] = $field_html;
 				}
@@ -121,7 +121,7 @@ if ( ! comments_open() ) {
 				}
 
 				if ( wc_review_ratings_enabled() ) {
-					$comment_form['comment_field'] = '<div class="comment-form-rating"><label for="rating">' . esc_html__( 'Your rating', 'woocommerce' ) . '</label><select name="rating" id="rating" required>
+					$comment_form['comment_field'] = '<div class="comment-form-rating"><label for="rating">' . esc_html__( 'Your rating', 'woocommerce' ) . ( wc_review_ratings_required() ? '&nbsp;<span class="required">*</span>' : '' ) . '</label><select name="rating" id="rating" required>
 						<option value="">' . esc_html__( 'Rate&hellip;', 'woocommerce' ) . '</option>
 						<option value="5">' . esc_html__( 'Perfect', 'woocommerce' ) . '</option>
 						<option value="4">' . esc_html__( 'Good', 'woocommerce' ) . '</option>
@@ -131,15 +131,15 @@ if ( ! comments_open() ) {
 					</select></div>';
 				}
 
-				$comment_form['comment_field'] .= '<p class="comment-form-comment"><textarea id="comment" name="comment" class="form-control" placeholder="' . __('Your review...*', 'bootscore') . '" cols="45" rows="8" required></textarea></p>';
+				$comment_form['comment_field'] .= '<p class="comment-form-comment"><textarea id="comment" class="form-control" placeholder="' . __('Your review...*', 'bootscore') . '" name="comment" cols="45" rows="8" required></textarea></p>';
 
 				comment_form( apply_filters( 'woocommerce_product_review_comment_form_args', $comment_form ) );
 				?>
-        </div>
-    </div>
-    <?php else : ?>
-    <p class="woocommerce-verification-required"><?php esc_html_e( 'Only logged in customers who have purchased this product may leave a review.', 'woocommerce' ); ?></p>
-    <?php endif; ?>
+			</div>
+		</div>
+	<?php else : ?>
+		<p class="woocommerce-verification-required"><?php esc_html_e( 'Only logged in customers who have purchased this product may leave a review.', 'woocommerce' ); ?></p>
+	<?php endif; ?>
 
-    <div class="clear"></div>
+	<div class="clear"></div>
 </div>
