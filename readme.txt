@@ -49,6 +49,7 @@ Bootscore includes support for Infinite Scroll in Jetpack.
     
         * Updated to Bootstrap 4.5
         * Removed samples bootstrap.min-sketch.css and bootstrap.min-pastell.css
+        * Updated to fontawesome-free-5.14.0
 
     = 3.2.5 - July 09 2020 =
     
