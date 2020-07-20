@@ -61,7 +61,7 @@
                         <div class="dropdown-menu bg-light border-top-0 border-left-0 border-right-0 border-bottom-0 rounded-0" aria-labelledby="dropdownMenuLink">
                             <div class="container">
                                 <?php if ( is_active_sidebar( 'top-nav-search' )) : ?>
-                                <div>
+                                <div class="w-100">
                                     <?php dynamic_sidebar( 'top-nav-search' ); ?>
                                 </div>
                                 <?php endif; ?>
@@ -152,7 +152,7 @@
                         <div class="w-100 mt-n1 dropdown-menu bg-light border-top-0 border-left-0 border-right-0 border-bottom-0 rounded-0" aria-labelledby="dropdownMenuLink">
                             <div class="container pl-0">
                                 <?php if ( is_active_sidebar( 'top-nav-search' )) : ?>
-                                <div>
+                                <div class="w-100">
                                     <?php dynamic_sidebar( 'top-nav-search' ); ?>
                                 </div>
                                 <?php endif; ?>
