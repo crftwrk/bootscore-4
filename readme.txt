@@ -6,7 +6,7 @@ Tags: featured-images, threaded-comments, translation-ready
 Requires at least: 4.5
 Tested up to: 5.5
 Requires PHP: 5.6
-Stable tag: 3.2.9
+Stable tag: 3.3.0
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -44,6 +44,12 @@ Bootscore includes support for Infinite Scroll in Jetpack.
 
 
 == Changelog ==
+
+    = 3.3.0 - September 10 2020 =
+    
+        * Close Offcanvas, Dropdown Menu, Collapsed open Navbar and opac on window resize
+        * Removes <p> from excerpt is now pluggable (functions.php)
+        * Removes [...] from excerpt is now pluggable (functions.php)
 
     = 3.2.9 - August 19 2020 =
     

@@ -359,16 +359,23 @@ function post_link_attributes($output) {
 
 
 // Removes [...] from excerpt
-function new_excerpt_more( $more ) {
-    return '';
-}
-add_filter('excerpt_more', 'new_excerpt_more');
+if ( ! function_exists( 'new_excerpt_more' ) ) :
+    function new_excerpt_more( $more ) {
+        return '';
+    }
+    add_filter('excerpt_more', 'new_excerpt_more');
+endif;
 // Removes [...] from excerpt End
 
 
 // Read more in List, removes <p> around excerpt
-remove_filter('the_excerpt', 'wpautop');
+if ( ! function_exists( 'bs_read_more' ) ) :
+    function bs_read_more( $more ) { 
+    }
+    remove_filter('the_excerpt', 'wpautop');
+endif;
 // Read more in List, removes <p> around excerpt End
+
 
 // Excerpt to pages
 add_post_type_support( 'page', 'excerpt' );

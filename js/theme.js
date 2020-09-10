@@ -126,6 +126,15 @@ jQuery(document).ready(function ($) {
     });
 
 
+    // Close Offcanvas, Dropdown menu and opac on resize
+    window.onresize = function () {
+        $('.opac').removeClass('visible');
+        $('.offcanvas-collapse-left, .cart-right, .offcanvas-collapse, .toggler-icon-animated').removeClass('open');
+        $('.navbar-nav .dropdown-menu, .navbar-collapse').removeClass('show');
+        $(".navbar-nav .dropdown-menu").removeAttr("style");
+    }
+
+
 
     // Header transform - activate the stylesheet in style.css in line 41
     /*$("#nav-main").addClass("on-top clear");
