@@ -1,27 +1,27 @@
 .toggler-icon-animated span, .toggler-icon span {
-	background: var(--secondary);
+	background-color: var(--secondary);
 }
 
 .toggler-icon-animated.open span {
-	background: var(--primary);
+	background-color: var(--primary);
 }
 
 ::-moz-selection {
    color:#fff;
-   background:var(--primary);
+   background-color:var(--primary);
 }
 
 ::selection {
    color:#fff;
-   background:var(--primary);
+   background-color:var(--primary);
 }
 
 pre {
-	background: var(--light);
+	background-color: var(--light);
 }
 
 blockquote {
-	background: var(--light);
+	background-color: var(--light);
 }
 
 q {
@@ -34,9 +34,4 @@ q {
 
 .wp-block-button:hover {
 	color: #fff;
-}
-
-:focus {
-    outline: none !important;
-    box-shadow: none !important;
 }

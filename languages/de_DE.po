@@ -4,30 +4,29 @@ msgid ""
 msgstr ""
 "Project-Id-Version: _s 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2020-05-18 16:37+0000\n"
+"POT-Creation-Date: 2020-09-14 10:28+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2020-05-18 17:04+0000\n"
-"Last-Translator: \n"
-"Language-Team: German\n"
+"PO-Revision-Date: 2020-09-14 10:30+0000\n"
+"Last-Translator: Basti\n"
+"Language-Team: Deutsch\n"
 "X-Generator: Loco https://localise.biz/\n"
 "Language: de_DE\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Loco-Version: 2.3.4; wp-5.4.1"
+"X-Loco-Version: 2.4.3; wp-5.5.1"
 
-#: category-equal-height.php:67 category-sidebar-left.php:72
-#: author-masonry.php:70 archive.php:70 author-equal-height.php:74
-#: archive-sidebar-left.php:72 archive-equal-height-sidebar-right.php:66
-#: category.php:70 archive-equal-height.php:67 index.php:88 index.php:154
-#: category-masonry.php:63 author-sidebar-left.php:79
-#: author-equal-height-sidebar-right.php:73 author.php:77
-#: archive-masonry.php:63 category-equal-height-sidebar-right.php:66
+#: category-equal-height.php:71 category-sidebar-left.php:72
+#: author-masonry.php:70 archive.php:70 author-equal-height.php:78
+#: archive-sidebar-left.php:72 archive-equal-height-sidebar-right.php:70
+#: category.php:70 archive-equal-height.php:71 category-masonry.php:63
+#: author-sidebar-left.php:79 author-equal-height-sidebar-right.php:77
+#: category-equal-height-sidebar-right.php:70
 #: template-parts/content-search.php:60
-msgid "Read more"
-msgstr "mehr"
+msgid "Read more »"
+msgstr "Weiterlesen »"
 
-#. translators: %s: search query.
+#. %s: search query.
 #: search.php:26
 #, php-format
 msgid "Search Results for: %s"
@@ -59,53 +58,53 @@ msgstr ""
 msgid "Footer Menu"
 msgstr ""
 
-#: functions.php:106
-msgid "Sidebar"
-msgstr "Sidebar"
-
-#: functions.php:108 functions.php:119 functions.php:131 functions.php:143
-#: functions.php:155 functions.php:167 functions.php:179 functions.php:191
-#: functions.php:204
-msgid "Add widgets here."
-msgstr "Widgets hier hinzufügen"
-
-#: functions.php:117
-msgid "Top Nav Search"
-msgstr ""
-
-#: functions.php:129
+#: functions.php:113
 msgid "Top Nav Module"
 msgstr ""
 
-#: functions.php:141
+#: functions.php:115 functions.php:127 functions.php:139 functions.php:151
+#: functions.php:163 functions.php:175 functions.php:187 functions.php:199
+#: functions.php:211
+msgid "Add widgets here."
+msgstr "Widgets hier hinzufügen"
+
+#: functions.php:125
+msgid "Top Nav Search"
+msgstr ""
+
+#: functions.php:137
+msgid "Sidebar"
+msgstr "Sidebar"
+
+#: functions.php:149
 msgid "Top Footer"
 msgstr ""
 
-#: functions.php:153
+#: functions.php:161
 msgid "Footer 1"
 msgstr ""
 
-#: functions.php:165
+#: functions.php:173
 msgid "Footer 2"
 msgstr ""
 
-#: functions.php:177
+#: functions.php:185
 msgid "Footer 3"
 msgstr ""
 
-#: functions.php:189
+#: functions.php:197
 msgid "Footer 4"
 msgstr ""
 
-#: functions.php:202
+#: functions.php:209
 msgid "404 Page"
 msgstr "404 Seite"
 
-#: functions.php:400
+#: functions.php:422
 msgid "Password"
 msgstr "Passwort"
 
-#: functions.php:401
+#: functions.php:423
 msgid "Submit"
 msgstr "Senden"
 
@@ -205,7 +204,7 @@ msgstr ""
 "verwenden."
 
 #: footer.php:101
-msgctxt "/datenschutzerklaerung"
+#, fuzzy
 msgid "/privacy-policy"
 msgstr "/datenschutzerklaerung"
 
@@ -221,15 +220,19 @@ msgstr "Verstanden"
 msgid "Left Sidebar"
 msgstr "Linke Sidebar"
 
+#: index.php:88 index.php:154 author.php:77 archive-masonry.php:63
+msgid "Read more"
+msgstr "mehr"
+
 #. Name of the template
 msgid "Blank with container"
 msgstr "Blank mit Container"
 
-#: header-woocommerce.php:79
+#: header-woocommerce.php:81
 msgid "Close menu"
 msgstr "Menü schliessen"
 
-#: header-woocommerce.php:118 header-woocommerce.php:165
+#: header-woocommerce.php:120 header-woocommerce.php:165
 msgid "Account"
 msgstr "Mein Konto"
 
@@ -237,25 +240,13 @@ msgstr "Mein Konto"
 msgid "View your shopping cart"
 msgstr "Warenkorb ansehen"
 
-#: header-woocommerce.php:191
+#: header-woocommerce.php:190
 msgid "Continue shopping"
 msgstr "Weiter einkaufen"
 
-#: header-woocommerce.php:203
+#: header-woocommerce.php:202
 msgid "Cart"
 msgstr "Warenkorb"
-
-#: header-woocommerce.php:240
-msgid "To find out your shipping cost , Please proceed to checkout."
-msgstr "Um deine Versandkosten zu berechnen, gehe bitte zur Kasse."
-
-#: header-woocommerce.php:241
-msgid "Edit cart"
-msgstr "Warenkorb bearbeiten"
-
-#: header-woocommerce.php:242
-msgid "Proceed to checkout"
-msgstr "Zur Kasse"
 
 #: searchform.php:4
 msgid "Search"
@@ -265,12 +256,11 @@ msgstr "Suche"
 msgid "Add a menu"
 msgstr "Menü hinzufügen"
 
-#. translators: used between list items, there is a space after the comma
+#. used between list items, there is a space after the comma
 #: inc/template-tags.php:20
 msgid ", "
 msgstr ", "
 
-#. translators: %s: post author.
 #: inc/template-tags.php:67
 #, php-format
 msgctxt "post author"
@@ -286,7 +276,7 @@ msgstr "Bearbeiten"
 msgid "Leave a comment"
 msgstr "Kommentar schreiben"
 
-#. translators: 1: list of tags.
+#. 1: list of tags.
 #: inc/template-tags.php:173
 #, php-format
 msgid "Tagged %1$s"
@@ -326,7 +316,7 @@ msgstr "Deine Bewertung...*"
 msgid "Nothing Found for"
 msgstr "Nichts gefunden für"
 
-#. translators: 1: link to WP admin new post page.
+#. 1: link to WP admin new post page.
 #: template-parts/content-none.php:25
 #, php-format
 msgid ""
@@ -358,6 +348,10 @@ msgstr "Alle"
 #: woocommerce/loop/orderby.php:27
 msgid "Shop order"
 msgstr ""
+
+#: woocommerce/cart/mini-cart.php:118
+msgid "To find out your shipping cost , Please proceed to checkout."
+msgstr "Um deine Versandkosten zu berechnen, gehe bitte zur Kasse."
 
 #. Name of the theme
 msgid "bootScore"

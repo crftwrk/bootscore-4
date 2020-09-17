@@ -6,7 +6,7 @@ Tags: featured-images, threaded-comments, translation-ready
 Requires at least: 4.5
 Tested up to: 5.5
 Requires PHP: 5.6
-Stable tag: 3.3.0
+Stable tag: 3.3.1
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -44,6 +44,13 @@ Bootscore includes support for Infinite Scroll in Jetpack.
 
 
 == Changelog ==
+
+    = 3.3.1 - September 17 2020 =
+    
+        * Remove <p> from excerpt function
+        * Remove [...] from excerpt function
+        * Read more lines up at the bottom of the equal-height cards and has a »
+        * adjusted ::focus
 
     = 3.3.0 - September 10 2020 =
     

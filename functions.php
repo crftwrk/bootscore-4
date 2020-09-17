@@ -319,8 +319,7 @@ function bootscore_pagination($pages = '', $range = 2)
         echo '<span class="sr-only">Page navigation</span>';
         echo '<ul class="pagination justify-content-center ft-wpbs mb-4">';
 		
-        // echo '<li class="page-item disabled hidden-md-down d-none d-lg-block"><span class="page-link">Page '.$paged.' of '.$pages.'</span></li>';
-	
+     
 	 	if($paged > 2 && $paged > $range+1 && $showitems < $pages) 
 			echo '<li class="page-item"><a class="page-link" href="'.get_pagenum_link(1).'" aria-label="First Page">&laquo;</a></li>';
 	
@@ -357,7 +356,7 @@ function post_link_attributes($output) {
 }
 // Pagination Buttons Single Posts End
 
-
+/*
 // Removes [...] from excerpt
 if ( ! function_exists( 'new_excerpt_more' ) ) :
     function new_excerpt_more( $more ) {
@@ -375,7 +374,7 @@ if ( ! function_exists( 'bs_read_more' ) ) :
     remove_filter('the_excerpt', 'wpautop');
 endif;
 // Read more in List, removes <p> around excerpt End
-
+*/
 
 // Excerpt to pages
 add_post_type_support( 'page', 'excerpt' );
