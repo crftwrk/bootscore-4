@@ -8,7 +8,25 @@
  */
 
 
-
+// Category Badge
+if ( ! function_exists( 'bootscore_category_badge' ) ) :
+	function bootscore_category_badge() {
+		// Hide category and tag text for pages.
+		if ( 'post' === get_post_type() ) {
+            echo '<div class="category-badge mb-2">';
+            $thelist = '';
+			$i = 0;
+            foreach( get_the_category() as $category ) {
+		      if ( 0 < $i ) $thelist .= ' ';
+						    $thelist .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" class="badge badge-secondary">' . $category->name.'</a>';
+						    $i++;
+            }
+            echo $thelist;	
+            echo '</div>';
+		}
+	}
+endif;
+// Category Badge End
 
 
 // Category

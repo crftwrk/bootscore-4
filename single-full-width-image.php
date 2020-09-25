@@ -27,18 +27,7 @@
 
                 <div class="entry-content">
 
-                    <div class="mb-2">
-                        <?php
-							$thelist = '';
-							$i = 0;
-							foreach( get_the_category() as $category ) {
-							    if ( 0 < $i ) $thelist .= ' ';
-							    $thelist .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" class="badge badge-secondary">' . $category->name.'</a>';
-							    $i++;
-							}
-							echo $thelist;
-							?>
-                    </div>
+                    <?php bootscore_category_badge(); ?>
 
                     <p class="entry-meta">
                         <small class="text-muted">

@@ -6,7 +6,7 @@ Tags: featured-images, threaded-comments, translation-ready
 Requires at least: 4.5
 Tested up to: 5.5
 Requires PHP: 5.6
-Stable tag: 3.3.2
+Stable tag: 3.3.3
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -44,6 +44,12 @@ Bootscore includes support for Infinite Scroll in Jetpack.
 
 
 == Changelog ==
+
+    = 3.3.3 - September 25 2020 =
+    
+        * Improved category badge, made a function of it
+        * Added plugin translation to theme
+        * Edited .pot files
 
     = 3.3.2 - September 18 2020 =
     

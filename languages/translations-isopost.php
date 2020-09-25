@@ -1,1 +1,0 @@
-<?php _e('All','bootscore'); ?>

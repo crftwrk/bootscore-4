@@ -4,11 +4,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: _s 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2020-09-14 10:28+0000\n"
+"POT-Creation-Date: 2020-09-25 09:02+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2020-09-14 10:31+0000\n"
+"PO-Revision-Date: 2020-09-25 09:04+0000\n"
 "Last-Translator: Basti\n"
 "Language-Team: Deutsch (Sie)\n"
 "X-Generator: Loco https://localise.biz/\n"
@@ -16,11 +16,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Loco-Version: 2.4.3; wp-5.5.1"
 
-#: category-equal-height.php:71 category-sidebar-left.php:72
-#: author-masonry.php:70 archive.php:70 author-equal-height.php:78
-#: archive-sidebar-left.php:72 archive-equal-height-sidebar-right.php:70
-#: category.php:70 archive-equal-height.php:71 category-masonry.php:63
-#: author-sidebar-left.php:79 author-equal-height-sidebar-right.php:77
+#: category-equal-height.php:59 category-sidebar-left.php:60
+#: author-masonry.php:60 archive.php:60 author-equal-height.php:66
+#: archive-sidebar-left.php:62 archive-equal-height-sidebar-right.php:59
+#: category.php:58 archive-equal-height.php:59 category-masonry.php:53
+#: author-sidebar-left.php:69 author-equal-height-sidebar-right.php:66
 #: category-equal-height-sidebar-right.php:70
 #: template-parts/content-search.php:60
 msgid "Read more »"
@@ -36,7 +36,7 @@ msgstr "Suchergebnisse für: %s"
 msgid "No Sidebar"
 msgstr "Ohne Sidebar"
 
-#: single-sidebar-none.php:36 single-full-width-image.php:47 single.php:39
+#: single-sidebar-none.php:25 single-full-width-image.php:36 single.php:39
 #: single-sidebar-left.php:42
 msgid " by "
 msgstr " von "
@@ -100,11 +100,11 @@ msgstr "Footer 4"
 msgid "404 Page"
 msgstr "404 Seite"
 
-#: functions.php:422
+#: functions.php:421
 msgid "Password"
 msgstr "Passwort"
 
-#: functions.php:423
+#: functions.php:422
 msgid "Submit"
 msgstr "Senden"
 
@@ -161,7 +161,7 @@ msgid "Comments are closed."
 msgstr "Kommentare sind geschlossen"
 
 #. %s: post title
-#: comments.php:98 inc/template-tags.php:92
+#: comments.php:98 inc/template-tags.php:110
 msgid "Leave a Comment"
 msgstr "Kommentar schreiben"
 
@@ -220,7 +220,7 @@ msgstr "Verstanden"
 msgid "Left Sidebar"
 msgstr "Linke Sidebar"
 
-#: index.php:88 index.php:154 author.php:77 archive-masonry.php:63
+#: index.php:88 index.php:154 author.php:67 archive-masonry.php:53
 msgid "Read more"
 msgstr "Weiterlesen"
 
@@ -257,27 +257,27 @@ msgid "Add a menu"
 msgstr "Menü hinzufügen"
 
 #. used between list items, there is a space after the comma
-#: inc/template-tags.php:20
+#: inc/template-tags.php:38
 msgid ", "
 msgstr ","
 
-#: inc/template-tags.php:67
+#: inc/template-tags.php:85
 #, php-format
 msgctxt "post author"
 msgid "by %s"
 msgstr "von %s"
 
 #. %s: Name of current post. Only visible to screen readers
-#: inc/template-tags.php:121 inc/comment-list.php:32 inc/comment-list.php:55
+#: inc/template-tags.php:139 inc/comment-list.php:32 inc/comment-list.php:55
 msgid "Edit"
 msgstr "Bearbeiten"
 
-#: inc/template-tags.php:149
+#: inc/template-tags.php:167
 msgid "Leave a comment"
 msgstr "Kommentar schreiben"
 
 #. 1: list of tags.
-#: inc/template-tags.php:173
+#: inc/template-tags.php:191
 #, php-format
 msgid "Tagged %1$s"
 msgstr "Tagged %1$s"
@@ -341,9 +341,13 @@ msgstr ""
 "Anscheinend können wir nicht finden, wonach Sie suchen. Suchen Sie bitte mit "
 "anderen Schlagwörtern."
 
-#: languages/translations-isopost.php:1
+#: languages/plugin-translations.php:2
 msgid "All"
 msgstr "Alle"
+
+#: languages/plugin-translations.php:5
+msgid "Look what I found: "
+msgstr "Schauen Sie mal was ich gefunden habe: "
 
 #: woocommerce/loop/orderby.php:27
 msgid "Shop order"

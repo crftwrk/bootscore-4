@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: _s 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
-"POT-Creation-Date: 2020-05-29 07:43+0000\n"
+"POT-Creation-Date: 2020-09-14 10:28+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -15,6 +15,40 @@ msgstr ""
 "X-Generator: Loco https://localise.biz/\n"
 "Language: \n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;"
+
+#: category-equal-height.php:71 category-sidebar-left.php:72
+#: author-masonry.php:70 archive.php:70 author-equal-height.php:78
+#: archive-sidebar-left.php:72 archive-equal-height-sidebar-right.php:70
+#: category.php:70 archive-equal-height.php:71 category-masonry.php:63
+#: author-sidebar-left.php:79 author-equal-height-sidebar-right.php:77
+#: category-equal-height-sidebar-right.php:70
+#: template-parts/content-search.php:60
+msgid "Read more »"
+msgstr ""
+
+#. %s: search query.
+#: search.php:26
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#. Name of the template
+msgid "No Sidebar"
+msgstr ""
+
+#: single-sidebar-none.php:36 single-full-width-image.php:47 single.php:39
+#: single-sidebar-left.php:42
+msgid " by "
+msgstr ""
+
+#. Name of the template
+msgid "Full width image"
+msgstr ""
+
+#: page.php:40 page-blank-without-container.php:21 page-sidebar-none.php:30
+#: page-sidebar-left.php:35 page-blank-with-container.php:21
+msgid "Pages:"
+msgstr ""
 
 #: functions.php:60
 msgid "Main Menu"
@@ -66,52 +100,16 @@ msgstr ""
 msgid "404 Page"
 msgstr ""
 
-#: functions.php:411
+#: functions.php:422
 msgid "Password"
 msgstr ""
 
-#: functions.php:412
+#: functions.php:423
 msgid "Submit"
 msgstr ""
 
 #. Name of the template
-msgid "Blank with container"
-msgstr ""
-
-#: page-blank-with-container.php:21 page-sidebar-none.php:30
-#: page-blank-without-container.php:21 page-sidebar-left.php:35 page.php:40
-msgid "Pages:"
-msgstr ""
-
-#: category.php:70 author-sidebar-left.php:79 index.php:88 index.php:154
-#: archive.php:70 category-equal-height.php:67
-#: author-equal-height-sidebar-right.php:73 archive-sidebar-left.php:72
-#: author-masonry.php:70 archive-equal-height-sidebar-right.php:66
-#: category-masonry.php:63 archive-equal-height.php:67 archive-masonry.php:63
-#: category-sidebar-left.php:72 author-equal-height.php:74 author.php:77
-#: category-equal-height-sidebar-right.php:66
-#: template-parts/content-search.php:60
-msgid "Read more"
-msgstr ""
-
-#: header-01.php:79 header.php:77
-msgid "Close menu"
-msgstr ""
-
-#: header-01.php:118 header-01.php:163 header.php:116 header.php:161
-msgid "Account"
-msgstr ""
-
-#: header-01.php:167 header.php:165
-msgid "View your shopping cart"
-msgstr ""
-
-#: header-01.php:188 header.php:186
-msgid "Continue shopping"
-msgstr ""
-
-#: header-01.php:200 header.php:198
-msgid "Cart"
+msgid "Sidebar left"
 msgstr ""
 
 #: 404.php:22
@@ -123,16 +121,11 @@ msgid "Back Home &raquo;"
 msgstr ""
 
 #. Name of the template
-msgid "Sidebar left"
-msgstr ""
-
-#: single-sidebar-left.php:42 single-sidebar-none.php:36
-#: single-full-width-image.php:47 single.php:39
-msgid " by "
+msgid "Blank without container"
 msgstr ""
 
 #. Name of the template
-msgid "No Sidebar"
+msgid "Full Width Image"
 msgstr ""
 
 #. %s: post title
@@ -201,24 +194,6 @@ msgstr ""
 msgid "Website"
 msgstr ""
 
-#. Name of the template
-msgid "Full width image"
-msgstr ""
-
-#. Name of the template
-msgid "Blank without container"
-msgstr ""
-
-#. Name of the template
-msgid "Left Sidebar"
-msgstr ""
-
-#. %s: search query.
-#: search.php:26
-#, php-format
-msgid "Search Results for: %s"
-msgstr ""
-
 #: footer.php:101
 msgid ""
 "Cookies help us deliver our services. By using our services, you agree to "
@@ -238,24 +213,73 @@ msgid "Accept"
 msgstr ""
 
 #. Name of the template
-msgid "Full Width Image"
+msgid "Left Sidebar"
+msgstr ""
+
+#: index.php:88 index.php:154 author.php:77 archive-masonry.php:63
+msgid "Read more"
+msgstr ""
+
+#. Name of the template
+msgid "Blank with container"
+msgstr ""
+
+#: header-woocommerce.php:81
+msgid "Close menu"
+msgstr ""
+
+#: header-woocommerce.php:120 header-woocommerce.php:165
+msgid "Account"
+msgstr ""
+
+#: header-woocommerce.php:169
+msgid "View your shopping cart"
+msgstr ""
+
+#: header-woocommerce.php:190
+msgid "Continue shopping"
+msgstr ""
+
+#: header-woocommerce.php:202
+msgid "Cart"
 msgstr ""
 
 #: searchform.php:4
 msgid "Search"
 msgstr ""
 
-#: woocommerce/single-product-reviews.php:134
-msgid "Your review...*"
+#: inc/class-wp-bootstrap-navwalker.php:366
+msgid "Add a menu"
+msgstr ""
+
+#. used between list items, there is a space after the comma
+#: inc/template-tags.php:20
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:67
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#. %s: Name of current post. Only visible to screen readers
+#: inc/template-tags.php:121 inc/comment-list.php:32 inc/comment-list.php:55
+msgid "Edit"
+msgstr ""
+
+#: inc/template-tags.php:149
+msgid "Leave a comment"
+msgstr ""
+
+#. 1: list of tags.
+#: inc/template-tags.php:173
+#, php-format
+msgid "Tagged %1$s"
 msgstr ""
 
 #: inc/comment-list.php:32
 msgid "Pingback:"
-msgstr ""
-
-#. %s: Name of current post. Only visible to screen readers
-#: inc/comment-list.php:32 inc/comment-list.php:55 inc/template-tags.php:121
-msgid "Edit"
 msgstr ""
 
 #: inc/comment-list.php:47
@@ -278,33 +302,8 @@ msgid ""
 "Save my name, email, and website in this browser for the next time I comment."
 msgstr ""
 
-#: inc/class-wp-bootstrap-navwalker.php:366
-msgid "Add a menu"
-msgstr ""
-
-#. used between list items, there is a space after the comma
-#: inc/template-tags.php:20
-msgid ", "
-msgstr ""
-
-#: inc/template-tags.php:67
-#, php-format
-msgctxt "post author"
-msgid "by %s"
-msgstr ""
-
-#: inc/template-tags.php:149
-msgid "Leave a comment"
-msgstr ""
-
-#. 1: list of tags.
-#: inc/template-tags.php:173
-#, php-format
-msgid "Tagged %1$s"
-msgstr ""
-
-#: languages/translations-isopost.php:1
-msgid "All"
+#: woocommerce/single-product-reviews.php:134
+msgid "Your review...*"
 msgstr ""
 
 #: template-parts/content-none.php:14
@@ -330,12 +329,16 @@ msgid ""
 "searching can help."
 msgstr ""
 
-#: woocommerce/cart/mini-cart.php:118
-msgid "To find out your shipping cost , Please proceed to checkout."
+#: languages/translations-isopost.php:1
+msgid "All"
 msgstr ""
 
 #: woocommerce/loop/orderby.php:27
 msgid "Shop order"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:118
+msgid "To find out your shipping cost , Please proceed to checkout."
 msgstr ""
 
 #. Name of the theme

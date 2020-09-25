@@ -44,19 +44,9 @@
 							?>
                             <div class="col">
                                 <div class="card-body">
-                                    <div class="mb-2">
-                                        <!-- Category Badge -->
-                                        <?php
-										$thelist = '';
-										$i = 0;
-										foreach( get_the_category() as $category ) {
-										    if ( 0 < $i ) $thelist .= ' ';
-										    $thelist .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" class="badge badge-secondary">' . $category->name.'</a>';
-										    $i++;
-										}
-										echo $thelist;
-										?>
-                                    </div>
+                                    
+                                    <?php bootscore_category_badge(); ?>
+                                    
                                     <!-- Title -->
                                     <h2 class="blog-post-title">
                                         <a href="<?php the_permalink(); ?>">
