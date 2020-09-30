@@ -44,9 +44,7 @@
                     </div>
                     
                     <footer class="entry-footer">
-                        <!-- Edit Link -->
-                        <!--<?php bootscore_edit();?>-->
-                        <!-- .entry-footer -->
+
                     </footer>
                     <!-- Comments -->
                     <?php comments_template(); ?>

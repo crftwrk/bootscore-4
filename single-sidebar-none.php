@@ -23,9 +23,8 @@
                         <?php
 							bootscore_date();
 							_e(' by ', 'bootscore'); the_author_posts_link();
-							bootscore_comment_count();
-							bootscore_edit();							
-							 ?>
+							bootscore_comment_count();						
+				        ?>
                     </small>
                 </p>
                 <?php bootscore_post_thumbnail(); ?>

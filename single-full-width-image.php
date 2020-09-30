@@ -32,20 +32,18 @@
                     <p class="entry-meta">
                         <small class="text-muted">
                             <?php
-							bootscore_date();
-							_e(' by ', 'bootscore'); the_author_posts_link();
-							bootscore_comment_count();
-							bootscore_edit();							
-							 ?>
+							     bootscore_date();
+							     _e(' by ', 'bootscore'); the_author_posts_link();
+							     bootscore_comment_count();							
+				            ?>
                         </small>
-
                     </p>
 
                     <?php the_content(); ?>
 
                 </div>
+                
                 <footer class="entry-footer">
-
                     <p><?php bootscore_tags(); ?></p>
 
                     <nav aria-label="Page navigation example">
@@ -58,7 +56,6 @@
                             </li>
                         </ul>
                     </nav>
-
                 </footer>
 
                 <?php comments_template(); ?>

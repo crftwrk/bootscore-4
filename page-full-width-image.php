@@ -10,8 +10,6 @@
     get_header();
     ?>
 
-
-
 <div id="content" class="site-content">
     <div id="primary" class="content-area">
 
@@ -32,7 +30,7 @@
                 </div>
 
                 <footer class="entry-footer">
-                    <!--<?php bootscore_edit();?>-->
+
                 </footer>
 
                 <?php comments_template(); ?>
