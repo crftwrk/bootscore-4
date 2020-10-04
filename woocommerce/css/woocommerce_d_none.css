@@ -14,10 +14,6 @@ ul.tabs.wc-tabs li:after {
     display: none;
 }
 
-.woocommerce-info::before {
-    display: none;
-}
-
 span#select2-billing_country-container {
     display: none;
 }

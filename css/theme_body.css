@@ -277,30 +277,46 @@ q::before {
 
 /* Alerts */
 
+.alert.alert-danger, .alert.alert-warning, .alert.alert-info, .alert.alert-success {
+    padding-left: 3.25rem;
+}
+
 .alert-danger::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     content: "\f071";
-    margin-right: .25rem;
+    position: absolute;
+    left: 1.25rem;
+    top: 50%;
+    transform: translate(0, -50%);
 }
 
 .alert-warning::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     content: "\f06a";
-    margin-right: .25rem;
+    position: absolute;
+    left: 1.25rem;
+    top: 50%;
+    transform: translate(0, -50%);
 }
 
 .alert-info::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     content: "\f05a";
-    margin-right: .25rem;
+    position: absolute;
+    left: 1.25rem;
+    top: 50%;
+    transform: translate(0, -50%);
 }
 
 .alert-success::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     content: "\f058";
-    margin-right: .25rem;
+    position: absolute;
+    left: 1.25rem;
+    top: 50%;
+    transform: translate(0, -50%);
 }

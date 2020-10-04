@@ -201,3 +201,8 @@ del {
 .woocommerce .widget_price_filter .ui-slider .ui-slider-range {
     background-color: var(--primary);
 }
+
+
+.woocommerce-info::before {
+    color: inherit;
+}

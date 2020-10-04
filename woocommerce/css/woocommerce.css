@@ -348,3 +348,7 @@ ul.tabs.wc-tabs {
 .price .woocommerce-Price-amount.amount {
     font-size: 1.25rem;
 }
+
+.pswp__caption__center {
+    text-align: center;
+}
