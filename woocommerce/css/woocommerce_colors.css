@@ -206,3 +206,7 @@ del {
 .woocommerce-info::before {
     color: inherit;
 }
+
+.woocommerce-message::before {
+    color: inherit;
+}

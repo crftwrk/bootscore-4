@@ -36,7 +36,7 @@ if ( ! is_ajax() ) {
 			?>
         </ul>
         <?php endif; ?>
-        <div class="form-row place-order p-0 pt-3">
+        <div class="place-order pt-3">
             <noscript>
                 <?php
 			/* translators: $1 and $2 opening and closing emphasis tags respectively */

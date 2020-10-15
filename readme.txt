@@ -6,17 +6,18 @@ Tags: featured-images, threaded-comments, translation-ready
 Requires at least: 4.5
 Tested up to: 5.5
 Requires PHP: 5.6
-Stable tag: 3.3.7
+Stable tag: 3.3.8
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Bootscore WordPress Theme, Copyright 2019 - 2020 Bastian Kreiter.
+bootScore WordPress Theme, Copyright 2019 - 2020 Bastian Kreiter.
 
 
 === Plugin Name ===
+
 Contributors: craftwerk
 
-A starter theme called Bootscore.
+A starter theme called bootScore.
 
 
 == Description ==
@@ -38,12 +39,16 @@ https://bootscore.me/category/documentation/
 
 == Frequently Asked Questions ==
 
-= Does this theme support any plugins? =
+    = Does this theme support any plugins? =
 
-Bootscore includes support for Infinite Scroll in Jetpack.
+    bootScore includes support for WooCommerce and Infinite Scroll in Jetpack.
 
 
 == Changelog ==
+
+    = 3.3.8 - October 15 2020 =
+    
+        * Edited Remember me Checkbox woocommerce/global/form-login.php and woocommerce/myaccount/form-login.php
 
     = 3.3.7 - October 14 2020 =
     

@@ -46,7 +46,7 @@ if ( is_user_logged_in() ) {
 
             <?php do_action( 'woocommerce_login_form' ); ?>
 
-            <div class="custom-control custom-checkbox py-2">
+            <div class="custom-control custom-checkbox mb-3">
                 <input name="rememberme" type="checkbox" class="custom-control-input" id="rememberme" value="forever" />
                 <label class="custom-control-label" for="rememberme"><?php _e( 'Remember me', 'woocommerce' ); ?></label>
             </div>

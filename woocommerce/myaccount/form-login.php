@@ -51,7 +51,7 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
 
                 <?php do_action( 'woocommerce_login_form' ); ?>
 
-                <p class="custom-control custom-checkbox mt-3">
+                <p class="custom-control custom-checkbox">
                     <input name="rememberme" type="checkbox" class="custom-control-input" id="rememberme" value="forever" />
                     <label class="custom-control-label" for="rememberme"><?php _e( 'Remember me', 'woocommerce' ); ?></label>
                 </p>
