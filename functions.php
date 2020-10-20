@@ -247,9 +247,6 @@ function bootscore_scripts() {
 	// Theme JS
 	wp_enqueue_script( 'bootscore-script', get_template_directory_uri() . '/js/theme.js', array(), '20151215', true );
 	
-	// Custom JS
-	wp_enqueue_script( 'bootscore-custom', get_template_directory_uri() . '/js/custom.js', array(), '20151215', true );
-	
 	// Bootstrap JS
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/lib/bootstrap.bundle.min.js', array(), '20151215', true );
 	

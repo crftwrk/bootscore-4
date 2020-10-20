@@ -6,7 +6,7 @@ Tags: featured-images, threaded-comments, translation-ready
 Requires at least: 4.5
 Tested up to: 5.5
 Requires PHP: 5.6
-Stable tag: 3.3.8
+Stable tag: 3.3.9
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -45,6 +45,15 @@ https://bootscore.me/category/documentation/
 
 
 == Changelog ==
+
+== Changelog ==
+
+    = 3.3.9 - October 20 2020 =
+    
+        * Alert info payment.php if no payment method is selected
+        * Removed theme_404.css
+        * Removed custom.css
+        * Removed custom.js
 
     = 3.3.8 - October 15 2020 =
     

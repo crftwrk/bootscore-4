@@ -352,3 +352,7 @@ ul.tabs.wc-tabs {
 .pswp__caption__center {
     text-align: center;
 }
+
+.woocommerce-checkout #payment ul.payment_methods li:not(.woocommerce-notice)::before {
+    content: "\f05a";
+}
