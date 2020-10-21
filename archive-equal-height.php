@@ -71,13 +71,9 @@
 
             </div><!-- row -->
 
+            <!-- Pagination -->
             <div>
-                <?php 
-						if (function_exists("bootscore_pagination"))
-						{
-						  	bootscore_pagination();
-						}
-						?>
+                <?php bootscore_pagination(); ?>
             </div>
 
         </main><!-- #main -->

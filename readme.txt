@@ -6,7 +6,7 @@ Tags: featured-images, threaded-comments, translation-ready
 Requires at least: 4.5
 Tested up to: 5.5
 Requires PHP: 5.6
-Stable tag: 3.3.9
+Stable tag: 3.4.0
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -47,6 +47,11 @@ https://bootscore.me/category/documentation/
 == Changelog ==
 
 == Changelog ==
+
+    = 3.4.0 - October 21 2020 =
+
+        * Improved pagination on all category, archive and author.php
+        * Added Bootstrap pagination to WooCommerce
 
     = 3.3.9 - October 20 2020 =
     
