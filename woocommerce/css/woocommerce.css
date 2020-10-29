@@ -353,6 +353,14 @@ ul.tabs.wc-tabs {
     text-align: center;
 }
 
-.woocommerce-checkout #payment ul.payment_methods li:not(.woocommerce-notice)::before {
-    content: "\f05a";
+@media (max-width: 991px) {
+    a.btn.btn-outline-primary.btn-sm.invoice {
+        margin-top: .25rem;
+    }
+}
+
+@media (min-width: 992px) {
+    a.btn.btn-outline-primary.btn-sm.invoice {
+        margin-left: .25rem;
+    }
 }

@@ -16,6 +16,10 @@
    background-color:var(--primary);
 }
 
+#preloader {
+    background-color: inherit;
+}
+
 pre {
 	background-color: var(--light);
 }
