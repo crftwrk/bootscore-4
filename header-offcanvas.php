@@ -42,7 +42,7 @@
         <header id="masthead" class="site-header">
             <div id="to-top"></div>
 
-            <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
+            <nav id="nav-main" class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
 
                 <div class="container">
 
