@@ -156,3 +156,8 @@
     z-index: 11;
 }
 
+@media (max-width: 991px) {
+    .flex-fill-lg-none {
+        flex: 1 1 auto!important;
+    }
+}

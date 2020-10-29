@@ -125,7 +125,7 @@ if ( ! function_exists( 'bootscore_widgets_init' ) ) :
             'name' => esc_html__('Top Nav Search', 'bootscore' ),
             'id' => 'top-nav-search',
             'description' => esc_html__('Add widgets here.', 'bootscore' ),
-            'before_widget' => '<div class="top-nav-search ml-lg-3">',
+            'before_widget' => '<div class="top-nav-search ml-lg-2">',
             'after_widget' => '</div>',
             'before_title' => '<div class="widget-title d-none">',
             'after_title' => '</div>'

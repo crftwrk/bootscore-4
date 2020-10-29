@@ -53,6 +53,13 @@
 	}
 }
 
+
+@media (min-width: 992px) {
+    .nav-item:last-child {
+        padding-right: .5rem;
+    }
+}
+
 .bootscore-cart {
 	cursor: pointer
 }

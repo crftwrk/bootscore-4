@@ -33,7 +33,7 @@
 <body <?php body_class(); ?>>
 
     <!-- Preloader -->
-    <div id="preloader" class="align-items-center justify-content-center position-fixed">
+    <div id="preloader" class="bg-white align-items-center justify-content-center position-fixed">
         <div id="status" class="spinner-border text-primary" role="status">
             <span class="sr-only">Loading...</span>
         </div>
@@ -103,8 +103,8 @@
 
 
 
-                    <!-- Mobile Top Module -->
-                    <div class="top-module-1 flex-fill justify-content-end d-flex mr-2 d-lg-none">
+                    <!-- Top Nav Module -->
+                    <div class="top-module-1 flex-fill-lg-none justify-content-end d-flex">
                         <?php if ( is_active_sidebar( 'top-nav-module' )) : ?>
                         <div>
                             <?php dynamic_sidebar( 'top-nav-module' ); ?>
@@ -135,22 +135,12 @@
                         <!-- Mini Cart Header Mobile End-->
                     </div>
                     <!-- Woocommerce Mobile End -->
-                    
-
-                    <!-- Large Top Module -->
-                    <div class="top-module-1 d-none d-lg-block">
-                        <?php if ( is_active_sidebar( 'top-nav-module' )) : ?>
-                        <div>
-                            <?php dynamic_sidebar( 'top-nav-module' ); ?>
-                        </div>
-                        <?php endif; ?>
-                    </div>
 
                     <!-- Large Top Search Module -->
-                    <div class="top-nav-search-large d-none d-lg-block ml-3">
+                    <div class="top-nav-search-large d-none d-lg-block ml-2">
                         <a class="btn btn-outline-secondary" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-search"></i></a>
                         <div class="w-100 mt-n1 dropdown-menu bg-light border-top-0 border-left-0 border-right-0 border-bottom-0 rounded-0" aria-labelledby="dropdownMenuLink">
-                            <div class="container pl-0">
+                            <div class="container pl-2">
                                 <?php if ( is_active_sidebar( 'top-nav-search' )) : ?>
                                 <div class="w-100">
                                     <?php dynamic_sidebar( 'top-nav-search' ); ?>

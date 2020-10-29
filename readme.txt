@@ -6,7 +6,7 @@ Tags: featured-images, threaded-comments, translation-ready
 Requires at least: 4.5
 Tested up to: 5.5
 Requires PHP: 5.6
-Stable tag: 3.4.1
+Stable tag: 3.4.2
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -47,6 +47,10 @@ https://bootscore.me/category/documentation/
 == Changelog ==
 
 == Changelog ==
+
+    = 3.4.2 - October 30 2020 =
+
+        * Channged Top Nav Widget. Now its possible to show a widget with unique id, for example bS Dark Mode, in widget area.
 
     = 3.4.1 - October 30 2020 =
 

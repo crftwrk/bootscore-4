@@ -41,21 +41,29 @@
     <div id="page" class="site">
         <header id="masthead" class="site-header">
             <div id="to-top"></div>
-            <nav id="nav-main" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+
+
+
+
+
+            <nav class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
+
                 <div class="container">
-                    <!-- SVG Logo -->
+
                     <a class="navbar-brand" href="<?php echo esc_url( home_url() ); ?>"><img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/img/logo/logo.svg" alt="logo" class="logo"></a>
-                    <!-- Mobile Top Module -->
-                    <div class="top-module-1 flex-fill justify-content-end d-flex pr-3 d-lg-none">
+
+
+                    <div class="top-widget order-lg-3 flex-fill-lg-none d-flex justify-content-end">
                         <?php if ( is_active_sidebar( 'top-nav-module' )) : ?>
                         <div>
                             <?php dynamic_sidebar( 'top-nav-module' ); ?>
                         </div>
                         <?php endif; ?>
                     </div>
+
                     <!-- Mobile Search Module -->
-                    <div class="top-nav-search-mobile pr-3 d-lg-none">
-                        <a class="btn btn-outline-secondary btn-sm" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-search"></i></a>
+                    <div class="top-nav-search-mobile d-lg-none">
+                        <a class="btn btn-outline-secondary btn-sm ml-2" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-search"></i></a>
                         <div class="dropdown-menu bg-light border-top-0 border-left-0 border-right-0 border-bottom-0 rounded-0" aria-labelledby="dropdownMenuLink">
                             <div class="container">
                                 <?php if ( is_active_sidebar( 'top-nav-search' )) : ?>
@@ -66,11 +74,47 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Toggler -->
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bootscore-navbar-collapse" aria-controls="#cw-navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+
+
+
+                    <!--
+                        <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        -->
+
+                    <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#bootscore-navbar-collapse" aria-controls="#cw-navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                         <div class="toggler-icon-animated"><span></span><span></span><span></span><span></span></div>
                     </button>
-                    <!-- Nav Walker -->
+
+
+
+                    <!--<div class="collapse navbar-collapse" id="bootscore-navbar-collapse">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Link</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Dropdown
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                                </li>
+                            </ul>
+
+      
+                        </div>-->
 
                     <?php
 						wp_nav_menu( array(
@@ -85,30 +129,20 @@
 						) );
 				    ?>
 
-
-
-                    <!-- Large Top Module -->
-                    <div class="top-module-1 d-none d-lg-block">
-                        <?php if ( is_active_sidebar( 'top-nav-module' )) : ?>
-                        <div>
-                            <?php dynamic_sidebar( 'top-nav-module' ); ?>
-                        </div>
-                        <?php endif; ?>
-                    </div>
                     <!-- Large Top Search Module -->
-                    <div class="top-nav-search d-none d-lg-block">
+                    <div class="top-nav-search d-none d-lg-block order-lg-3">
                         <?php if ( is_active_sidebar( 'top-nav-search' )) : ?>
                         <div>
                             <?php dynamic_sidebar( 'top-nav-search' ); ?>
                         </div>
                         <?php endif; ?>
                     </div>
-                </div><!-- container -->
-                
+
+                </div><!-- . container -->
+
             </nav>
-            
-            
+
         </header><!-- #masthead -->
-        
-        
+
+
         <div class="opac z11"></div>
