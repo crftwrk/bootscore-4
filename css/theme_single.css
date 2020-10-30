@@ -1,9 +1,3 @@
-.page-image img, .post-image img {
-    width: 100%;
-    object-fit: contain;
-    height: auto;
-}
-
 #featured-full-image {
     background-size: cover;
     background-position: 50%;

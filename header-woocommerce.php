@@ -48,7 +48,7 @@
 
             <nav id="nav-main" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 
-                <div class="container">
+                <div class="container px-sm-3">
 
                     <!-- Toggler -->
                     <button class="navbar-toggler" type="button" data-toggle="offcanvas">
@@ -104,7 +104,7 @@
 
 
                     <!-- Top Nav Module -->
-                    <div class="top-module-1 flex-fill-lg-none justify-content-end d-flex">
+                    <div class="top-module-1 flex-grow-1 flex-lg-grow-0 justify-content-end d-flex">
                         <?php if ( is_active_sidebar( 'top-nav-module' )) : ?>
                         <div>
                             <?php dynamic_sidebar( 'top-nav-module' ); ?>

@@ -1,5 +1,3 @@
-
-
 /* Pagination Buttons */
 
 [rel="prev"]:before {
@@ -10,8 +8,6 @@
 	content: " »";
 }
 
-
-
 /* Category masonry card */
 
 @media (min-width: 576px) and (max-width: 991px) {
@@ -21,6 +17,8 @@
 		column-count: 2;
 	}
 }
+
+/* Horizontal Card */
 
 @media (max-width: 767px) {
 	.card-img-left img {

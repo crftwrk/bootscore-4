@@ -8,9 +8,5 @@
 
 #gdpr-box a.gdpr-button-settings,
 #gdpr-box button.gdpr-button-accept {
-    display: inline-block
-}
-
-#gdpr-box button.gdpr-button-accept:hover {
-    cursor: pointer
+    display: inline-block;
 }

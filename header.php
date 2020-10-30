@@ -44,12 +44,12 @@
 
             <nav id="nav-main" class="navbar navbar-expand-lg bg-light navbar-light fixed-top">
 
-                <div class="container">
+                <div class="container px-sm-3">
 
                     <a class="navbar-brand" href="<?php echo esc_url( home_url() ); ?>"><img src="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/img/logo/logo.svg" alt="logo" class="logo"></a>
 
 
-                    <div class="top-widget order-lg-3 flex-fill-lg-none d-flex justify-content-end">
+                    <div class="top-widget order-lg-3 flex-grow-1 flex-lg-grow-0 d-flex justify-content-end">
                         <?php if ( is_active_sidebar( 'top-nav-module' )) : ?>
                         <div>
                             <?php dynamic_sidebar( 'top-nav-module' ); ?>
