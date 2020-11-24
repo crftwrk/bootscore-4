@@ -14,7 +14,13 @@
 
 
 // Register Nav Walker class_alias
-require_once('inc/class-wp-bootstrap-navwalker.php');
+if ( ! function_exists( 'register_navwalker' ) ) :
+    function register_navwalker(){
+        require_once('inc/class-wp-bootstrap-navwalker.php');
+    }
+endif;
+add_action( 'after_setup_theme', 'register_navwalker' );
+
 
 // Register Comment List
 require_once('inc/comment-list.php');

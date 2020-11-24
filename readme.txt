@@ -6,7 +6,7 @@ Tags: featured-images, threaded-comments, translation-ready
 Requires at least: 4.5
 Tested up to: 5.5
 Requires PHP: 5.6
-Stable tag: 3.4.4
+Stable tag: 3.4.5
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -47,6 +47,11 @@ https://bootscore.me/category/documentation/
 == Changelog ==
 
 == Changelog ==
+
+    = 3.4.5 - November 24 2020 =
+
+        * Updated inc/class-wp-bootstrap-navwalker.php
+        * require_once('inc/class-wp-bootstrap-navwalker.php'); is now a pluggable function. In case you need a clickable parent menu item https://medium.com/@oscarmwana/make-parent-link-clickable-in-bootstrap-wordpress-navigation-walker-61213063a1a0 you can register the class-wp-bootstrap-navwalker.php in the child-theme.
 
     = 3.4.4 - November 2 2020 =
 
