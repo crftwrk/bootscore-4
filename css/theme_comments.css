@@ -14,13 +14,6 @@ ul.comment-list li {
 }
 
 
-/* Media Object */
-
-.media img {
-	border-radius: .25rem;
-}
-
-
 /* Comments Link Hide Title */
 
 .screen-reader-text {

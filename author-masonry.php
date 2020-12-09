@@ -18,7 +18,7 @@
             <header class="page-header mb-4">
                 <div class="media">
                     <div class="mr-3">
-                        <?php echo get_avatar( $curauth->ID ); ?>
+                        <?php echo get_avatar( get_the_author_email(), '96', '', '', array('class' => 'rounded') ); ?>
                     </div>
                     <div class="media-body">
                         <h1><?php the_author(); ?></h1>

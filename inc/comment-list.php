@@ -37,7 +37,7 @@ if ( ! function_exists( 'bootscore_comment' ) ) :
 <li id="comment-<?php comment_ID(); ?>" <?php comment_class( empty( $args['has_children'] ) ? '' : 'parent' ); ?>>
     <article id="div-comment-<?php comment_ID(); ?>" class="comment-body media my-3">
         <a class="mr-3" href="#">
-            <?php if ( 0 != $args['avatar_size'] ) echo get_avatar( $comment, $args['avatar_size'] ); ?>
+            <?php if ( 0 != $args['avatar_size'] ) echo get_avatar( $comment, $args['avatar_size'], '', '', array('class' => 'rounded') ); ?>
         </a>
 
         <div class="media-body p-3 rounded border">

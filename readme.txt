@@ -6,7 +6,7 @@ Tags: featured-images, threaded-comments, translation-ready
 Requires at least: 4.5
 Tested up to: 5.5
 Requires PHP: 5.6
-Stable tag: 3.4.5
+Stable tag: 3.4.6
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -47,6 +47,11 @@ https://bootscore.me/category/documentation/
 == Changelog ==
 
 == Changelog ==
+
+    = 3.4.6 - Dez 09 2020 =
+
+        * Cleaned header.php
+        * Comments and author avatar uses class .rounded instead of own css.
 
     = 3.4.5 - November 24 2020 =
 
