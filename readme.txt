@@ -4,9 +4,9 @@ Contributors: craftwerk
 Tags: featured-images, threaded-comments, translation-ready
 
 Requires at least: 4.5
-Tested up to: 5.5
+Tested up to: 5.6
 Requires PHP: 5.6
-Stable tag: 3.4.6
+Stable tag: 4.0.0
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -47,6 +47,13 @@ https://bootscore.me/category/documentation/
 == Changelog ==
 
 == Changelog ==
+
+    = 4.0.0 - Jan 06 2021 =
+
+        * improved cookie consent
+        * break-word
+        * .alert-link to <a> in alerts
+        * Category badge in content-search.php
 
     = 3.4.6 - Dez 09 2020 =
 

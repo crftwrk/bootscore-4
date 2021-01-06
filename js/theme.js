@@ -246,6 +246,9 @@ jQuery(document).ready(function ($) {
 
     // Forms
     $('select, #billing_state').addClass('custom-select');
+    
+        // Alert links
+    $('.alert a').addClass('alert-link');
 
 
 }); // jQuery End

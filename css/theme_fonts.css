@@ -1,6 +1,5 @@
 body {
-	word-wrap: break-word;
-	-ms-word-wrap: break-word;
+	word-break: break-word;
 }
 
 .breadcrumb {

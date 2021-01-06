@@ -17,27 +17,9 @@
 				?>
 			<div class="col">
 				<div class="card-body">
-					<div class="mb-2">
-						<!-- Category Badge -->
-						<?php
-							$thelist = '';
-							$i = 0;
-							foreach( get_the_category() as $category ) {
-							    if ( 0 < $i ) $thelist .= ' ';
-							    $thelist .= '<a href="' . esc_url( get_category_link( $category->term_id ) ) . '" class="badge badge-secondary">' . $category->name.'</a>';
-							    $i++;
-							}
-							echo $thelist;
-							?>
-						<!-- isopost Categories -->
-						<?php
-							$terms = get_the_terms( $post->ID, 'isopost_categories' );
-								if ($terms && ! is_wp_error($terms)): ?>
-						<?php foreach($terms as $term): ?>
-						<a href="<?php echo get_term_link( $term->slug, 'isopost_categories'); ?>" rel="tag" class="badge badge-secondary"><?php echo $term->name; ?></a>
-						<?php endforeach; ?>
-						<?php endif; ?>
-					</div>
+					
+                    <?php bootscore_category_badge(); ?>
+                    
 					<!-- Title -->
 					<h2 class="blog-post-title">
 						<a href="<?php the_permalink(); ?>">
