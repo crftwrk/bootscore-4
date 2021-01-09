@@ -1,6 +1,6 @@
 <?php
 	/*
-	 * Template Name: Full width image
+	 * Template Name: Full Width Image
 	 * Template Post Type: post
 	 */
 	  
@@ -19,8 +19,6 @@
                     <div class="container align-items-end d-flex h-100 pb-3">
                         <?php the_title('<h1>', '</h1>'); ?>
                     </div>
-
-
             </header>
 
             <div class="container pb-5">

@@ -6,7 +6,7 @@ Tags: featured-images, threaded-comments, translation-ready
 Requires at least: 4.5
 Tested up to: 5.6
 Requires PHP: 5.6
-Stable tag: 4.0.0
+Stable tag: 4.0.1
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -46,7 +46,10 @@ https://bootscore.me/category/documentation/
 
 == Changelog ==
 
-== Changelog ==
+    = 4.0.1 - Jan 09 2021 =
+
+        * css bug fix *-full-width-image.php
+        * text-left cookie consent
 
     = 4.0.0 - Jan 06 2021 =
 
