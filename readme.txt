@@ -6,7 +6,7 @@ Tags: featured-images, threaded-comments, translation-ready
 Requires at least: 4.5
 Tested up to: 5.6
 Requires PHP: 5.6
-Stable tag: 4.0.2
+Stable tag: 4.0.3
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -46,7 +46,11 @@ https://bootscore.me/category/documentation/
 
 == Changelog ==
 
-    = 4.0.1 - Jan 10 2021 =
+    = 4.0.3 - Jan 10 2021 =
+
+        * :not([data-smoothscroll="false"]) in smooth-scroll, thnx Xscratch. Usage <a href="#internal-link-without-smooth-scroll" data-smoothscroll="false">Hello</a>
+
+    = 4.0.2 - Jan 10 2021 =
 
         * get_the_author_meta('email') in all author.php
         * $aria_req = '' in comments.php
