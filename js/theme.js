@@ -136,7 +136,7 @@ jQuery(document).ready(function ($) {
 
 
 
-    // Header transform - activate the stylesheet in style.css in line 41
+    // Header transform - activate the stylesheet in style.css in line 17
     /*$("#nav-main").addClass("on-top clear");
     $(window).scroll(function () {
     	var scroll = $(window).scrollTop();
@@ -157,7 +157,7 @@ jQuery(document).ready(function ($) {
 
 
 
-    // Header up on scroll down, down on scroll up - activate the stylesheet in style.css in line 42
+    // Header up on scroll down, down on scroll up - activate the stylesheet in style.css in line 18
     /*var lastScrollTop = 0;
     $(window).scroll(function (event) {
     	var st = $(this).scrollTop();
@@ -176,7 +176,7 @@ jQuery(document).ready(function ($) {
 
 
 
-    // Header Offcanvas - activate the stylesheet in style.css in line 43, rename header.php in whateveryouwant.php and rename header-offcanvas.php into header.php
+    // Header Offcanvas - activate the stylesheet in style.css in line 19, rename header.php in whateveryouwant.php and rename header-offcanvas.php into header.php
     /*$(function () {
         'use strict'
 

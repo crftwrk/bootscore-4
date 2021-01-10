@@ -4,7 +4,7 @@ Theme URI: https://bootscore.me/
 Author: Bastian Kreiter
 Author URI: https://crftwrk.de
 Description: A powerful Bootstrap Starter Onepage or Multi-Page Theme with WooCommerce Support. Examples: https://bootscore.me/#examples, Documentation: https://bootscore.me/category/documentation/. This theme gives you full control whatever you do and the full freedom to design whatever you want. It comes with some useful header scripts and a wide selection of category, page, post, author and archive templates as well as sidebar, header, footer and 404 widgets. A preloader is included. There are just minor customizer settings in the backend. All important settings can only be made by touching the code. Some CSS, HTML, PHP and JS Skills are required to customize it completely. Make bootScore your own!
-Version: 4.0.1
+Version: 4.0.2
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: bootscore
@@ -19,24 +19,3 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
-
-/* Theme Core CSS */
-@import url("css/theme_header.css");
-@import url("css/theme_body.css");
-@import url("css/theme_footer.css");
-@import url("css/theme_colors.css");
-@import url("css/theme_fonts.css");
-@import url("css/theme_archive.css");
-@import url("css/theme_single.css");
-@import url("css/theme_comments.css");
-@import url("css/theme_sidebar.css");
-
-/* Theme Addons CSS */
-@import url("css/theme_preloader.css");
-@import url("css/theme_cookiebar.css");				
-@import url("css/theme_to_top.css");
-
-/* Theme Header presets */
-/*@import url("css/theme_header_transform.css");*/			/* Activate the script in js/theme.js in line 130 */
-/*@import url("css/theme_header_up_down.css");*/			/* Activate the script in js/theme.js in line 151 */
-/*@import url("css/theme_header_offcanvas.css");*/			/* Activate the script in js/theme.js in line 170, rename header.php in whateveryouwant.php and rename header-offcanvas.php into header.php */

@@ -119,11 +119,11 @@ if ( post_password_required() ) {
     	'fields' => apply_filters(
         	'comment_form_default_fields', array(
             	'author' =>'<p class="comment-form-author">' . '<input id="author" class="form-control" placeholder="' . __('Name*', 'bootscore') . '" name="author" type="text" value="' .
-                	esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' />'.
+                	esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req = '' . ' />'.
                 	'</p>'
                 	,
             	'email'  => '<p class="comment-form-email">' . '<input class="form-control "id="email" placeholder="' . __('Email* (will not be published)', 'bootscore') . '" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) .
-                	'" size="30"' . $aria_req . ' />'  .
+                	'" size="30"' . $aria_req = '' . ' />'  .
 
                 	'</p>',
             	'url'    => '<p class="comment-form-url">' .
@@ -144,26 +144,5 @@ if ( post_password_required() ) {
 
 
 
-
-
-<!--
-<div>
-<form action="http://example.com/blog/wp-comments-post.php" method="post" id="commentform" class="form-group">
-   <p>
-       <input name="author" id="author"tabindex="1" type="text" class="form-control" placeholder="Name*">
-   </p>
-   <p>
-       <input name="email" id="email"tabindex="2" type="text" class="form-control" placeholder="Mail* (will not be published)">
-   </p>
-   <p>
-       <input name="url" id="url"tabindex="3" type="text" class="form-control" placeholder="Website">
-   </p>
-   <p>
-       <input name="submit" id="label_submit" tabindex="5" value="Submit Comment" type="submit" class="btn btn-outline-primary">
-       <input name="comment_post_ID" value="1" type="hidden">
-   </p>
-</form>
-</div>
--->
 
 

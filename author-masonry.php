@@ -18,7 +18,7 @@
             <header class="page-header mb-4">
                 <div class="media">
                     <div class="mr-3">
-                        <?php echo get_avatar( get_the_author_email(), '96', '', '', array('class' => 'rounded') ); ?>
+                        <?php echo get_avatar( get_the_author_meta('email'), '96', '', '', array('class' => 'rounded') ); ?>
                     </div>
                     <div class="media-body">
                         <h1><?php the_author(); ?></h1>
@@ -35,9 +35,9 @@
                     <?php the_post_thumbnail('medium', array('class' => 'card-img-top')); ?>
 
                     <div class="card-body d-flex flex-column">
-                        
+
                         <?php bootscore_category_badge(); ?>
-                        
+
                         <!-- Title -->
                         <h2 class="blog-post-title">
                             <a href="<?php the_permalink(); ?>">

@@ -243,6 +243,12 @@ add_filter( 'widget_text', 'do_shortcode' );
 function bootscore_scripts() {
 	// Style CSS
 	wp_enqueue_style( 'bootscore-style', get_stylesheet_uri() );
+    
+    // All CSS to collect files via @import
+	wp_enqueue_style( 'all', get_template_directory_uri() . '/css/all.css');
+    
+    // Enqueue preloader. Using a minification plugin like JCH Optimize, Autoptimize or WP-rocket select to load not in footer.
+	wp_enqueue_style( 'preloader', get_template_directory_uri() . '/css/theme_preloader.css');    
 
 	// Bootstrap	
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/lib/bootstrap.min.css');

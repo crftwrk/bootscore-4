@@ -1,0 +1,19 @@
+/* Theme Core CSS */
+@import url("theme_header.css");
+@import url("theme_body.css");
+@import url("theme_footer.css");
+@import url("theme_colors.css");
+@import url("theme_fonts.css");
+@import url("theme_archive.css");
+@import url("theme_single.css");
+@import url("theme_comments.css");
+@import url("theme_sidebar.css");
+
+/* Theme Addons CSS */
+@import url("theme_cookiebar.css");				
+@import url("theme_to_top.css");
+
+/* Theme Header presets */
+/*@import url("theme_header_transform.css");*/			/* Activate the script in js/theme.js in line 130 */
+/*@import url("theme_header_up_down.css");*/			/* Activate the script in js/theme.js in line 151 */
+/*@import url("theme_header_offcanvas.css");*/			/* Activate the script in js/theme.js in line 170, rename header.php in whateveryouwant.php and rename header-offcanvas.php into header.php */

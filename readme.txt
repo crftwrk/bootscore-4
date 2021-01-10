@@ -6,7 +6,7 @@ Tags: featured-images, threaded-comments, translation-ready
 Requires at least: 4.5
 Tested up to: 5.6
 Requires PHP: 5.6
-Stable tag: 4.0.1
+Stable tag: 4.0.2
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -45,6 +45,13 @@ https://bootscore.me/category/documentation/
 
 
 == Changelog ==
+
+    = 4.0.1 - Jan 10 2021 =
+
+        * get_the_author_meta('email') in all author.php
+        * $aria_req = '' in comments.php
+        * Enqueue theme-preloader.css. If optimizing plugin is used, you can deselect it from loading in footer.
+        * Enqueue all.css to collect files via @import
 
     = 4.0.1 - Jan 09 2021 =
 
