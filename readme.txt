@@ -6,7 +6,7 @@ Tags: featured-images, threaded-comments, translation-ready
 Requires at least: 4.5
 Tested up to: 5.6
 Requires PHP: 5.6
-Stable tag: 4.0.3
+Stable tag: 4.0.4
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -45,6 +45,10 @@ https://bootscore.me/category/documentation/
 
 
 == Changelog ==
+
+    = 4.0.4 - Jan 20 2021 =
+
+        * Update to Bootstrap 4.6
 
     = 4.0.3 - Jan 10 2021 =
 
